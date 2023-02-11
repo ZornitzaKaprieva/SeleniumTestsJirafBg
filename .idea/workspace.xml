@@ -4,27 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d277289d-3610-405e-b4e6-a75187aeb2f3" name="Changes" comment="Preparation of the working environment">
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/b/0ba1b9c7a4878802f938e331cc2d8a042087ec6b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/f/9fe84ebb15faf917b7def6236dba604453cc61e0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/5/a5cc2925ca8258af241be7e5b0381edf30266302" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/testsPOM/HomePageTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/testsPOM/MyProfilePageTest.java" afterDir="false" />
+    <list default="true" id="d277289d-3610-405e-b4e6-a75187aeb2f3" name="Changes" comment="LoginTests">
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/itemPages/ItemOceanAnimal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testsPOM/homePage/HomePageTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/testsPOM/logIn/LogInTestCorrectCredentials.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/testsPOM/logIn/LogInTestWrongCredentials.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/wrongCredentials.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testsPOM/myProfile/MyProfilePageGoToHomePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testsPOM/myProfile/MyProfilePageTestLogOut.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testsPOM/selectItems/selectItemAfterLogIn/HomePageSelectItemAfterLogIn.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/base/TestUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/TestUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LogInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LogInPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/MyProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/MyProfilePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testsPOM/LogInTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/correctCredentials.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/correctCredentials.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/wrongCredentials" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,20 +61,22 @@
       <recent name="D:\QA\domashni i upravneniq\Java\SeleniumTestsJirafBg\src\test\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="testsPOM.myProfile" />
+      <recent name="testsPOM.selectItemAfterLogIn" />
       <recent name="testsPOM" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.testsPOM">
-    <configuration name="LogInTestCorrectCredentials" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.&lt;default&gt;">
+    <configuration name="HomePageSelectItemAfterLogIn" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumTestsJirafBg" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="testsPOM.logIn.*" />
+          <option name="PATTERN" value="testsPOM.homePage.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="testsPOM" />
-      <option name="MAIN_CLASS_NAME" value="testsPOM.logIn.LogInTestCorrectCredentials" />
+      <option name="PACKAGE_NAME" value="testsPOM.homePage" />
+      <option name="MAIN_CLASS_NAME" value="testsPOM.homePage.HomePageSelectItemAfterLogIn" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -92,34 +84,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LogInTestWrongCredentials" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="HomePageSelectItemAfterLogIn.goToHomePageAfterLogin" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumTestsJirafBg" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="testsPOM.logIn.*" />
+          <option name="PATTERN" value="testsPOM.homePage.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="testsPOM" />
-      <option name="MAIN_CLASS_NAME" value="testsPOM.logIn.LogInTestWrongCredentials" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MyProfilePageTest.successfulLogin" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumTestsJirafBg" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testsPOM.logIn.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testsPOM" />
-      <option name="MAIN_CLASS_NAME" value="testsPOM.MyProfilePageTest" />
-      <option name="METHOD_NAME" value="successfulLogin" />
+      <option name="PACKAGE_NAME" value="testsPOM.homePage" />
+      <option name="MAIN_CLASS_NAME" value="testsPOM.homePage.HomePageSelectItemAfterLogIn" />
+      <option name="METHOD_NAME" value="goToHomePageAfterLogin" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -127,31 +102,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testsPOM" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="MyProfilePageGoToHomePage" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumTestsJirafBg" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="testsPOM.*" />
+          <option name="PATTERN" value="testsPOM.homePage.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="testsPOM" />
-      <option name="TEST_OBJECT" value="PACKAGE" />
+      <option name="MAIN_CLASS_NAME" value="testsPOM.homePage.MyProfilePageGoToHomePage" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testsPOM.logIn" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="MyProfilePageGoToHomePage.goToHomePageAfterLogin" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumTestsJirafBg" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="testsPOM.logIn.*" />
+          <option name="PATTERN" value="testsPOM.homePage.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="testsPOM.logIn" />
+      <option name="PACKAGE_NAME" value="testsPOM.homePage" />
+      <option name="MAIN_CLASS_NAME" value="testsPOM.homePage.MyProfilePageGoToHomePage" />
+      <option name="METHOD_NAME" value="goToHomePageAfterLogin" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="&lt;default&gt;" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumTestsJirafBg" />
+      <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="PACKAGE" />
       <properties />
       <listeners />
@@ -161,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.testsPOM" />
-        <item itemvalue="TestNG.testsPOM.logIn" />
-        <item itemvalue="TestNG.LogInTestCorrectCredentials" />
-        <item itemvalue="TestNG.LogInTestWrongCredentials" />
-        <item itemvalue="TestNG.MyProfilePageTest.successfulLogin" />
+        <item itemvalue="TestNG.&lt;default&gt;" />
+        <item itemvalue="TestNG.HomePageSelectItemAfterLogIn" />
+        <item itemvalue="TestNG.HomePageSelectItemAfterLogIn.goToHomePageAfterLogin" />
+        <item itemvalue="TestNG.MyProfilePageGoToHomePage.goToHomePageAfterLogin" />
+        <item itemvalue="TestNG.MyProfilePageGoToHomePage" />
       </list>
     </recent_temporary>
   </component>
@@ -185,11 +173,35 @@
       <option name="project" value="LOCAL" />
       <updated>1676026427872</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="LoginTests">
+      <created>1676121315277</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1676121315278</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Preparation of the working environment" />
-    <option name="LAST_COMMIT_MESSAGE" value="Preparation of the working environment" />
+    <MESSAGE value="LoginTests" />
+    <option name="LAST_COMMIT_MESSAGE" value="LoginTests" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/pages/MyProfilePage.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/testsPOM/myProfile/MyProfilePageTestLogOut.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
