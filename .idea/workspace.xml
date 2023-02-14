@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d277289d-3610-405e-b4e6-a75187aeb2f3" name="Changes" comment="Add to Cart Item from Home Page">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/ProductPage.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/testsPOM/addToCart/AddToCart3ItemsFromHomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/testsPOM/addToCart/AddToCartItemFromHomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testing.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/base/TestUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/TestUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/GamesAndToysCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/GamesAndToysCategory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testsPOM/selectItems/selectItemAfterLogIn/SelectItemFromHomePageAfterLogIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testsPOM/selectItemAfterLogIn/SelectItemFromHomePageAfterLogIn.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/itemsXPaths" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/itemsXPaths" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +60,7 @@
       <recent name="testsPOM" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.SelectItemFromHomePageAfterLogIn">
+  <component name="RunManager" selected="TestNG.D:/QA/domashni i upravneniq/Java/SeleniumTestsJirafBg/src/test/resources/testing.xml">
     <configuration name="AddToCart3ItemsFromHomePage" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumTestsJirafBg" />
       <extension name="coverage">
@@ -78,6 +72,24 @@
       <option name="PACKAGE_NAME" value="testsPOM.addToCart" />
       <option name="MAIN_CLASS_NAME" value="testsPOM.addToCart.AddToCart3ItemsFromHomePage" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AddToCart3ItemsFromHomePage.goToHomePageAfterLogin (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumTestsJirafBg" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testsPOM.addToCart.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testsPOM.addToCart" />
+      <option name="MAIN_CLASS_NAME" value="testsPOM.addToCart.AddToCart3ItemsFromHomePage" />
+      <option name="METHOD_NAME" value="goToHomePageAfterLogin" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -168,23 +180,6 @@
       <option name="MAIN_CLASS_NAME" value="testsPOM.addToCart.AddToCartFromHomePageAfterLogIn" />
       <option name="METHOD_NAME" value="goToHomePageAfterLogin" />
       <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AddToCartItemFromHomePage" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumTestsJirafBg" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testsPOM.addToCart.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testsPOM.addToCart" />
-      <option name="MAIN_CLASS_NAME" value="testsPOM.addToCart.AddToCartItemFromHomePage" />
-      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -298,17 +293,17 @@
       <item itemvalue="TestNG.D:/QA/domashni i upravneniq/Java/SeleniumTestsJirafBg/src/test/resources/testing.xml" />
       <item itemvalue="TestNG.AddToCart3ItemsFromHomePage" />
       <item itemvalue="TestNG.AddToCart3ItemsFromHomePage.goToHomePageAfterLogin" />
-      <item itemvalue="TestNG.AddToCartItemFromHomePage" />
+      <item itemvalue="TestNG.AddToCart3ItemsFromHomePage.goToHomePageAfterLogin (1)" />
       <item itemvalue="TestNG.Select3ItemsFromHomePageAfterLogIn.goToHomePageAfterLogin" />
       <item itemvalue="TestNG.SelectItemFromHomePageAfterLogIn" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.SelectItemFromHomePageAfterLogIn" />
         <item itemvalue="TestNG.AddToCart3ItemsFromHomePage.goToHomePageAfterLogin" />
+        <item itemvalue="TestNG.AddToCart3ItemsFromHomePage.goToHomePageAfterLogin (1)" />
+        <item itemvalue="TestNG.SelectItemFromHomePageAfterLogIn" />
         <item itemvalue="TestNG.AddToCart3ItemsFromHomePage" />
         <item itemvalue="TestNG.Select3ItemsFromHomePageAfterLogIn.goToHomePageAfterLogin" />
-        <item itemvalue="TestNG.AddToCartItemFromHomePage" />
       </list>
     </recent_temporary>
   </component>
@@ -349,7 +344,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676372887056</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add to Cart Item from Home Page">
+      <created>1676380385631</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1676380385631</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
