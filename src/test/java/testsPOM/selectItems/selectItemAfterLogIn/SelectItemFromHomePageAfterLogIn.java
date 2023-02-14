@@ -16,7 +16,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.List;
 
-public class HomePageSelectItemAfterLogIn extends TestUtil {
+public class SelectItemFromHomePageAfterLogIn extends TestUtil {
     @Test(dataProvider = "correctCredentials")//управляваме през тестовите данни (през самите параметри)
 
     public void goToHomePageAfterLogin (String email, String password) throws InterruptedException {
@@ -34,7 +34,7 @@ public class HomePageSelectItemAfterLogIn extends TestUtil {
         Assert.assertTrue(applicationUrl.equals(applicationUrl));
 
         HomePage homePageItem1 = new HomePage(driver);
-        homePageItem1.selectItem();
+        homePageItem1.selectItem("/html/body/main/section/div[1]/div/div/section/section/div[5]/div/div/section/div/article[1]/div/div[2]/h3" );
         WebElement itemTitle = driver.findElement(By.xpath("/html/body/main/section/div/div/div/section/div[2]/div[2]/h1"));
         Assert.assertTrue(itemTitle.isDisplayed(), "Item Title is not displayed.");
     }

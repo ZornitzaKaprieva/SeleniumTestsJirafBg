@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -27,7 +28,9 @@ public class HomePage extends BasePage { //todo да се опишат елем�
         enterBtn.click();
     }
 
-    public void selectItem(){ //(WebElement item)
-        productBtnOceanAnimals.click();
+    public void selectItem(String xPath){ //(WebElement item)
+        //WebElement itemFromHomePageToBeSelected = driver.findElement(By.xpath("/html/body/main/section/div[1]/div/div/section/section/div[5]/div/div/section/div/article[1]/div/div[2]/h3"));
+        WebElement itemFromHomePageToBeSelected = driver.findElement(By.xpath(xPath));
+        itemFromHomePageToBeSelected.click();
     }
 }
