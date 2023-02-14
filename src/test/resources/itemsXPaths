@@ -9,3 +9,17 @@ item3:
 home page:
 aquarium:
 /html/body/main/section/div[1]/div/div/section/section/div[5]/div/div/section/div/article[1]/div/div[2]/h3
+//paintingWithFingers:
+/html/body/main/section/div/div/div/section/div[2]/div[2]/h1
+//fairytaleWorld:
+/html/body/main/section/div/div/div/section/div[2]/div[2]/h1
+
+addToCartButton:
+addToCartButton(homePage):
+/html/body/main/section/div/div/div/section/div[2]/div[2]/div[3]/div[2]/form/div[2]/div[2]/div/button
+item1 (GamesAndToys):
+/html/body/main/section/div/div/div/section/div[2]/div[2]/div[3]/div[2]/form/div[2]/div[2]/div/button
+item2 (GamesAndToys):
+/html/body/main/section/div/div/div/section/div[2]/div[2]/div[3]/div[2]/form/div[2]/div[2]/div/button
+item3 (GamesAndToys):
+/html/body/main/section/div/div/div/section/div[2]/div[2]/div[3]/div[2]/form/div[2]/div[2]/div/button

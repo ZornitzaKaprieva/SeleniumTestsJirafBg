@@ -15,6 +15,8 @@ public class GamesAndToysCategory extends BasePage {
         PageFactory.initElements(driver, this);
     }
 
+
+    //todo да се стигне до категорията и да се избере продукт.
     public void addItemToTheCart(String xPath){
         WebElement itemFromGamesAndToysToBeSelected = driver.findElement(By.xpath(xPath));
         itemFromGamesAndToysToBeSelected.click();

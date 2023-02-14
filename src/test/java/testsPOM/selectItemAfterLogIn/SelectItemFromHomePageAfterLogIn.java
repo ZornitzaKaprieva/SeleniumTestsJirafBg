@@ -1,4 +1,4 @@
-package testsPOM.selectItems.selectItemAfterLogIn;
+package testsPOM.selectItemAfterLogIn;
 
 import base.TestUtil;
 import com.opencsv.CSVReader;
@@ -37,6 +37,7 @@ public class SelectItemFromHomePageAfterLogIn extends TestUtil {
         homePageItem1.selectItem("/html/body/main/section/div[1]/div/div/section/section/div[5]/div/div/section/div/article[1]/div/div[2]/h3" );
         WebElement itemTitle = driver.findElement(By.xpath("/html/body/main/section/div/div/div/section/div[2]/div[2]/h1"));
         Assert.assertTrue(itemTitle.isDisplayed(), "Item Title is not displayed.");
+
     }
 
     @DataProvider(name = "correctCredentials") //името на DataProvider, който ще използваме
