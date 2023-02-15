@@ -14,7 +14,7 @@ public class HomePageTest extends TestUtil {
 
         HomePage homePage = new HomePage(driver);
         homePage.goToLogin();
-        Thread.sleep(1000);
+        //Thread.sleep(1000);
 
         WebElement emailField = driver.findElement(By.name("email"));
         Assert.assertTrue(emailField.isDisplayed(), "Email Link was not displayed");

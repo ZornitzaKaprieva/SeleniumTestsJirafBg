@@ -43,6 +43,8 @@ public class AddToCartItemFromHomePage extends TestUtil {
         ProductPage item1 = new ProductPage(driver);
         item1.selectItemAndAddToCart();
         WebElement successfullyAddToCartMsg = driver.findElement(By.xpath("/html/body/div[6]/div/div/div[1]/button/span"));
+
+
         Assert.assertTrue(successfullyAddToCartMsg.isEnabled(), "successfullyAddToCartMsg is not displayed");
 
     }

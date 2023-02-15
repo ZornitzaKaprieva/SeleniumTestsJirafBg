@@ -35,39 +35,70 @@ public class AddToCart3ItemsFromHomePage extends TestUtil {
         myProfilePage.goToHomePage();
         Assert.assertTrue(applicationUrl.equals(applicationUrl));
 
-        //item1:
+        //подреденият вариант:
         HomePage homePageItem1 = new HomePage(driver);
+        HomePage homePageItem2 = new HomePage(driver);
+        HomePage homePageItem3 = new HomePage(driver);
+
+        ProductPage item1 = new ProductPage(driver);
+        ProductPage item2 = new ProductPage(driver);
+        ProductPage item3 = new ProductPage(driver);
+
+        //item1:
         homePageItem1.selectItem("/html/body/main/section/div[1]/div/div/section/section/div[5]/div/div/section/div/article[1]/div/div[2]/h3");
         WebElement itemTitle = driver.findElement(By.xpath("/html/body/main/section/div/div/div/section/div[2]/div[2]/h1"));
         Assert.assertTrue(itemTitle.isDisplayed(), "Item Title is not displayed.");
 
-        ProductPage item1 = new ProductPage(driver);
         item1.goToHomePageAfterAddToCart();
         Assert.assertEquals(item1.getItemsInTheCart(), "КОЛИЧКА: 1", "Problem with addToCartCounter");
 
         //item2:
-        HomePage homePageItem2 = new HomePage(driver);
         homePageItem2.selectItem("/html/body/main/section/div[1]/div/div/section/section/div[5]/div/div/section/div/article[2]/div/div[2]/h3/a");
         WebElement itemTitle2 = driver.findElement(By.xpath("/html/body/main/section/div/div/div/section/div[2]/div[2]/h1"));
         Assert.assertTrue(itemTitle2.isDisplayed(), "Item2 Title is not displayed.");
 
-        ProductPage item2 = new ProductPage(driver);
         item2.goToHomePageAfterAddToCart();
         Assert.assertEquals(item2.getItemsInTheCart(), "КОЛИЧКА: 2", "Problem with addToCartCounter");
 
         //item3:
-        HomePage homePageItem3 = new HomePage(driver);
         homePageItem3.selectItem("/html/body/main/section/div[1]/div/div/section/section/div[5]/div/div/section/div/article[3]");
         WebElement itemTitle3 = driver.findElement(By.xpath("/html/body/main/section/div/div/div/section/div[2]/div[2]/h1"));
         Assert.assertTrue(itemTitle3.isDisplayed(), "Item2 Title is not displayed.");
 
-        ProductPage item3 = new ProductPage(driver);
-        item2.goToHomePageAfterAddToCart();
+        item3.goToHomePageAfterAddToCart();
         Assert.assertEquals(item3.getItemsInTheCart(), "КОЛИЧКА: 3", "Problem with addToCartCounter");
 
-
-
-
+        //ХРОНОЛОГИЧНО ПОДРЕДЕН ВАРИАНТ:
+//
+//        //item1:
+//        HomePage homePageItem1 = new HomePage(driver);
+//        homePageItem1.selectItem("/html/body/main/section/div[1]/div/div/section/section/div[5]/div/div/section/div/article[1]/div/div[2]/h3");
+//        WebElement itemTitle = driver.findElement(By.xpath("/html/body/main/section/div/div/div/section/div[2]/div[2]/h1"));
+//        Assert.assertTrue(itemTitle.isDisplayed(), "Item Title is not displayed.");
+//
+//        ProductPage item1 = new ProductPage(driver);
+//        item1.goToHomePageAfterAddToCart();
+//        Assert.assertEquals(item1.getItemsInTheCart(), "КОЛИЧКА: 1", "Problem with addToCartCounter");
+//
+//        //item2:
+//        HomePage homePageItem2 = new HomePage(driver);
+//        homePageItem2.selectItem("/html/body/main/section/div[1]/div/div/section/section/div[5]/div/div/section/div/article[2]/div/div[2]/h3/a");
+//        WebElement itemTitle2 = driver.findElement(By.xpath("/html/body/main/section/div/div/div/section/div[2]/div[2]/h1"));
+//        Assert.assertTrue(itemTitle2.isDisplayed(), "Item2 Title is not displayed.");
+//
+//        ProductPage item2 = new ProductPage(driver);
+//        item2.goToHomePageAfterAddToCart();
+//        Assert.assertEquals(item2.getItemsInTheCart(), "КОЛИЧКА: 2", "Problem with addToCartCounter");
+//
+//        //item3:
+//        HomePage homePageItem3 = new HomePage(driver);
+//        homePageItem3.selectItem("/html/body/main/section/div[1]/div/div/section/section/div[5]/div/div/section/div/article[3]");
+//        WebElement itemTitle3 = driver.findElement(By.xpath("/html/body/main/section/div/div/div/section/div[2]/div[2]/h1"));
+//        Assert.assertTrue(itemTitle3.isDisplayed(), "Item2 Title is not displayed.");
+//
+//        ProductPage item3 = new ProductPage(driver);
+//        item3.goToHomePageAfterAddToCart();
+//        Assert.assertEquals(item3.getItemsInTheCart(), "КОЛИЧКА: 3", "Problem with addToCartCounter");
 
     }
 

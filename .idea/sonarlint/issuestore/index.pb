@@ -18,3 +18,11 @@ o
 ?src/test/java/testsPOM/myProfile/MyProfilePageGoToHomePage.java,e\3\e3b1b60fc4b7ed611839b2c015d0ebfd03f027a0
 m
 =src/test/java/testsPOM/myProfile/MyProfilePageTestLogOut.java,7\b\7b9955673cbb681af41b16392cc5b60403b198b1
+m
+=src/test/java/testsPOM/logIn/LogInTestCorrectCredentials.java,1\9\199fc73de2bb7de0d5ada685fa51ff4fb6fa605b
+R
+"src/test/java/pages/LogInPage.java,9\a\9a5a6e60dfc1b041c4a44a0e45ec5db0388a36f9
+V
+&src/test/java/pages/MyProfilePage.java,d\8\d83fbc1ee3e44a9974e023b667f6f43d722ae6be
+P
+ src/test/java/base/TestUtil.java,5\9\59d9ef061498841be504356267b8ae8810e418b8

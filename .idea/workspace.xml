@@ -4,10 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d277289d-3610-405e-b4e6-a75187aeb2f3" name="Changes" comment="Add to Cart Item from Home Page">
-      <change afterPath="$PROJECT_DIR$/src/test/java/testsPOM/addToCart/AddToCart3ItemsFromHomePage.java" afterDir="false" />
+    <list default="true" id="d277289d-3610-405e-b4e6-a75187aeb2f3" name="Changes" comment="Add to Cart 3 Items from Home Page">
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/Categories.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testsPOM/categories/SelectCategory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/itemsXPaths" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/itemsXPaths" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testsPOM/addToCart/AddToCart3ItemsFromHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testsPOM/addToCart/AddToCart3ItemsFromHomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testsPOM/addToCart/AddToCartItemFromHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testsPOM/addToCart/AddToCartItemFromHomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testsPOM/homePage/HomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testsPOM/homePage/HomePageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/itemsXPaths" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/itemsXPathsReadOnly" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/taskConditionReadOnly" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/taskConditionReadOnly" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +52,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "last_opened_file_path": "D:/QA/domashni i upravneniq/Java/SeleniumTestsJirafBg/src/test/resources/testing.xml"
+    "last_opened_file_path": "D:/QA/domashni i upravneniq/Java/PracticeQAAutomationSaucedemo"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -60,7 +66,7 @@
       <recent name="testsPOM" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.D:/QA/domashni i upravneniq/Java/SeleniumTestsJirafBg/src/test/resources/testing.xml">
+  <component name="RunManager" selected="TestNG.SelectCategory">
     <configuration name="AddToCart3ItemsFromHomePage" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumTestsJirafBg" />
       <extension name="coverage">
@@ -78,24 +84,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AddToCart3ItemsFromHomePage.goToHomePageAfterLogin (1)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumTestsJirafBg" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testsPOM.addToCart.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testsPOM.addToCart" />
-      <option name="MAIN_CLASS_NAME" value="testsPOM.addToCart.AddToCart3ItemsFromHomePage" />
-      <option name="METHOD_NAME" value="goToHomePageAfterLogin" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="AddToCart3ItemsFromHomePage.goToHomePageAfterLogin" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumTestsJirafBg" />
       <extension name="coverage">
@@ -106,60 +94,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="testsPOM.addToCart" />
       <option name="MAIN_CLASS_NAME" value="testsPOM.addToCart.AddToCart3ItemsFromHomePage" />
-      <option name="METHOD_NAME" value="goToHomePageAfterLogin" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AddToCartAfterLogIn.goToHomePageAfterLogin (1)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumTestsJirafBg" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testsPOM.addToCart.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testsPOM.addToCart" />
-      <option name="MAIN_CLASS_NAME" value="testsPOM.addToCart.AddToCartAfterLogIn" />
-      <option name="METHOD_NAME" value="goToHomePageAfterLogin" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AddToCartFromHomePageAfterLogIn.goToHomePageAfterLogin" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumTestsJirafBg" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testsPOM.addToCart.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testsPOM.addToCart" />
-      <option name="MAIN_CLASS_NAME" value="testsPOM.addToCart.AddToCartFromHomePageAfterLogIn" />
-      <option name="METHOD_NAME" value="goToHomePageAfterLogin" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AddToCartFromHomePageAfterLogIn.goToHomePageAfterLogin" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumTestsJirafBg" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testsPOM.addToCart.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testsPOM.addToCart" />
-      <option name="MAIN_CLASS_NAME" value="testsPOM.addToCart.AddToCartFromHomePageAfterLogIn" />
       <option name="METHOD_NAME" value="goToHomePageAfterLogin" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -236,34 +170,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Select3ItemsFromHomePageAfterLogIn.goToHomePageAfterLogin" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SelectCategory" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumTestsJirafBg" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="testsPOM.selectItemAfterLogIn.*" />
+          <option name="PATTERN" value="testsPOM.categories.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="testsPOM.selectItemAfterLogIn" />
-      <option name="MAIN_CLASS_NAME" value="testsPOM.selectItemAfterLogIn.Select3ItemsFromHomePageAfterLogIn" />
-      <option name="METHOD_NAME" value="goToHomePageAfterLogin" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SelectItemFromHomePageAfterLogIn" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumTestsJirafBg" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testsPOM.selectItemAfterLogIn.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testsPOM.selectItemAfterLogIn" />
-      <option name="MAIN_CLASS_NAME" value="testsPOM.selectItemAfterLogIn.SelectItemFromHomePageAfterLogIn" />
+      <option name="PACKAGE_NAME" value="testsPOM.categories" />
+      <option name="MAIN_CLASS_NAME" value="testsPOM.categories.SelectCategory" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -271,17 +187,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SelectItemFromHomePageAfterLogIn.goToHomePageAfterLogin" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SelectCategory.successGoToCategory (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumTestsJirafBg" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="testsPOM.selectItems.selectItemAfterLogIn.*" />
+          <option name="PATTERN" value="testsPOM.categories.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="testsPOM.selectItems.selectItemAfterLogIn" />
-      <option name="MAIN_CLASS_NAME" value="testsPOM.selectItems.selectItemAfterLogIn.SelectItemFromHomePageAfterLogIn" />
-      <option name="METHOD_NAME" value="goToHomePageAfterLogin" />
+      <option name="PACKAGE_NAME" value="testsPOM.categories" />
+      <option name="MAIN_CLASS_NAME" value="testsPOM.categories.SelectCategory" />
+      <option name="METHOD_NAME" value="successGoToCategory" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SelectCategory.successGoToCategory" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumTestsJirafBg" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testsPOM.categories.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testsPOM.categories" />
+      <option name="MAIN_CLASS_NAME" value="testsPOM.categories.SelectCategory" />
+      <option name="METHOD_NAME" value="successGoToCategory" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -291,19 +225,19 @@
     </configuration>
     <list>
       <item itemvalue="TestNG.D:/QA/domashni i upravneniq/Java/SeleniumTestsJirafBg/src/test/resources/testing.xml" />
+      <item itemvalue="TestNG.SelectCategory" />
+      <item itemvalue="TestNG.SelectCategory.successGoToCategory" />
+      <item itemvalue="TestNG.SelectCategory.successGoToCategory (1)" />
       <item itemvalue="TestNG.AddToCart3ItemsFromHomePage" />
       <item itemvalue="TestNG.AddToCart3ItemsFromHomePage.goToHomePageAfterLogin" />
-      <item itemvalue="TestNG.AddToCart3ItemsFromHomePage.goToHomePageAfterLogin (1)" />
-      <item itemvalue="TestNG.Select3ItemsFromHomePageAfterLogIn.goToHomePageAfterLogin" />
-      <item itemvalue="TestNG.SelectItemFromHomePageAfterLogIn" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.AddToCart3ItemsFromHomePage.goToHomePageAfterLogin" />
-        <item itemvalue="TestNG.AddToCart3ItemsFromHomePage.goToHomePageAfterLogin (1)" />
-        <item itemvalue="TestNG.SelectItemFromHomePageAfterLogIn" />
+        <item itemvalue="TestNG.SelectCategory" />
+        <item itemvalue="TestNG.SelectCategory.successGoToCategory" />
+        <item itemvalue="TestNG.SelectCategory.successGoToCategory (1)" />
         <item itemvalue="TestNG.AddToCart3ItemsFromHomePage" />
-        <item itemvalue="TestNG.Select3ItemsFromHomePageAfterLogIn.goToHomePageAfterLogin" />
+        <item itemvalue="TestNG.AddToCart3ItemsFromHomePage.goToHomePageAfterLogin" />
       </list>
     </recent_temporary>
   </component>
@@ -351,7 +285,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676380385631</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Add to Cart 3 Items from Home Page">
+      <created>1676382409276</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1676382409276</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -361,7 +302,8 @@
     <MESSAGE value="Select Item from HomePage After LogIn" />
     <MESSAGE value="Select Item from HomePage after LogIn" />
     <MESSAGE value="Add to Cart Item from Home Page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add to Cart Item from Home Page" />
+    <MESSAGE value="Add to Cart 3 Items from Home Page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add to Cart 3 Items from Home Page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
