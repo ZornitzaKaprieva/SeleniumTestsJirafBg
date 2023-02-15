@@ -29,6 +29,19 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="b85b629b-0751-4442-9356-b026910240ff" />
+        <option name="url" value="https://github.com/ZornitzaKaprieva/SeleniumTestsJirafBg.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -65,42 +78,7 @@
       <recent name="testsPOM" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.SelectCategory">
-    <configuration name="AddToCart3ItemsFromHomePage" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumTestsJirafBg" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testsPOM.addToCart.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testsPOM.addToCart" />
-      <option name="MAIN_CLASS_NAME" value="testsPOM.addToCart.AddToCart3ItemsFromHomePage" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AddToCart3ItemsFromHomePage.goToHomePageAfterLogin" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumTestsJirafBg" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testsPOM.addToCart.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testsPOM.addToCart" />
-      <option name="MAIN_CLASS_NAME" value="testsPOM.addToCart.AddToCart3ItemsFromHomePage" />
-      <option name="METHOD_NAME" value="goToHomePageAfterLogin" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.SelectCategoryWithoutLogIn.successGoToCategory">
     <configuration name="AddToCartFromHomePageAfterLogIn.goToHomePageAfterLogin" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumTestsJirafBg" />
       <extension name="coverage">
@@ -186,7 +164,43 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SelectCategoryWithoutLogIn.successGoToCategory" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumTestsJirafBg" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testsPOM.categories.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testsPOM.categories" />
+      <option name="MAIN_CLASS_NAME" value="testsPOM.categories.SelectCategoryWithoutLogIn" />
+      <option name="METHOD_NAME" value="successGoToCategory" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SelectCategory.successGoToCategory (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumTestsJirafBg" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testsPOM.categories.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testsPOM.categories" />
+      <option name="MAIN_CLASS_NAME" value="testsPOM.categories.SelectCategory" />
+      <option name="METHOD_NAME" value="successGoToCategory" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SelectCategory.successGoToCategory (2)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumTestsJirafBg" />
       <extension name="coverage">
         <pattern>
@@ -227,16 +241,16 @@
       <item itemvalue="TestNG.SelectCategory" />
       <item itemvalue="TestNG.SelectCategory.successGoToCategory" />
       <item itemvalue="TestNG.SelectCategory.successGoToCategory (1)" />
-      <item itemvalue="TestNG.AddToCart3ItemsFromHomePage" />
-      <item itemvalue="TestNG.AddToCart3ItemsFromHomePage.goToHomePageAfterLogin" />
+      <item itemvalue="TestNG.SelectCategory.successGoToCategory (2)" />
+      <item itemvalue="TestNG.SelectCategoryWithoutLogIn.successGoToCategory" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.SelectCategoryWithoutLogIn.successGoToCategory" />
+        <item itemvalue="TestNG.SelectCategory.successGoToCategory (2)" />
         <item itemvalue="TestNG.SelectCategory" />
         <item itemvalue="TestNG.SelectCategory.successGoToCategory" />
         <item itemvalue="TestNG.SelectCategory.successGoToCategory (1)" />
-        <item itemvalue="TestNG.AddToCart3ItemsFromHomePage" />
-        <item itemvalue="TestNG.AddToCart3ItemsFromHomePage.goToHomePageAfterLogin" />
       </list>
     </recent_temporary>
   </component>
