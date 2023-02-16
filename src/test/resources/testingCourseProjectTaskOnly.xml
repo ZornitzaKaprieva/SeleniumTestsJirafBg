@@ -20,7 +20,7 @@
 
     <test name="CheckoutSuit">
         <classes>
-            <class name="testsPOM.checkout.GoToCheckOutWithoutApprovalWindow"/>
+            <class name="testsPOM.checkout.GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindow"/>
         </classes>
     </test>
 

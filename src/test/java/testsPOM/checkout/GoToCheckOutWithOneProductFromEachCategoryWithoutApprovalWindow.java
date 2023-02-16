@@ -14,7 +14,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.List;
 
-public class GoToCheckOutWithoutApprovalWindow extends TestUtil {
+public class GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindow extends TestUtil {
 
     @Test(dataProvider = "correctCredentials")//управляваме през тестовите данни (през самите параметри)
 
@@ -39,7 +39,7 @@ public class GoToCheckOutWithoutApprovalWindow extends TestUtil {
         Categories item1GameAndPlay = new Categories(driver);
         item1GameAndPlay.selectItemFromCategory("/html/body/main/section/div/div/div[2]/section/section/div[3]/div/div[1]/article[1]/div");
         WebElement itemTitle = driver.findElement(By.xpath("/html/body/main/section/div/div/div/section/div[2]/div[2]/h1"));
-        Assert.assertTrue(itemTitle.isDisplayed(), "Item Title is not displayed.");
+        Assert.assertTrue(itemTitle.isDisplayed(), "Item1 Title is not displayed.");
 
         ProductPage itemFromGameAndPlay = new ProductPage(driver);
         //itemFromGameAndPlay.goToHomePageAfterAddToCart();//todo
@@ -55,24 +55,85 @@ public class GoToCheckOutWithoutApprovalWindow extends TestUtil {
         Categories itemCostumesAndRolePlaying = new Categories(driver);
         itemCostumesAndRolePlaying.selectItemFromCategory("/html/body/main/section/div/div/div[2]/section/section/div[3]/div/div[1]/article[3]/div/div[1]/a");
         WebElement item2Title = driver.findElement(By.xpath("/html/body/main/section/div/div/div/section/div[2]/div[2]/h1"));
-        Assert.assertTrue(item2Title.isDisplayed(), "Item Title is not displayed.");
+        Assert.assertTrue(item2Title.isDisplayed(), "Item2 Title is not displayed.");
 
         ProductPage itemFromCostumesAndRolePlaying = new ProductPage(driver);
         //itemFromCostumesAndRolePlaying.goToHomePageAfterAddToCart();//todo
         itemFromCostumesAndRolePlaying.goToHomePageAfterAddToCartByClickingOnProductPage();
         Assert.assertEquals(itemFromCostumesAndRolePlaying.getHowManyItemsInTheCart(), "КОЛИЧКА: 2", "Problem with addToCartCounter");
 
+        //item from third category:
+        Categories accessories = new Categories(driver);
+        accessories.selectCategory("[3]");
+        WebElement accessoriesTitle = driver.findElement(By.xpath("/html/body/main/section/div/div/div[2]/section/div/div/h1"));
+        Assert.assertTrue(accessoriesTitle.isDisplayed());
+
+        Categories itemAccessories = new Categories(driver);
+        itemAccessories.selectItemFromCategory("/html/body/main/section/div/div/div[2]/section/section/div[3]/div/div[1]/article[1]/div/div[2]/h3/a");
+        WebElement item3Title = driver.findElement(By.xpath("/html/body/main/section/div/div/div/section/div[2]/div[2]/h1"));
+        Assert.assertTrue(item3Title.isDisplayed(), "Item3 Title is not displayed.");
+
+        ProductPage itemFromAccessories = new ProductPage(driver);
+        //itemFromAccessories.goToHomePageAfterAddToCart();//todo
+        itemFromAccessories.goToHomePageAfterAddToCartByClickingOnProductPage();
+        Assert.assertEquals(itemFromAccessories.getHowManyItemsInTheCart(), "КОЛИЧКА: 3", "Problem with addToCartCounter");
+
+        //item from fourth category:
+        Categories creativity = new Categories(driver);
+        creativity.selectCategory("[4]");
+        WebElement selectCategoryTitle = driver.findElement(By.xpath("/html/body/main/section/div/div/div[2]/section/div/div/h1"));
+        Assert.assertTrue(selectCategoryTitle.isDisplayed());
+
+        Categories itemCreativity = new Categories(driver);
+        itemCreativity.selectItemFromCategory("/html/body/main/section/div/div/div[2]/section/section/div[3]/div/div[1]/article[1]/div/div[2]/h3/a");
+        WebElement item4Title = driver.findElement(By.xpath("/html/body/main/section/div/div/div/section/div[2]/div[2]/h1"));
+        Assert.assertTrue(item4Title.isDisplayed(), "Item4 Title is not displayed.");
+
+        ProductPage itemFromCreativity = new ProductPage(driver);
+        //itemFromCreativity.goToHomePageAfterAddToCart();//todo
+        itemFromCreativity.goToHomePageAfterAddToCartByClickingOnProductPage();
+        Assert.assertEquals(itemFromAccessories.getHowManyItemsInTheCart(), "КОЛИЧКА: 4", "Problem with addToCartCounter(itemFromCreativity)");
+
+        //item from fifth category:
+        Categories shoesAndSlippers = new Categories(driver);
+        shoesAndSlippers.selectCategory("[5]");
+        WebElement shoesAndSlippersTitle = driver.findElement(By.xpath("/html/body/main/section/div/div/div[2]/section/div/div/h1"));
+        Assert.assertTrue(shoesAndSlippersTitle.isDisplayed());
+
+        Categories itemShoesAndSlippers = new Categories(driver);
+        itemShoesAndSlippers.selectItemFromCategory("/html/body/main/section/div/div/div[2]/section/section/div[3]/div/div[1]/article[3]/div/div[2]/h3/a");
+        WebElement item5Title = driver.findElement(By.xpath("/html/body/main/section/div/div/div/section/div[2]/div[2]/h1"));
+        Assert.assertTrue(item5Title.isDisplayed(), "Item5 Title is not displayed.");
+
+        ProductPage itemFromShoesAndSlippers = new ProductPage(driver);
+        //itemFromShoesAndSlippers.goToHomePageAfterAddToCart();//todo
+        itemFromShoesAndSlippers.goToHomePageAfterAddToCartByClickingOnProductPage();
+        Assert.assertEquals(itemFromAccessories.getHowManyItemsInTheCart(), "КОЛИЧКА: 5", "Problem with addToCartCounter(itemFromShoesAndSlippers)");
+
+        //item from sixth category:
+        Categories stem = new Categories(driver);
+        stem.selectCategory("[6]");
+        WebElement stemTitle = driver.findElement(By.xpath("/html/body/main/section/div/div/div[2]/section/div/div/h1"));
+        Assert.assertTrue(stemTitle.isDisplayed());
+
+        Categories itemStem = new Categories(driver);
+        itemStem.selectItemFromCategory("/html/body/main/section/div/div/div[2]/section/section/div[3]/div/div[1]/article[1]/div/div[2]/h3/a");
+        WebElement item6Title = driver.findElement(By.xpath("/html/body/main/section/div/div/div/section/div[2]/div[2]/h1"));
+        Assert.assertTrue(item6Title.isDisplayed(), "Item6 Title is not displayed.");
+
+        ProductPage itemFromStem = new ProductPage(driver);
+        //itemFromStem.goToHomePageAfterAddToCart();//todo
+        itemFromStem.goToHomePageAfterAddToCartByClickingOnProductPage();
+        Assert.assertEquals(itemFromAccessories.getHowManyItemsInTheCart(), "КОЛИЧКА: 6", "Problem with addToCartCounter(itemFromStem)");
+
+
+        //to checkout:
         homePage.goToCartFromHomePage();
 
         CartPage newPurchase = new CartPage(driver);
         newPurchase.goToCheckOutAfterAddToCart();
         WebElement personalInfoTitle = driver.findElement(By.xpath("/html/body/main/section/div/div/div/section/div/div[1]/section[1]/h1"));
         Assert.assertTrue(personalInfoTitle.isDisplayed());
-
-
-
-
-
     }
 
     @DataProvider(name = "correctCredentials") //името на DataProvider, който ще използваме

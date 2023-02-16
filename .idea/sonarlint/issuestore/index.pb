@@ -20,5 +20,3 @@ k
 ;src/test/java/testsPOM/logIn/LogInTestWrongCredentials.java,f\1\f1a8d8ca33ca0ae97d889816d9a9b73fbce79586
 o
 ?src/test/java/testsPOM/myProfile/MyProfilePageGoToHomePage.java,e\3\e3b1b60fc4b7ed611839b2c015d0ebfd03f027a0
-q
-Asrc/test/java/testsPOM/categories/SelectCategoryWithoutLogIn.java,5\d\5deae8089cb26a2b84c8adeff3bb8958d8ece8ad
