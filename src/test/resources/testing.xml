@@ -5,7 +5,8 @@
 
     <test name="HomePageSuit" >
         <classes>
-            <class name="testsPOM.homePage.HomePageTest" />
+            <class name="testsPOM.homePage.GoToLogInFromHomePage" />
+            <class name="testsPOM.homePage.SelectCategoriesFromHomePage" />
         </classes>
     </test>
 
@@ -31,8 +32,22 @@
 
     <test name="AddToCartSuit">
         <classes>
-            <class name="testsPOM.addToCart.AddToCartItemFromHomePage"/>
-            <class name="testsPOM.addToCart.AddToCart3ItemsFromHomePage"/>
+            <class name="testsPOM.addToCart.AddToCartItemFromHomePageAfterLogIn"/>
+            <class name="testsPOM.addToCart.AddToCart3ItemsFromHomePageAfterLogIn"/>
+        </classes>
+    </test>
+
+    <test name="CheckoutSuit">
+        <classes>
+            <class name="testsPOM.checkout.GoToCheckOutWith1ItemFromSpecificCategoryAfterLogin"/>
+            <class name="testsPOM.checkout.GoToCheckOutWithDifferentItemFromDifferentCategoriesAfterLogin"/>
+            <class name="testsPOM.checkout.GoToCheckOutWithoutApprovalWindow"/>
+        </classes>
+    </test>
+
+    <test name="CategoriesSuit">
+        <classes>
+            <class name="testsPOM.categories.SelectCategoryWithoutLogIn"/>
         </classes>
     </test>
 

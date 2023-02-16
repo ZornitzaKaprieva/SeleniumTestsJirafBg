@@ -4,15 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d277289d-3610-405e-b4e6-a75187aeb2f3" name="Changes" comment="Categories added">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/Categories.java" afterDir="false" />
+    <list default="true" id="d277289d-3610-405e-b4e6-a75187aeb2f3" name="Changes" comment="Test SelectCategoryWithoutLogIn added">
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/CartPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/CheckOut.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testsPOM/checkout/GoToCheckOutWith1ItemFromSpecificCategoryAfterLogin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testsPOM/checkout/GoToCheckOutWithDifferentItemFromDifferentCategoriesAfterLogin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testsPOM/checkout/GoToCheckOutWithoutApprovalWindow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testsPOM/homePage/SelectCategoriesFromHomePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/testingCourseProjectTaskOnly.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testsPOM/addToCart/AddToCart3ItemsFromHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testsPOM/addToCart/AddToCart3ItemsFromHomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testsPOM/addToCart/AddToCartItemFromHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testsPOM/addToCart/AddToCartItemFromHomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testsPOM/homePage/HomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testsPOM/homePage/HomePageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/itemsXPaths" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/itemsXPathsReadOnly" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/TestUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/TestUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/Categories.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/Categories.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/GamesAndToysCategory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/MyProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/MyProfilePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ProductPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testsPOM/addToCart/AddToCart3ItemsFromHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testsPOM/addToCart/AddToCart3ItemsFromHomePageAfterLogIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testsPOM/addToCart/AddToCartItemFromHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testsPOM/addToCart/AddToCartItemFromHomePageAfterLogIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testsPOM/homePage/HomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testsPOM/homePage/GoToLogInFromHomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testsPOM/myProfile/MyProfilePageTestLogOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testsPOM/myProfile/MyProfilePageTestLogOut.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testsPOM/selectItemAfterLogIn/SelectItemFromHomePageAfterLogIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testsPOM/selectItemAfterLogIn/SelectItemFromHomePageAfterLogIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/itemsXPathsReadOnly" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/itemsXPathsReadOnly" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/taskConditionReadOnly" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/taskConditionReadOnly" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testing.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testing.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,11 +44,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -64,7 +79,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "last_opened_file_path": "D:/QA/domashni i upravneniq/Java/PracticeQAAutomationSaucedemo"
+    "last_opened_file_path": "D:/QA/domashni i upravneniq/Java/SeleniumTestsJirafBg/src/test/resources/testingCourseProjectTaskOnly.xml"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -72,13 +87,32 @@
       <recent name="D:\QA\domashni i upravneniq\Java\SeleniumTestsJirafBg\src\test\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="testsPOM.checkOut" />
       <recent name="testsPOM.addToCart" />
       <recent name="testsPOM.selectItemAfterLogIn" />
       <recent name="testsPOM.myProfile" />
       <recent name="testsPOM" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.SelectCategoryWithoutLogIn.successGoToCategory">
+  <component name="RunManager" selected="TestNG.D:/QA/domashni i upravneniq/Java/SeleniumTestsJirafBg/src/test/resources/testingCourseProjectTaskOnly.xml">
+    <configuration name="AddToCart3ItemsFromHomePageAfterLogIn.addToCart3ItemsFromHomePage" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumTestsJirafBg" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testsPOM.addToCart.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testsPOM.addToCart" />
+      <option name="MAIN_CLASS_NAME" value="testsPOM.addToCart.AddToCart3ItemsFromHomePageAfterLogIn" />
+      <option name="METHOD_NAME" value="addToCart3ItemsFromHomePage" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AddToCartFromHomePageAfterLogIn.goToHomePageAfterLogin" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumTestsJirafBg" />
       <extension name="coverage">
@@ -91,6 +125,31 @@
       <option name="MAIN_CLASS_NAME" value="testsPOM.addToCart.AddToCartFromHomePageAfterLogIn" />
       <option name="METHOD_NAME" value="goToHomePageAfterLogin" />
       <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="D:/QA/domashni i upravneniq/Java/SeleniumTestsJirafBg/src/test/resources/testingCourseProjectTaskOnly.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumTestsJirafBg" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testsPOM.checkOut.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testingCourseProjectTaskOnly.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
@@ -147,34 +206,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SelectCategory" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="GoToCheckOutWithoutApprovalWindow.goToCheckOutWithDifferentItemFromDifferentCategoriesAfterLogin (2)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumTestsJirafBg" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="testsPOM.categories.*" />
+          <option name="PATTERN" value="testsPOM.checkOut.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="testsPOM.categories" />
-      <option name="MAIN_CLASS_NAME" value="testsPOM.categories.SelectCategory" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SelectCategoryWithoutLogIn.successGoToCategory" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumTestsJirafBg" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testsPOM.categories.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testsPOM.categories" />
-      <option name="MAIN_CLASS_NAME" value="testsPOM.categories.SelectCategoryWithoutLogIn" />
-      <option name="METHOD_NAME" value="successGoToCategory" />
+      <option name="PACKAGE_NAME" value="testsPOM.checkOut" />
+      <option name="MAIN_CLASS_NAME" value="testsPOM.checkOut.GoToCheckOutWithoutApprovalWindow" />
+      <option name="METHOD_NAME" value="goToCheckOutWithDifferentItemFromDifferentCategoriesAfterLogin" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -182,17 +224,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SelectCategory.successGoToCategory (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="GoToCheckOutWithoutApprovalWindow.goToCheckOutWithDifferentItemFromDifferentCategoriesAfterLogin" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumTestsJirafBg" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="testsPOM.categories.*" />
+          <option name="PATTERN" value="testsPOM.checkout.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="testsPOM.categories" />
-      <option name="MAIN_CLASS_NAME" value="testsPOM.categories.SelectCategory" />
-      <option name="METHOD_NAME" value="successGoToCategory" />
+      <option name="PACKAGE_NAME" value="testsPOM.checkOut" />
+      <option name="MAIN_CLASS_NAME" value="testsPOM.checkout.GoToCheckOutWithoutApprovalWindow" />
+      <option name="METHOD_NAME" value="goToCheckOutWithDifferentItemFromDifferentCategoriesAfterLogin" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -200,17 +242,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SelectCategory.successGoToCategory (2)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="GoToCheckOutWithoutApprovalWindow.goToCheckOutWithDifferentItemFromDifferentCategoriesAfterLogin" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumTestsJirafBg" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="testsPOM.categories.*" />
+          <option name="PATTERN" value="testsPOM.checkout.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="testsPOM.categories" />
-      <option name="MAIN_CLASS_NAME" value="testsPOM.categories.SelectCategory" />
-      <option name="METHOD_NAME" value="successGoToCategory" />
+      <option name="PACKAGE_NAME" value="testsPOM.checkOut" />
+      <option name="MAIN_CLASS_NAME" value="testsPOM.checkout.GoToCheckOutWithoutApprovalWindow" />
+      <option name="METHOD_NAME" value="goToCheckOutWithDifferentItemFromDifferentCategoriesAfterLogin" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -218,17 +260,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SelectCategory.successGoToCategory" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="GoToCheckOutWithoutApprovalWindow.goToCheckOutWithoutApprovalWindow" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumTestsJirafBg" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="testsPOM.categories.*" />
+          <option name="PATTERN" value="testsPOM.checkout.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="testsPOM.categories" />
-      <option name="MAIN_CLASS_NAME" value="testsPOM.categories.SelectCategory" />
-      <option name="METHOD_NAME" value="successGoToCategory" />
+      <option name="PACKAGE_NAME" value="testsPOM.checkOut" />
+      <option name="MAIN_CLASS_NAME" value="testsPOM.checkout.GoToCheckOutWithoutApprovalWindow" />
+      <option name="METHOD_NAME" value="goToCheckOutWithoutApprovalWindow" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -238,19 +280,20 @@
     </configuration>
     <list>
       <item itemvalue="TestNG.D:/QA/domashni i upravneniq/Java/SeleniumTestsJirafBg/src/test/resources/testing.xml" />
-      <item itemvalue="TestNG.SelectCategory" />
-      <item itemvalue="TestNG.SelectCategory.successGoToCategory" />
-      <item itemvalue="TestNG.SelectCategory.successGoToCategory (1)" />
-      <item itemvalue="TestNG.SelectCategory.successGoToCategory (2)" />
-      <item itemvalue="TestNG.SelectCategoryWithoutLogIn.successGoToCategory" />
+      <item itemvalue="TestNG.AddToCartFromHomePageAfterLogIn.goToHomePageAfterLogin" />
+      <item itemvalue="TestNG.AddToCart3ItemsFromHomePageAfterLogIn.addToCart3ItemsFromHomePage" />
+      <item itemvalue="TestNG.D:/QA/domashni i upravneniq/Java/SeleniumTestsJirafBg/src/test/resources/testingCourseProjectTaskOnly.xml" />
+      <item itemvalue="TestNG.GoToCheckOutWithoutApprovalWindow.goToCheckOutWithDifferentItemFromDifferentCategoriesAfterLogin" />
+      <item itemvalue="TestNG.GoToCheckOutWithoutApprovalWindow.goToCheckOutWithDifferentItemFromDifferentCategoriesAfterLogin (2)" />
+      <item itemvalue="TestNG.GoToCheckOutWithoutApprovalWindow.goToCheckOutWithoutApprovalWindow" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.SelectCategoryWithoutLogIn.successGoToCategory" />
-        <item itemvalue="TestNG.SelectCategory.successGoToCategory (2)" />
-        <item itemvalue="TestNG.SelectCategory" />
-        <item itemvalue="TestNG.SelectCategory.successGoToCategory" />
-        <item itemvalue="TestNG.SelectCategory.successGoToCategory (1)" />
+        <item itemvalue="TestNG.D:/QA/domashni i upravneniq/Java/SeleniumTestsJirafBg/src/test/resources/testingCourseProjectTaskOnly.xml" />
+        <item itemvalue="TestNG.AddToCart3ItemsFromHomePageAfterLogIn.addToCart3ItemsFromHomePage" />
+        <item itemvalue="TestNG.GoToCheckOutWithoutApprovalWindow.goToCheckOutWithoutApprovalWindow" />
+        <item itemvalue="TestNG.GoToCheckOutWithoutApprovalWindow.goToCheckOutWithDifferentItemFromDifferentCategoriesAfterLogin" />
+        <item itemvalue="TestNG.GoToCheckOutWithoutApprovalWindow.goToCheckOutWithDifferentItemFromDifferentCategoriesAfterLogin (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -312,8 +355,33 @@
       <option name="project" value="LOCAL" />
       <updated>1676453474421</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Test SelectCategory added">
+      <created>1676453596021</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1676453596021</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Test SelectCategoryWithoutLogIn added">
+      <created>1676453821322</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1676453821322</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Preparation of the working environment" />
@@ -324,7 +392,9 @@
     <MESSAGE value="Add to Cart Item from Home Page" />
     <MESSAGE value="Add to Cart 3 Items from Home Page" />
     <MESSAGE value="Categories added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Categories added" />
+    <MESSAGE value="Test SelectCategory added" />
+    <MESSAGE value="Test SelectCategoryWithoutLogIn added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test SelectCategoryWithoutLogIn added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -343,6 +413,16 @@
           <url>file://$PROJECT_DIR$/src/test/java/testsPOM/addToCart/AddToCartFromHomePageAfterLogIn.java</url>
           <line>41</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/pages/HomePage.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/testsPOM/addToCart/AddToCart3ItemsFromHomePageAfterLogIn.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

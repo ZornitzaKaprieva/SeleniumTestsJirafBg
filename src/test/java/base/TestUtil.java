@@ -27,6 +27,7 @@ public class TestUtil {
         loadTestUrl(applicationUrl);
     }
 
+    //todo temporally comment
     @AfterMethod
     public void tearDown(){
         driver.quit();

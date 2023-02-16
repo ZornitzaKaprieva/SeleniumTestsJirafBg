@@ -7,7 +7,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.HomePage;
 
-public class HomePageTest extends TestUtil {
+public class GoToLogInFromHomePage extends TestUtil {
 
     @Test
     public void successGoToLogin() throws InterruptedException {

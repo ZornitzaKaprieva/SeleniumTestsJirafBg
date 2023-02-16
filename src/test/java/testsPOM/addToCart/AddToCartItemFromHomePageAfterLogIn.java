@@ -1,4 +1,4 @@
-package testsPOM.myProfile;
+package testsPOM.addToCart;
 
 import base.TestUtil;
 import com.opencsv.CSVReader;
@@ -11,15 +11,17 @@ import org.testng.annotations.Test;
 import pages.HomePage;
 import pages.LogInPage;
 import pages.MyProfilePage;
+import pages.ProductPage;
 
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.List;
 
-public class MyProfilePageTestLogOut extends TestUtil {
+public class AddToCartItemFromHomePageAfterLogIn extends TestUtil {
+
     @Test(dataProvider = "correctCredentials")//управляваме през тестовите данни (през самите параметри)
 
-    public void loginLogOut(String email, String password) throws InterruptedException {
+    public void addToCartItemFromHomePageAfterLogIn(String email, String password) throws InterruptedException {
 
         HomePage homePage = new HomePage(driver); //един page, един обект
         homePage.goToLogin();
@@ -30,11 +32,20 @@ public class MyProfilePageTestLogOut extends TestUtil {
 
         LogInPage logInPage = new LogInPage(driver); //един page, един обект
         MyProfilePage myProfilePage = logInPage.login(email, password); //ако нямаме това = трябват асършани todo
-        myProfilePage.logout(); //todo new
+        myProfilePage.goToHomePage();
+        Assert.assertTrue(applicationUrl.equals(applicationUrl));
 
-        WebElement myProfileContent = driver.findElement(By.id("content")); //в случая не е нужен assert, но го правя за упражнение
-        Assert.assertTrue(myProfileContent.isDisplayed(), "Мy Profile content was not displayed");
-        //Thread.sleep(1000);
+        HomePage homePageItem1 = new HomePage(driver);
+        homePageItem1.selectItem("/html/body/main/section/div[1]/div/div/section/section/div[5]/div/div/section/div/article[1]/div/div[2]/h3");
+        WebElement itemTitle = driver.findElement(By.xpath("/html/body/main/section/div/div/div/section/div[2]/div[2]/h1"));
+        Assert.assertTrue(itemTitle.isDisplayed(), "Item Title is not displayed.");
+
+        ProductPage item1 = new ProductPage(driver);
+        item1.selectItemAndAddToCart();
+
+        WebElement successfullyAddToCartMsg = driver.findElement(By.xpath("/html/body/div[6]/div/div/div[1]/button/span"));
+        Assert.assertTrue(successfullyAddToCartMsg.isEnabled(), "successfullyAddToCartMsg is not displayed");
+
     }
 
     @DataProvider(name = "correctCredentials") //името на DataProvider, който ще използваме
@@ -58,5 +69,5 @@ public class MyProfilePageTestLogOut extends TestUtil {
         }
 
     }
-    }
+}
 

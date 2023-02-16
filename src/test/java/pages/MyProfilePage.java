@@ -39,11 +39,6 @@ public class MyProfilePage extends BasePage {
         return new HomePage(driver);
     }
 
-    public GamesAndToysCategory goToGamesAndToys(){
-        gamesAndToysBtn.click();
-        return new GamesAndToysCategory(driver);
-
-    }
 }
 
 

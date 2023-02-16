@@ -19,7 +19,7 @@ import java.util.List;
 public class SelectItemFromHomePageAfterLogIn extends TestUtil {
     @Test(dataProvider = "correctCredentials")//управляваме през тестовите данни (през самите параметри)
 
-    public void goToHomePageAfterLogin (String email, String password) throws InterruptedException {
+    public void selectItemFromHomePageAfterLogIn (String email, String password) throws InterruptedException {
 
         HomePage homePage = new HomePage(driver); //един page, един обект
         homePage.goToLogin();
