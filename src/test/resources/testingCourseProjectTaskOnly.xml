@@ -21,6 +21,7 @@
     <test name="CheckoutSuit">
         <classes>
             <class name="testsPOM.checkout.GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindow"/>
+            <class name="testsPOM.checkout.CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetails"/>
         </classes>
     </test>
 

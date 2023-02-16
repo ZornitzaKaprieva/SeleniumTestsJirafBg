@@ -45,5 +45,7 @@ public class SelectCategoriesFromHomePage extends TestUtil {
         stem.goToCategoryFromHomePage("[6]");
         WebElement stemTitle = driver.findElement(By.xpath("/html/body/main/section/div/div/div[2]/section/div/div/h1"));
         Assert.assertTrue(stemTitle.isDisplayed());
+
+
     }
 }

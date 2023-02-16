@@ -8,8 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import pages.Categories;
-import pages.ProductPage;
+import pages.*;
 
 import java.io.FileReader;
 import java.io.IOException;
@@ -20,16 +19,16 @@ public class GoToCheckOutWithDifferentItemFromDifferentCategoriesAfterLogin exte
     @Test(dataProvider = "correctCredentials")//управляваме през тестовите данни (през самите параметри)
 
     public void goToCheckOutWithDifferentItemFromDifferentCategoriesAfterLogin (String email, String password) throws InterruptedException {
-//        HomePage homePage = new HomePage(driver); //един page, един обект
-//        homePage.goToLogin();
-//
-//        WebElement emailField = driver.findElement(By.name("email"));
-//        Assert.assertTrue(emailField.isDisplayed(), "Email Link was not displayed");
-//
-//        LogInPage logInPage = new LogInPage(driver); //един page, един обект
-//        MyProfilePage myProfilePage = logInPage.login(email, password); //ако нямаме това = трябват асършани todo
-//        myProfilePage.goToHomePage();
-//        Assert.assertTrue(applicationUrl.equals(applicationUrl));
+        HomePage homePage = new HomePage(driver); //един page, един обект
+        homePage.goToLogin();
+
+        WebElement emailField = driver.findElement(By.name("email"));
+        Assert.assertTrue(emailField.isDisplayed(), "Email Link was not displayed");
+
+        LogInPage logInPage = new LogInPage(driver); //един page, един обект
+        MyProfilePage myProfilePage = logInPage.login(email, password); //ако нямаме това = трябват асършани
+        myProfilePage.goToHomePage();
+        Assert.assertTrue(applicationUrl.equals(applicationUrl));
 
         Categories gameAndPlay = new Categories(driver);
         gameAndPlay.selectCategory("[1]");

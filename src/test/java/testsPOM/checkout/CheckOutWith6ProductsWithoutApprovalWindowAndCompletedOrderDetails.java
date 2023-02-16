@@ -5,8 +5,6 @@ import com.opencsv.CSVReader;
 import com.opencsv.exceptions.CsvException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -14,14 +12,15 @@ import pages.*;
 
 import java.io.FileReader;
 import java.io.IOException;
-import java.time.Duration;
 import java.util.List;
 
-public class GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindow extends TestUtil {
+public class CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetails extends TestUtil {
 
+
+    //todo completed order details
     @Test(dataProvider = "correctCredentials")//управляваме през тестовите данни (през самите параметри)
 
-    public void goToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindow (String email, String password) throws InterruptedException {
+    public void checkOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetails (String email, String password) throws InterruptedException {
         HomePage homePage = new HomePage(driver); //един page, един обект
         homePage.goToLogin();
 
@@ -104,7 +103,7 @@ public class GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindow ext
         Assert.assertTrue(shoesAndSlippersTitle.isDisplayed());
 
         Categories itemShoesAndSlippers = new Categories(driver);
-        itemShoesAndSlippers.selectItemFromCategory("/html/body/main/section/div/div/div[2]/section/section/div[3]/div/div[1]/article[3]/div/div[2]/h3/a");
+        itemShoesAndSlippers.selectItemFromCategory("/html/body/main/section/div/div/div[2]/section/section/div[3]/div/div[1]/article[4]/div/div[2]/h3");
         WebElement item5Title = driver.findElement(By.xpath("/html/body/main/section/div/div/div/section/div[2]/div[2]/h1"));
         Assert.assertTrue(item5Title.isDisplayed(), "Item5 Title is not displayed.");
 
@@ -137,9 +136,9 @@ public class GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindow ext
         WebElement personalInfoTitle = driver.findElement(By.xpath("/html/body/main/section/div/div/div/section/div/div[1]/section[1]/h1"));
         Assert.assertTrue(personalInfoTitle.isDisplayed());
 
-        //explicit Wait:
-        WebDriverWait wait05 = new WebDriverWait(driver, Duration.ofSeconds(4));
-        wait05.until(ExpectedConditions.visibilityOf(personalInfoTitle));
+        //deliveryDetails:
+        CheckOut fillShippingDetails = new CheckOut(driver);
+        fillShippingDetails.fillDeliveryDetails("QA","Test. Test","ул. проф. д-р Г.Павлов17","1111","София", "Това е поредният спам от мен. Като ви писна, кажете си");
     }
 
     @DataProvider(name = "correctCredentials") //името на DataProvider, който ще използваме

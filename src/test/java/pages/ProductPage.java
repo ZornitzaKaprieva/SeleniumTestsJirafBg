@@ -12,10 +12,10 @@ public class ProductPage extends BasePage {
     @FindBy(xpath = "/html/body/main/section/div/div/div/section/div[2]/div[2]/div[3]/div[2]/form/div[2]/div[2]/div/button")
     private WebElement addToCartButton;
 
-    @FindBy(xpath = "/html/body/div[6]/div/div/div[2]/div/div[2]/div/div/a")  //todo
+    @FindBy(xpath = "/html/body/div[6]/div/div/div[2]/div/div[2]/div/div/button")  //todo
     private WebElement continueToShoppingButton;
 
-    @FindBy(xpath = "/html/body/div[6]/div/div/div[2]/div/div[2]/div/div/a") //todo
+    @FindBy(xpath = "/html/body/div[6]/div/div/div[2]/div/div[2]/div/div/a/i") //todo
     private WebElement goToCheckOutBtn;
     @FindBy (xpath = "/html/body/main/div/div/nav/ol/li[1]/a/span")
     private WebElement homePageBtn;
@@ -61,4 +61,8 @@ public class ProductPage extends BasePage {
         goToCheckOutBtn.click();
         return new CartPage(driver);
     }
+
+    public CartPage orderProductFromLoginToCheckout(){
+        return new CartPage(driver);
+    }//todo
 }
