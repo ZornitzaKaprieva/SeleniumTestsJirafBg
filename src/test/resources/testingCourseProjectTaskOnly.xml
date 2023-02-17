@@ -14,14 +14,15 @@
 
     <test name="AddToCartSuit">
         <classes>
-            <class name="testsPOM.addToCart.AddToCart3ItemsFromHomePageAfterLogIn"/>
+            <class name="testsPOM.addToCart.AddToCart3ItemsFromHomePageAfterLogInItemFinalXpathProducts"/>
         </classes>
     </test>
 
     <test name="CheckoutSuit">
         <classes>
-            <class name="testsPOM.checkout.GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindow"/>
-            <class name="testsPOM.checkout.CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetails"/>
+            <class name="testsPOM.checkout.GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindowWithAssertions"/>
+            <class name="testsPOM.checkout.GoToCheckOutWithOneProductFromEachCategoryAndItemParam"/>
+            <class name="testsPOM.checkout.CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsWithParam"/>
         </classes>
     </test>
 

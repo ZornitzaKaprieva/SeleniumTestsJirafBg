@@ -11,17 +11,25 @@ aquariumHomePage:
 /html/body/main/section/div[1]/div/div/section/section/div[5]/div/div/section/div/article[1]/div/div[2]/h3
 aquariumPageHeading:
 /html/body/main/section/div/div/div/section/div[2]/div[2]/h1
-
 paintingWithFingersHomePage:
 /html/body/main/section/div[1]/div/div/section/section/div[5]/div/div/section/div/article[2]/div/div[2]/h3/a
 paintingWithFingerPageHeading:
 /html/body/main/section/div/div/div/section/div[2]/div[2]/h1
-
-
 fairytaleWorldHomePage:
 /html/body/main/section/div[1]/div/div/section/section/div[5]/div/div/section/div/article[3]
 fairytaleWorldPageHeading:
 /html/body/main/section/div/div/div/section/div[2]/div[2]/h1
+
+home page FINAL_XPATH:
+/html/body/main/section/div[1]/div/div/section/section/div[5]/div/div/section/div/article
+aquariumHomePage:
+[1]/div/div[2]/h3
+/html/body/main/section/div[1]/div/div/section/section/div[5]/div/div/section/div/article[1]/div/div[2]/h3/a
+paintingWithFingersHomePage:
+[2]/div/div[2]/h3/a
+fairytaleWorldHomePage:
+[3]
+
 
 addToCartButton:
 addToCartButton(homePage):
@@ -52,19 +60,30 @@ STEM:
 Products from different categories:
 дървен комплект яйца и бекон (from gamesAndToys):
 /html/body/main/section/div/div/div[2]/section/section/div[3]/div/div[1]/article[1]/div
-
 пиратски комплект в чанта (from costumes and role playing):
 /html/body/main/section/div/div/div[2]/section/section/div[3]/div/div[1]/article[3]/div/div[1]/a
-
 кутия за храна (from accessories):
 /html/body/main/section/div/div/div[2]/section/section/div[3]/div/div[1]/article[1]/div/div[2]/h3/a
-
 Бебешки пантофки "Тигърчето Лили" (from ShoesAndSlippers):
 /html/body/main/section/div/div/div[2]/section/section/div[3]/div/div[1]/article[4]/div/div[2]/h3
-
+Бебешки пантофки "Пчела" (from ShoesAndSlippers):
+/html/body/main/section/div/div/div[2]/section/section/div[3]/div/div[1]/article[14]/div/div[2]/h3/a
 STEM комплект звънец (fromSTEM):
 /html/body/main/section/div/div/div[2]/section/section/div[3]/div/div[1]/article[1]/div/div[2]/h3/a
 
+Products from different categories without FINAL_ID: /html/body/main/section/div/div/div[2]/section/section/div[3]/div/div[1]/article
+дървен комплект яйца и бекон (from gamesAndToys):
+[1]/div
+пиратски комплект в чанта (from costumes and role playing):
+[3]/div/div[1]/a
+кутия за храна (from accessories):
+[1]/div/div[2]/h3/a
+Бебешки пантофки "Тигърчето Лили" (from ShoesAndSlippers):
+[4]/div/div[2]/h3
+Бебешки пантофки "Пчела" (from ShoesAndSlippers):
+[14]/div/div[2]/h3/a
+STEM комплект звънец (fromSTEM):
+[1]/div/div[2]/h3/a
 
 
 goTocheckOutbtn from Home page:

@@ -41,7 +41,7 @@
         <classes>
             <class name="testsPOM.checkout.GoToCheckOutWith1ItemFromSpecificCategoryAfterLogin"/>
             <class name="testsPOM.checkout.GoToCheckOutWithDifferentItemFromDifferentCategoriesAfterLogin"/>
-            <class name="testsPOM.checkout.GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindow"/>
+            <class name="testsPOM.checkout.GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindowWithAssertions"/>
             <class name="testsPOM.checkout.CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetails"/>
         </classes>
     </test>

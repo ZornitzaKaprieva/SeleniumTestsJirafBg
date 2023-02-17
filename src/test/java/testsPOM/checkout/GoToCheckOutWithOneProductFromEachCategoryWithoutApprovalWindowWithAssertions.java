@@ -17,11 +17,13 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.List;
 
-public class GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindow extends TestUtil {
+public class GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindowWithAssertions extends TestUtil {
+
+    //вариант с Assert на всяко действие:
 
     @Test(dataProvider = "correctCredentials")//управляваме през тестовите данни (през самите параметри)
 
-    public void goToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindow (String email, String password) throws InterruptedException {
+    public void goToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindowWithAssertions (String email, String password) throws InterruptedException {
         HomePage homePage = new HomePage(driver); //един page, един обект
         homePage.goToLogin();
 

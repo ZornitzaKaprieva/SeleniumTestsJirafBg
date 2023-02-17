@@ -62,7 +62,5 @@ public class ProductPage extends BasePage {
         return new CartPage(driver);
     }
 
-    public CartPage orderProductFromLoginToCheckout(){
-        return new CartPage(driver);
-    }//todo
+
 }

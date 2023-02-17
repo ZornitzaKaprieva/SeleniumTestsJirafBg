@@ -27,11 +27,11 @@ public class TestUtil {
         loadTestUrl(applicationUrl);
     }
 
-    //todo temporally comment
-//    @AfterMethod
-//    public void tearDown(){
-//        driver.quit();
-//    }
+    //todo if(comment){temporally}
+    @AfterMethod
+    public void tearDown(){
+        driver.quit();
+    }
 
     private  void setupBrowserDriver (String browser) {
 

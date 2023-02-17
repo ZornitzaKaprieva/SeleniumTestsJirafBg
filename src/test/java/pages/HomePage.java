@@ -10,7 +10,9 @@ public class HomePage extends BasePage { //todo да се опишат елем�
 
 
     //повтаря се с Categories:
-    private final static String CATEGORY_ID = "/html/body/main/header/div[2]/div/div[2]/div/div/div/div[1]/div/div/ul/li";//константа (после към този линк добавяме конкретен айтем)
+    private final static String CATEGORY_XPATH = "/html/body/main/header/div[2]/div/div[2]/div/div/div/div[1]/div/div/ul/li";//константа (после към този линк добавяме конкретен айтем)
+
+    private final static String PRODUCT_FROM_HOMEPAGE_XPATH = "/html/body/main/section/div[1]/div/div/section/section/div[5]/div/div/section/div/article";
     private final static String CHECKOUT_BTN = "/html/body/main/header/div[2]/div/div[1]/div[2]/div[2]/div/div[1]";//константа
 
     @FindBy(xpath = "//span[text()=\"Разбрах\"] ")
@@ -18,10 +20,6 @@ public class HomePage extends BasePage { //todo да се опишат елем�
     @FindBy(xpath = "//span[text()=\"Вход\"] ")
     private WebElement enterBtn;
 
-
-    //item
-    @FindBy(xpath = "//a[@href='https://jiraf.bg/bg/kreativnost/105-szdajte-svoi-sobstveni-gigantski-okeanski-origami.html']")
-    private WebElement productBtnOceanAnimals;
 
     public HomePage(WebDriver driver){
         super(driver);
@@ -43,7 +41,7 @@ public class HomePage extends BasePage { //todo да се опишат елем�
 
     //повтаря се с Categories
     public void goToCategoryFromHomePage (String categoryName){
-        WebElement selectCategory = driver.findElement(By.xpath(CATEGORY_ID + categoryName)); //към контантата добавяме конкретен айтем
+        WebElement selectCategory = driver.findElement(By.xpath(CATEGORY_XPATH + categoryName)); //към контантата добавяме конкретен айтем
         if (agreeBtn.isDisplayed()){
             agreeBtn.click();
         }
@@ -55,5 +53,17 @@ public class HomePage extends BasePage { //todo да се опишат елем�
         WebElement clickCheckOutBtn = driver.findElement(By.xpath(CHECKOUT_BTN));
         clickCheckOutBtn.click();
         return new CartPage(driver);
+    }
+
+    //повтаря се с Categories
+    //new:
+    public void selectItemFromHomePageParam(String itemXPath){
+
+        if (agreeBtn.isDisplayed()){
+            agreeBtn.click();
+        }
+
+        WebElement itemFromCategoryToBeSelected = driver.findElement(By.xpath(PRODUCT_FROM_HOMEPAGE_XPATH + itemXPath));
+        itemFromCategoryToBeSelected.click();
     }
 }

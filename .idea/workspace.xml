@@ -4,22 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d277289d-3610-405e-b4e6-a75187aeb2f3" name="Changes" comment="Test CheckOut with one product from each category added">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/ConfirmedOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/testsPOM/checkout/GoToCheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/testsPOM/selectItemAfterLogIn/Select2ItemsFromHomePageAfterLogInWithParam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/deliveryDetails.csv" afterDir="false" />
+    <list default="true" id="d277289d-3610-405e-b4e6-a75187aeb2f3" name="Changes" comment="CheckOut &amp; order details added">
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/ExamplePathFromLoginToCartPage1Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testsPOM/addToCart/AddToCart3ItemsFromHomePageAfterLogInItemFinalXpathProducts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testsPOM/checkout/CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsWithParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testsPOM/checkout/GoToCheckOutWithOneProductFromEachCategoryAndItemParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testsPOM/checkout/GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindowFinalAssertion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testsPOM/checkout/TestFromLoginToCartPage1ItemCsv.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/categoriesItems.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/credentialsAndItemDetails.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/Categories.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/Categories.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/CheckOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/CheckOut.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ProductPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testsPOM/checkout/GoToCheckOutWith1ItemFromSpecificCategoryAfterLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testsPOM/checkout/GoToCheckOutWith1ItemFromSpecificCategoryAfterLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testsPOM/checkout/GoToCheckOutWithDifferentItemFromDifferentCategoriesAfterLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testsPOM/checkout/GoToCheckOutWithDifferentItemFromDifferentCategoriesAfterLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testsPOM/checkout/GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testsPOM/checkout/GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testsPOM/homePage/GoToLogInFromHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testsPOM/homePage/GoToLogInFromHomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testsPOM/homePage/SelectCategoriesFromHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testsPOM/homePage/SelectCategoriesFromHomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testsPOM/checkout/GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testsPOM/checkout/GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindowWithAssertions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/itemsXPathsReadOnly" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/itemsXPathsReadOnly" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/taskConditionReadOnly" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/taskConditionReadOnly" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/testing.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testing.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/testingCourseProjectTaskOnly.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testingCourseProjectTaskOnly.xml" afterDir="false" />
     </list>
@@ -67,28 +68,64 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "last_opened_file_path": "D:/QA/domashni i upravneniq/Java/PracticeQAAutomationSaucedemo"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/QA/domashni i upravneniq/Java/PracticeQAAutomationSaucedemo&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\QA\domashni i upravneniq\Java\SeleniumTestsJirafBg\src\test\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="testsPOM.checkout" />
+      <recent name="testsPOM.addToCart" />
       <recent name="testsPOM.selectItemAfterLogIn" />
       <recent name="testsPOM.checkOut" />
-      <recent name="testsPOM.addToCart" />
       <recent name="testsPOM.myProfile" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.GoToCheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetails.goToCheckOutWithoutApprovalWindow">
+  <component name="RunManager" selected="TestNG.CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsWithParam.checkOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetails">
+    <configuration name="AddToCart3ItemsFromHomePageAfterLogInItemFinalXpathProducts.addToCart3ItemsFromHomePageAfterLogInCatDetails" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumTestsJirafBg" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testsPOM.addToCart.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testsPOM.addToCart" />
+      <option name="MAIN_CLASS_NAME" value="testsPOM.addToCart.AddToCart3ItemsFromHomePageAfterLogInItemFinalXpathProducts" />
+      <option name="METHOD_NAME" value="addToCart3ItemsFromHomePageAfterLogInCatDetails" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsWithParam.checkOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetails" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumTestsJirafBg" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testsPOM.checkout.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testsPOM.checkout" />
+      <option name="MAIN_CLASS_NAME" value="testsPOM.checkout.CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsWithParam" />
+      <option name="METHOD_NAME" value="checkOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetails" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="D:/QA/domashni i upravneniq/Java/SeleniumTestsJirafBg/src/test/resources/testing.xml" type="TestNG" nameIsGenerated="true">
       <module name="SeleniumTestsJirafBg" />
       <shortenClasspath name="NONE" />
@@ -139,7 +176,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GoToCheckOutWith1ItemFromSpecificCategoryAfterLogin.goToCheckOutWith1ItemFromSpecificCategoryAfterLogin" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="GoToCheckOutWithOneProductFromEachCategoryAndItemParam.goToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindow" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumTestsJirafBg" />
       <extension name="coverage">
         <pattern>
@@ -148,8 +185,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="testsPOM.checkout" />
-      <option name="MAIN_CLASS_NAME" value="testsPOM.checkout.GoToCheckOutWith1ItemFromSpecificCategoryAfterLogin" />
-      <option name="METHOD_NAME" value="goToCheckOutWith1ItemFromSpecificCategoryAfterLogin" />
+      <option name="MAIN_CLASS_NAME" value="testsPOM.checkout.GoToCheckOutWithOneProductFromEachCategoryAndItemParam" />
+      <option name="METHOD_NAME" value="goToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindow" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -157,7 +194,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GoToCheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetails" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindowFinalAssertion.goToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindow" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumTestsJirafBg" />
       <extension name="coverage">
         <pattern>
@@ -166,80 +203,44 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="testsPOM.checkout" />
-      <option name="MAIN_CLASS_NAME" value="testsPOM.checkout.GoToCheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetails" />
+      <option name="MAIN_CLASS_NAME" value="testsPOM.checkout.GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindowFinalAssertion" />
+      <option name="METHOD_NAME" value="goToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindow" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GoToCheckoutOneProductFromEachCategoryWithoutLogin.GoToCheckoutOneProductFromEachCategoryWithoutLogin" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumTestsJirafBg" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testsPOM.checkout.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testsPOM.checkout" />
+      <option name="MAIN_CLASS_NAME" value="testsPOM.checkout.GoToCheckoutOneProductFromEachCategoryWithoutLogin" />
+      <option name="METHOD_NAME" value="GoToCheckoutOneProductFromEachCategoryWithoutLogin" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestFromLoginToCartPage1ItemCsv" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumTestsJirafBg" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testsPOM.checkout.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testsPOM.checkout" />
+      <option name="MAIN_CLASS_NAME" value="testsPOM.checkout.TestFromLoginToCartPage1ItemCsv" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GoToCheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetails.goToCheckOutWithoutApprovalWindow" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumTestsJirafBg" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testsPOM.checkout.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testsPOM.checkout" />
-      <option name="MAIN_CLASS_NAME" value="testsPOM.checkout.GoToCheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetails" />
-      <option name="METHOD_NAME" value="goToCheckOutWithoutApprovalWindow" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindow.goToCheckOutWithDifferentItemFromDifferentCategoriesAfterLogin" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumTestsJirafBg" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testsPOM.checkout.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testsPOM.checkOut" />
-      <option name="MAIN_CLASS_NAME" value="testsPOM.checkout.GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindow" />
-      <option name="METHOD_NAME" value="goToCheckOutWithDifferentItemFromDifferentCategoriesAfterLogin" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindow.goToCheckOutWithoutApprovalWindow" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumTestsJirafBg" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testsPOM.checkout.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testsPOM.checkOut" />
-      <option name="MAIN_CLASS_NAME" value="testsPOM.checkout.GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindow" />
-      <option name="METHOD_NAME" value="goToCheckOutWithoutApprovalWindow" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GoToLogInFromHomePage.successGoToLogin" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumTestsJirafBg" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testsPOM.homePage.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testsPOM.homePage" />
-      <option name="MAIN_CLASS_NAME" value="testsPOM.homePage.GoToLogInFromHomePage" />
-      <option name="METHOD_NAME" value="successGoToLogin" />
-      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -248,19 +249,19 @@
     </configuration>
     <list>
       <item itemvalue="TestNG.D:/QA/domashni i upravneniq/Java/SeleniumTestsJirafBg/src/test/resources/testing.xml" />
-      <item itemvalue="TestNG.GoToCheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetails" />
-      <item itemvalue="TestNG.GoToCheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetails.goToCheckOutWithoutApprovalWindow" />
-      <item itemvalue="TestNG.GoToLogInFromHomePage.successGoToLogin" />
-      <item itemvalue="TestNG.GoToCheckOutWith1ItemFromSpecificCategoryAfterLogin.goToCheckOutWith1ItemFromSpecificCategoryAfterLogin" />
-      <item itemvalue="TestNG.GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindow.goToCheckOutWithoutApprovalWindow" />
+      <item itemvalue="TestNG.AddToCart3ItemsFromHomePageAfterLogInItemFinalXpathProducts.addToCart3ItemsFromHomePageAfterLogInCatDetails" />
+      <item itemvalue="TestNG.CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsWithParam.checkOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetails" />
+      <item itemvalue="TestNG.GoToCheckOutWithOneProductFromEachCategoryAndItemParam.goToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindow" />
+      <item itemvalue="TestNG.GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindowFinalAssertion.goToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindow (1)" />
+      <item itemvalue="TestNG.GoToCheckoutOneProductFromEachCategoryWithoutLogin.GoToCheckoutOneProductFromEachCategoryWithoutLogin" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.GoToCheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetails.goToCheckOutWithoutApprovalWindow" />
-        <item itemvalue="TestNG.GoToCheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetails" />
-        <item itemvalue="TestNG.GoToLogInFromHomePage.successGoToLogin" />
-        <item itemvalue="TestNG.GoToCheckOutWith1ItemFromSpecificCategoryAfterLogin.goToCheckOutWith1ItemFromSpecificCategoryAfterLogin" />
-        <item itemvalue="TestNG.GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindow.goToCheckOutWithoutApprovalWindow" />
+        <item itemvalue="TestNG.CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsWithParam.checkOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetails" />
+        <item itemvalue="TestNG.AddToCart3ItemsFromHomePageAfterLogInItemFinalXpathProducts.addToCart3ItemsFromHomePageAfterLogInCatDetails" />
+        <item itemvalue="TestNG.GoToCheckOutWithOneProductFromEachCategoryAndItemParam.goToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindow" />
+        <item itemvalue="TestNG.GoToCheckoutOneProductFromEachCategoryWithoutLogin.GoToCheckoutOneProductFromEachCategoryWithoutLogin" />
+        <item itemvalue="TestNG.GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindowFinalAssertion.goToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindow (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -350,7 +351,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676536304438</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="CheckOut &amp; order details added">
+      <created>1676545568821</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1676545568821</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -377,7 +385,8 @@
     <MESSAGE value="Test SelectCategoryWithoutLogIn added" />
     <MESSAGE value="Additional edits &amp; Package checkout added" />
     <MESSAGE value="Test CheckOut with one product from each category added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test CheckOut with one product from each category added" />
+    <MESSAGE value="CheckOut &amp; order details added" />
+    <option name="LAST_COMMIT_MESSAGE" value="CheckOut &amp; order details added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -399,13 +408,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/pages/HomePage.java</url>
-          <line>26</line>
+          <line>24</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/testsPOM/addToCart/AddToCart3ItemsFromHomePageAfterLogIn.java</url>
           <line>51</line>
           <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/testsPOM/checkout/GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindowFinalAssertion.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

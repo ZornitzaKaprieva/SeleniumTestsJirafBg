@@ -78,7 +78,7 @@ public class CheckOut extends BasePage {
 
         wayOfDeliveryContinueBtn.click();
         radioBtn.click();
-        confirmBtn.click();
+        //todo confirmBtn.click();
 
 
         return new ConfirmedOrder(driver);
