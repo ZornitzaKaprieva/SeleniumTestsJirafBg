@@ -77,7 +77,7 @@ public class GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindowFina
         itemFromShoesAndSlippers.goToHomePageAfterAddToCartByClickingOnProductPage();
 
         stem.selectCategory("[6]");
-        itemStem.selectItemFromCategory("/html/body/main/section/div/div/div[2]/section/section/div[3]/div/div[1]/article[1]/div/div[2]/h3/a");
+        itemStem.selectItemFromCategory("/html/body/main/section/div/div/div[2]/section/section/div[3]/div/div[1]/article[2]/div/div[2]/h3/a"); //острилка
         itemFromStem.goToHomePageAfterAddToCartByClickingOnProductPage();
 
         //final Assertion:

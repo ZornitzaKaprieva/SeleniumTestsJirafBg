@@ -119,7 +119,7 @@ public class CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetails 
         Assert.assertTrue(stemTitle.isDisplayed());
 
         Categories itemStem = new Categories(driver);
-        itemStem.selectItemFromCategory("/html/body/main/section/div/div/div[2]/section/section/div[3]/div/div[1]/article[1]/div/div[2]/h3/a");
+        itemStem.selectItemFromCategory("/html/body/main/section/div/div/div[2]/section/section/div[3]/div/div[1]/article[2]/div/div[2]/h3/a"); //острилка
         WebElement item6Title = driver.findElement(By.xpath("/html/body/main/section/div/div/div/section/div[2]/div[2]/h1"));
         Assert.assertTrue(item6Title.isDisplayed(), "Item6 Title is not displayed.");
 
