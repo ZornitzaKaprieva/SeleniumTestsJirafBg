@@ -138,7 +138,9 @@ public class CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetails 
 
         //deliveryDetails:
         CheckOut fillShippingDetails = new CheckOut(driver);
-        fillShippingDetails.fillDeliveryDetails("QA","Test. Test","ул. проф. д-р Г.Павлов17","1111","София", "Това е поредният спам от мен. Като ви писна, кажете си");
+        //fillShippingDetails.fillDeliveryDetails("QA","Test. Test","ул. проф. д-р Г.Павлов17","1111","София", "Това е поредният спам от мен. Като ви писна, кажете си");
+        fillShippingDetails.fillDeliveryDetailsWithoutAddress("Това е поредният спам от мен. Като ви писна, кажете си");
+
     }
 
     @DataProvider(name = "correctCredentials") //името на DataProvider, който ще използваме

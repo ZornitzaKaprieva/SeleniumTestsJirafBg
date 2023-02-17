@@ -26,8 +26,6 @@ W
 'src/test/java/pages/ConfirmedOrder.java,4\3\437cd51557f1fe29ca95dd0a1a095c3b407a8a5a
 j
 :src/test/java/testsPOM/homePage/GoToLogInFromHomePage.java,7\a\7a8b2ecf090d2ff60f9fcdf732378430ff8caa9f
-Œ
-\src/test/java/testsPOM/selectItemAfterLogIn/Select2ItemsFromHomePageAfterLogInWithParam.java,f\3\f3cec53de950e132b26c1154e5d0010129af0b30
 q
 Asrc/test/java/testsPOM/homePage/SelectCategoriesFromHomePage.java,e\3\e334fab22ceb1dd46c0ea71ad7b42582e345336e
 m

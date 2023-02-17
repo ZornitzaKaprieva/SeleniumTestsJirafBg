@@ -34,6 +34,7 @@
         <classes>
             <class name="testsPOM.addToCart.AddToCartItemFromHomePageAfterLogIn"/>
             <class name="testsPOM.addToCart.AddToCart3ItemsFromHomePageAfterLogIn"/>
+            <class name="testsPOM.addToCart.AddToCart3ItemsFromHomePageAfterLogInItemFinalXpathProducts"/>
         </classes>
     </test>
 
@@ -43,6 +44,10 @@
             <class name="testsPOM.checkout.GoToCheckOutWithDifferentItemFromDifferentCategoriesAfterLogin"/>
             <class name="testsPOM.checkout.GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindowWithAssertions"/>
             <class name="testsPOM.checkout.CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetails"/>
+            <class name="testsPOM.checkout.CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsWithParam"/>
+            <class name="testsPOM.checkout.GoToCheckOutWithOneProductFromEachCategoryAndItemParam"/>
+            <class name="testsPOM.checkout.GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindowFinalAssertion"/>
+            <class name="testsPOM.checkout.TestFromLoginToCartPage1ItemCsv"/>
         </classes>
     </test>
 

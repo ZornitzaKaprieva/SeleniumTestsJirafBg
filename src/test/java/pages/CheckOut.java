@@ -29,6 +29,9 @@ public class CheckOut extends BasePage {
     @FindBy(xpath = "/html/body/main/section/div/div/div/section/div/div[1]/section[2]/div/div/form/div/div/footer/button")
     private WebElement continueBtn;
 
+    @FindBy(xpath = "/html/body/main/section/div/div/div/section/div/div[1]/section[2]/div/div/form/div[2]/button")
+    private WebElement continueBtnWithFilledAddress;
+
     @FindBy(xpath = "/html/body/main/section/div/div/div/section/div/div[1]/section[3]/div/div[2]/form/div/div[2]/div/textarea")
     private WebElement commentField;
 
@@ -71,6 +74,23 @@ public class CheckOut extends BasePage {
         cityField.sendKeys(city);
 
         continueBtn.click();
+
+        commentField.click();
+        commentField.clear();
+        commentField.sendKeys(comment);
+
+        wayOfDeliveryContinueBtn.click();
+        radioBtn.click();
+        //todo confirmBtn.click();
+
+
+        return new ConfirmedOrder(driver);
+    }
+
+    //когато адресът е попълнен автоматично (това се случва след първата успешно направена поръчка):
+    public ConfirmedOrder fillDeliveryDetailsWithoutAddress (String comment){
+
+        continueBtnWithFilledAddress.click();
 
         commentField.click();
         commentField.clear();
