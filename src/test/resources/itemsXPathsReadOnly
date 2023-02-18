@@ -1,37 +1,29 @@
-GamesAndToys:
-item1:
-/html/body/main/section/div/div/div[2]/section/section/div[3]/div/div[1]/article[1]/div/div[2]/h3
-item2:
-/html/body/main/section/div/div/div[2]/section/section/div[3]/div/div[1]/article[2]/div/div[2]/h3/a
-item3:
-/html/body/main/section/div/div/div[2]/section/section/div[3]/div/div[1]/article[3]/div/div[1]/a
 
-home page:
+HOME PAGE:
 aquariumHomePage:
 /html/body/main/section/div[1]/div/div/section/section/div[5]/div/div/section/div/article[1]/div/div[2]/h3
 aquariumPageHeading:
 /html/body/main/section/div/div/div/section/div[2]/div[2]/h1
+
 paintingWithFingersHomePage:
 /html/body/main/section/div[1]/div/div/section/section/div[5]/div/div/section/div/article[2]/div/div[2]/h3/a
 paintingWithFingerPageHeading:
 /html/body/main/section/div/div/div/section/div[2]/div[2]/h1
+
 fairytaleWorldHomePage:
 /html/body/main/section/div[1]/div/div/section/section/div[5]/div/div/section/div/article[3]
 fairytaleWorldPageHeading:
 /html/body/main/section/div/div/div/section/div[2]/div[2]/h1
 
-home page FINAL_XPATH:
-/html/body/main/section/div[1]/div/div/section/section/div[5]/div/div/section/div/article
+home page FINAL_XPATH: /html/body/main/section/div[1]/div/div/section/section/div[5]/div/div/section/div/article
 aquariumHomePage:
-[1]/div/div[2]/h3
-/html/body/main/section/div[1]/div/div/section/section/div[5]/div/div/section/div/article[1]/div/div[2]/h3/a
+[1]/div/div[2]/h3 OR: [1]/div/div[2]/h3/a
 paintingWithFingersHomePage:
 [2]/div/div[2]/h3/a
 fairytaleWorldHomePage:
 [3]
 
-
-addToCartButton:
+ADD TO CART BUTTON:
 addToCartButton(homePage):
 /html/body/main/section/div/div/div/section/div[2]/div[2]/div[3]/div[2]/form/div[2]/div[2]/div/button
 item1 (GamesAndToys):
@@ -70,8 +62,8 @@ Products from different categories:
 /html/body/main/section/div/div/div[2]/section/section/div[3]/div/div[1]/article[14]/div/div[2]/h3/a
 STEM комплект звънец (fromSTEM):
 /html/body/main/section/div/div/div[2]/section/section/div[3]/div/div[1]/article[1]/div/div[2]/h3/a
-STEM острилка:
-/html/body/main/section/div/div/div[2]/section/section/div[3]/div/div[1]/article[2]/div/div[2]/h3/a
+STEM комплект очила(FromStem):
+/html/body/main/section/div/div/div[2]/section/section/div[3]/div/div[1]/article[3]/div/div[2]/h3/a
 
 Products from different categories without FINAL_ID: /html/body/main/section/div/div/div[2]/section/section/div[3]/div/div[1]/article
 дървен комплект яйца и бекон (from gamesAndToys):
@@ -86,6 +78,8 @@ Products from different categories without FINAL_ID: /html/body/main/section/div
 [14]/div/div[2]/h3/a
 STEM комплект звънец (fromSTEM):
 [1]/div/div[2]/h3/a
+STEM комплект очила(FromStem):
+[3]/div/div[2]/h3/a
 
 
 goTocheckOutbtn from Home page:

@@ -1,4 +1,4 @@
-package testsPOM.checkout;
+package testsPOM.goToCheckout;
 
 import base.TestUtil;
 import com.opencsv.CSVReader;
@@ -14,11 +14,11 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.List;
 
-public class GoToCheckOutWithDifferentItemFromDifferentCategoriesAfterLogin extends TestUtil {
+public class GoToCheckOutWith1ItemFromSpecificCategoryAfterLogin extends TestUtil {
 
     @Test(dataProvider = "correctCredentials")//управляваме през тестовите данни (през самите параметри)
 
-    public void goToCheckOutWithDifferentItemFromDifferentCategoriesAfterLogin (String email, String password) throws InterruptedException {
+    public void goToCheckOutWith1ItemFromSpecificCategoryAfterLogin (String email, String password) throws InterruptedException {
         HomePage homePage = new HomePage(driver); //един page, един обект
         homePage.goToLogin();
 
@@ -46,7 +46,9 @@ public class GoToCheckOutWithDifferentItemFromDifferentCategoriesAfterLogin exte
         WebElement successfullyAddToCartMsg = driver.findElement(By.xpath("/html/body/div[6]/div/div/div[1]/button/span"));
         Assert.assertTrue(successfullyAddToCartMsg.isEnabled(), "successfullyAddToCartMsg is not displayed");
 
-        itemFromGameAndPlay.addToCartAndContinueToShopping(); //todo за повече от 1 айтем
+        itemFromGameAndPlay.goToCartFromProductPage(); //todo
+        WebElement cartTitle = driver.findElement(By.xpath("/html/body/main/section/div/div/div/section/div/div[1]/div[1]/div[1]/h1"));
+        Assert.assertTrue(cartTitle.isDisplayed());
 
 
     }

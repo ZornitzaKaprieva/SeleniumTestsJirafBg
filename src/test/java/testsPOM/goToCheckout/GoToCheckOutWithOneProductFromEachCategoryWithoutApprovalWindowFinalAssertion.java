@@ -1,4 +1,4 @@
-package testsPOM.checkout;
+package testsPOM.goToCheckout;
 
 import base.TestUtil;
 import com.opencsv.CSVReader;

@@ -1,4 +1,4 @@
-package testsPOM.checkout;
+package testsPOM.goToCheckout;
 
 import base.TestUtil;
 import com.opencsv.CSVReader;
@@ -13,6 +13,7 @@ import java.util.List;
 
 public class TestFromLoginToCartPage1ItemCsv extends TestUtil {
 
+    //този тест е само за пример. Той не следва РОМ, дадено е за пример как с една команда да поръчаме продукт:
     @Test(dataProvider = "correctCredentialsAndItemDetails")
     public void goFromLoginToCartPage1ItemCsv (String email, String password,String categoryName, String xPath) throws InterruptedException {
         ExamplePathFromLoginToCartPage1Item firstItemFromGamesAndToys = new ExamplePathFromLoginToCartPage1Item(driver);
@@ -23,7 +24,7 @@ public class TestFromLoginToCartPage1ItemCsv extends TestUtil {
     @DataProvider(name = "correctCredentialsAndItemDetails") //името на DataProvider, който ще използваме
     public static Object[][] readCredentialsAndItemDetails(){
         try{
-            CSVReader csvReader = new CSVReader(new FileReader("src/test/resources/credentialsAndItemDetails.csv"));
+            CSVReader csvReader = new CSVReader(new FileReader("src/test/resources/credentialsAndItemDetailsForExamplePath.csv"));
             List<String[]> csvData = csvReader.readAll();
             Object[][] csvDataObject = new Object[csvData.size()][4]; //oldVersion: [2]: все едно това ни е броя на редовете в scv. В случая имаме само 2 стойности в scv, затова можем да ги хардкорнем, но не можем да хардкорнем редовете, защото те се променят
 

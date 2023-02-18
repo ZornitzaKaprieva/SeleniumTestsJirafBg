@@ -81,7 +81,7 @@ public class CheckOut extends BasePage {
 
         wayOfDeliveryContinueBtn.click();
         radioBtn.click();
-        //todo confirmBtn.click();
+        //confirmBtn.click(); ///todo закоментирано е, за да не направим истинска поръчка
 
 
         return new ConfirmedOrder(driver);

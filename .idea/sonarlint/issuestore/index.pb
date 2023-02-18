@@ -42,8 +42,6 @@ Isrc/test/java/testsPOM/addToCart/AddToCartItemFromHomePageAfterLogIn.java,a\c\
 Ksrc/test/java/testsPOM/addToCart/AddToCart3ItemsFromHomePageAfterLogIn.java,c\1\c1115d1108d0009a930bc6b5a6573e2bbe5be291
 S
 #src/test/java/pages/Categories.java,5\5\5522ece3f52c239b0eb9847fd791a4d3c0f344d6
-l
-<src/test/java/pages/ExamplePathFromLoginToCartPage1Item.java,3\1\31588ffe238eead8678ea9047b9d022f4ca9aadc
 Œ
 \src/test/java/testsPOM/selectItemAfterLogIn/Select2ItemsFromHomePageAfterLogInWithParam.java,f\3\f3cec53de950e132b26c1154e5d0010129af0b30
 t
@@ -54,9 +52,11 @@ T
 $src/test/java/pages/ProductPage.java,d\3\d3d1f0b73a437016b8e297cf4d10e792b2c6b213
 P
  src/test/java/base/TestUtil.java,5\9\59d9ef061498841be504356267b8ae8810e418b8
-Q
-!src/test/java/pages/CheckOut.java,4\8\48d41b18e248fee6e7b8330cc350dd7e4379b859
-V
-&src/test/java/pages/MyProfilePage.java,d\8\d83fbc1ee3e44a9974e023b667f6f43d722ae6be
 “
 csrc/test/java/testsPOM/checkout/GoToCheckOutWithDifferentItemFromDifferentCategoriesAfterLogin.java,7\2\72f63e9945588750bf842100b10d18c4011f5904
+‹
+[src/test/java/testsPOM/checkout/GoToCheckOutWithOneProductFromEachCategoryAndItemParam.java,d\a\daa590d4b4ca65b8aa7dec9e78df0c4a86b6f380
+¢
+rsrc/test/java/testsPOM/checkout/GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindowFinalAssertion.java,5\3\53e9134fe0e3824ce1d64a8f4e6d2a87f3fabe81
+¢
+rsrc/test/java/testsPOM/checkout/GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindowWithAssertions.java,8\6\868245cd2af6a069ef93f31f6d2d0b7e228e6d58

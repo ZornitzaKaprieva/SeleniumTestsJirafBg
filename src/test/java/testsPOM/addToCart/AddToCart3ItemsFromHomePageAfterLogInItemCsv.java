@@ -17,6 +17,10 @@ import java.util.List;
 
 public class AddToCart3ItemsFromHomePageAfterLogInItemCsv extends TestUtil {
 
+    //RESUME: вариант с Assert в края на теста и данни от .csv файл за айтемите (логинът е хардкорнат)
+    // (ако ни гръмне някой тест поради липса на наличност, не знаем кой е продуктът)
+    // (проверяваме през теста GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindowWithAssertions, който е по-дълъг, но по-надежден)
+
     @Test(dataProvider = "homePageItems")//управляваме през тестовите данни (през самите параметри)
 
     public void addToCart3ItemsFromHomePageAfterLogInItemParam (String xpathItem1, String xpathItem2,String xpathItem3) throws InterruptedException {

@@ -8,6 +8,8 @@ import org.openqa.selenium.support.PageFactory;
 
 public class ExamplePathFromLoginToCartPage1Item extends BasePage{
 
+    //това е пътека, която не следва РОМ, дадена е за пример как с една команда да поръчаме продукт:
+
     ///homePage:
 
     private final static String CATEGORY_ID = "/html/body/main/header/div[2]/div/div[2]/div/div/div/div[1]/div/div/ul/li";//константа (после към този линк добавяме конкретен айтем)
@@ -27,7 +29,6 @@ public class ExamplePathFromLoginToCartPage1Item extends BasePage{
 
     @FindBy (id = "submit-login")
     private  WebElement loginBtn;
-
 
 
     //myProfilePage:

@@ -19,9 +19,12 @@ public class AddToCart3ItemsFromHomePageAfterLogInItemFinalXpathProducts extends
 
     @Test(dataProvider = "correctCredentials")//управляваме през тестовите данни (през самите параметри)
 
-    public void addToCart3ItemsFromHomePageAfterLogInCatDetails (String email, String password) throws InterruptedException {
+    public void addToCart3ItemsFromHomePageAfterLogInItemFinalXpathProducts (String email, String password) throws InterruptedException {
 
-        //подреденият вариант с final assertion and param: (не можем да сложим параметри за повече от един продукт, тъй като, за да се поръча, следва да се мине през страницата на конкретния продукт
+        //подреденият вариант с final assertion and param:
+        // (не можем да сложим параметри за повече от един продукт,
+        // тъй като, за да се поръча, следва да се мине през страницата на конкретния продукт
+
         HomePage homePage = new HomePage(driver); //един page, един обект
         LogInPage logInPage = new LogInPage(driver); //един page, един обект
         MyProfilePage myProfilePage = new MyProfilePage(driver);

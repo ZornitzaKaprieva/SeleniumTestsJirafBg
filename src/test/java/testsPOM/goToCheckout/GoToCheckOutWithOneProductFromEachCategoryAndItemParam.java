@@ -1,4 +1,4 @@
-package testsPOM.checkout;
+package testsPOM.goToCheckout;
 
 import base.TestUtil;
 import com.opencsv.CSVReader;
@@ -19,7 +19,7 @@ import java.util.List;
 
 public class GoToCheckOutWithOneProductFromEachCategoryAndItemParam extends TestUtil {
 
-    //вариант с Assert накрая + param Categories:(следва да направя тест с подаване на параметри от .csv 6 реда с категориите и xpath на продуктите)
+    //вариант с Assert накрая + param Categories:(с методът public void selectCategoryAndItemFromCategory(String categoryXpath, String itemXPath){}
     @Test(dataProvider = "correctCredentials")//управляваме през тестовите данни (през самите параметри)
 
     public void goToCheckOutWithOneProductFromEachCategoryAndItemParam (String email, String password) throws InterruptedException {
@@ -105,7 +105,5 @@ public class GoToCheckOutWithOneProductFromEachCategoryAndItemParam extends Test
         }
 
     }
-
-
 }
 

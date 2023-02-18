@@ -17,14 +17,20 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.List;
 
-public class CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetails extends TestUtil {
+public class CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsWithItemParamFromCsv extends TestUtil {
 
+    //RESUME: вариант с Assert в края на теста и данни от .csv файл за айтемите  (логинът е хардкорнат)
+    // (ако ни гръмне някой тест поради липса на наличност, не знаем кой е продукта) //todo може и да стане с if за колко броя продукти има в количката
+    // (проверяваме през теста GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindowWithAssertions, който е по-дълъг, но по-надежден)
 
-    //вариант с Assert накрая + param Categories:(с методът public void selectCategoryAndItemFromCategory(String categoryXpath, String itemXPath){}
-    @Test(dataProvider = "correctCredentials")//управляваме през тестовите данни (през самите параметри)
+    @Test(dataProvider = "xPathOneItemFromEachCategoryCsv")//управляваме през тестовите данни (през самите параметри)
 
-    public void checkOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetails (String email, String password) throws InterruptedException {
-
+    public void checkOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsWithItemParamFromCsv (String xpathGamesAndToys, String xpathGTItem1,
+                                                                                                        String xpathCostumesAndRolePlaying, String xpathCRPItem1,
+                                                                                                        String xpathAccessories, String xpathAItem1,
+                                                                                                        String xpathCreativity, String xpathCItem1,
+                                                                                                        String xpathShoesAndSlippers, String xpathSSItem1,
+                                                                                                        String xpathStem, String xpathSItem1) throws InterruptedException {
         HomePage homePage = new HomePage(driver); //един page, един обект
         LogInPage logInPage = new LogInPage(driver);
         MyProfilePage myProfilePage = new MyProfilePage(driver);
@@ -48,38 +54,36 @@ public class CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetails 
         ProductPage itemFromStem = new ProductPage(driver);
 
         homePage.goToLogin();
-        logInPage.login(email, password);
+        logInPage.login("qa-test1122@abv.bg","test1122");//хардкорваме стойностите, защото нямаме провайдър з тях
         myProfilePage.goToHomePage();
 
-        gameAndPlay.selectCategoryAndItemFromCategory("[1]", "[1]/div/div[2]/h3/a");
+        gameAndPlay.selectCategoryAndItemFromCategory(xpathGamesAndToys, xpathGTItem1);
         itemFromGameAndPlay.goToHomePageAfterAddToCartByClickingOnProductPage();
 
-        costumesAndRolePlaying.selectCategoryAndItemFromCategory("[2]", "[3]/div/div[1]/a");
+        costumesAndRolePlaying.selectCategoryAndItemFromCategory(xpathCostumesAndRolePlaying, xpathCRPItem1);
         itemFromCostumesAndRolePlaying.goToHomePageAfterAddToCartByClickingOnProductPage();
 
-//        accessories.selectCategoryAndItemFromCategory("[3]", "[1]/div/div[2]/h3/a");
-//        itemFromAccessories.goToHomePageAfterAddToCartByClickingOnProductPage();
-//
-//
-//        creativity.selectCategoryAndItemFromCategory("[4]", "[14]/div/div[2]/h3/a");
-//        itemFromCreativity.goToHomePageAfterAddToCartByClickingOnProductPage();
-//
-//        shoesAndSlippers.selectCategoryAndItemFromCategory("[5]", "[3]/div/div[2]/h3/a");
-//        itemFromShoesAndSlippers.goToHomePageAfterAddToCartByClickingOnProductPage();
-//
-//        stem.selectCategoryAndItemFromCategory("[6]", "[1]/div/div[2]/h3/a");
-//        itemFromStem.goToHomePageAfterAddToCartByClickingOnProductPage();
+        accessories.selectCategoryAndItemFromCategory(xpathAccessories, xpathAItem1);
+        itemFromAccessories.goToHomePageAfterAddToCartByClickingOnProductPage();
+
+
+        creativity.selectCategoryAndItemFromCategory(xpathCreativity, xpathCItem1);
+        itemFromCreativity.goToHomePageAfterAddToCartByClickingOnProductPage();
+
+        shoesAndSlippers.selectCategoryAndItemFromCategory(xpathShoesAndSlippers, xpathSSItem1);
+        itemFromShoesAndSlippers.goToHomePageAfterAddToCartByClickingOnProductPage();
+
+        stem.selectCategoryAndItemFromCategory(xpathStem, xpathSItem1);
+        itemFromStem.goToHomePageAfterAddToCartByClickingOnProductPage();
 
         //final Assertion:
-        Assert.assertEquals(itemFromAccessories.getHowManyItemsInTheCart(), "КОЛИЧКА: 2", "Problem with addToCartCounter(itemFromStem)");
+        Assert.assertEquals(itemFromAccessories.getHowManyItemsInTheCart(), "КОЛИЧКА: 6", "Problem with addToCartCounter(itemFromStem)");
 
         //to checkout:
         homePage.goToCartFromHomePage();
 
         CartPage newPurchase = new CartPage(driver);
         newPurchase.goToCheckOutAfterAddToCart();
-
-        //to checkout assert: стъпката преди потвърди поръчката
         WebElement personalInfoTitle = driver.findElement(By.xpath("/html/body/main/section/div/div/div/section/div/div[1]/section[1]/h1"));
         Assert.assertTrue(personalInfoTitle.isDisplayed());
 
@@ -93,10 +97,10 @@ public class CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetails 
         fillShippingDetails.fillDeliveryDetailsWithoutAddress("Това е поредният спам от мен. Като ви писна, кажете си");
     }
 
-    @DataProvider(name = "correctCredentials") //името на DataProvider, който ще използваме
-    public static Object[][] readCorrectCredentialsFromCsv(){
+    @DataProvider(name = "xPathOneItemFromEachCategoryCsv") //името на DataProvider, който ще използваме
+    public static Object[][] readXPathOneItemFromEachCategoryCsv(){
         try{
-            CSVReader csvReader = new CSVReader(new FileReader("src/test/resources/correctCredentials.csv")); // има ексепшън, който трябва да хванем (IOException)
+            CSVReader csvReader = new CSVReader(new FileReader("src/test/resources/oneItemFromEachCategory.csv")); // има ексепшън, който трябва да хванем (IOException)
             List<String[]> csvData = csvReader.readAll();// методът csvReader.readAll(); също има ексепшън, който трябва да хванем
             Object[][] csvDataObject = new Object[csvData.size()][2]; //все едно това ни е броя на редовете в scv. В случая имаме само 2 стойности в scv, затова можем да ги хардкорнем, но не можем да хардкорнем редовете, защото те се променят
 
@@ -115,3 +119,4 @@ public class CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetails 
 
     }
 }
+

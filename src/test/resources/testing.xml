@@ -26,6 +26,7 @@
 
     <test name="SelectItemsSuit">
         <classes>
+            <class name="testsPOM.selectItemAfterLogIn.Select2ItemsFromHomePageAfterLogInWithParam"/>
             <class name="testsPOM.selectItemAfterLogIn.SelectItemFromHomePageAfterLogIn"/>
         </classes>
     </test>
@@ -33,21 +34,30 @@
     <test name="AddToCartSuit">
         <classes>
             <class name="testsPOM.addToCart.AddToCartItemFromHomePageAfterLogIn"/>
-            <class name="testsPOM.addToCart.AddToCart3ItemsFromHomePageAfterLogIn"/>
+            <class name="testsPOM.addToCart.AddToCart3ItemsFromHomePageAfterLogInItemCsv"/>
             <class name="testsPOM.addToCart.AddToCart3ItemsFromHomePageAfterLogInItemFinalXpathProducts"/>
+            <class name="testsPOM.addToCart.AddToCartItemFromHomePageAfterLogIn"/>
         </classes>
     </test>
 
-    <test name="CheckoutSuit">
+    <test name="GoToCheckoutSuit">
         <classes>
-            <class name="testsPOM.checkout.GoToCheckOutWith1ItemFromSpecificCategoryAfterLogin"/>
-            <class name="testsPOM.checkout.GoToCheckOutWithDifferentItemFromDifferentCategoriesAfterLogin"/>
-            <class name="testsPOM.checkout.GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindowWithAssertions"/>
+            <class name="testsPOM.goToCheckout.GoToCheckOutWith1ItemFromSpecificCategoryAfterLogin"/>
+            <class name="testsPOM.goToCheckout.GoToCheckOutWithDifferentItemFromDifferentCategoriesAfterLogin"/>
+            <class name="testsPOM.goToCheckout.GoToCheckOutWithOneProductFromEachCategoryAndItemParam"/>
+            <class name="testsPOM.goToCheckout.GoToCheckOutWithOneProductFromEachCategoryAndItemParamFromCsv"/>
+            <class name="testsPOM.goToCheckout.GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindowFinalAssertion"/>
+            <class name="testsPOM.goToCheckout.GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindowWithAssertions"/>
+            <class name="testsPOM.goToCheckout.TestFromLoginToCartPage1ItemCsv"/>
+        </classes>
+    </test>
+
+    <test name="CheckOutSuit">
+        <classes>
             <class name="testsPOM.checkout.CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetails"/>
+            <class name="testsPOM.checkout.CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsWithItemParamFromCsv"/>
             <class name="testsPOM.checkout.CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsWithParam"/>
-            <class name="testsPOM.checkout.GoToCheckOutWithOneProductFromEachCategoryAndItemParam"/>
-            <class name="testsPOM.checkout.GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindowFinalAssertion"/>
-            <class name="testsPOM.checkout.TestFromLoginToCartPage1ItemCsv"/>
+
         </classes>
     </test>
 
