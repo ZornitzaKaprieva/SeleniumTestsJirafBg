@@ -43,9 +43,9 @@ public class SelectItemFromHomePageAfterLogIn extends TestUtil {
     @DataProvider(name = "correctCredentials") //името на DataProvider, който ще използваме
     public static Object[][] readCorrectCredentialsFromCsv(){
         try{
-            CSVReader csvReader = new CSVReader(new FileReader("src/test/resources/correctCredentials.csv")); // има ексепшън, който трябва да хванем (IOException)
-            List<String[]> csvData = csvReader.readAll();// методът csvReader.readAll(); също има ексепшън, който трябва да хванем
-            Object[][] csvDataObject = new Object[csvData.size()][2]; //все едно това ни е броя на редовете в scv. В случая имаме само 2 стойности в scv, затова можем да ги хардкорнем, но не можем да хардкорнем редовете, защото те се променят
+            CSVReader csvReader = new CSVReader(new FileReader("src/test/resources/correctCredentials.csv"));
+            List<String[]> csvData = csvReader.readAll();
+            Object[][] csvDataObject = new Object[csvData.size()][2]; //само 2 стойности в scv
 
             for (int i = 0; i < csvData.size(); i++) {
                 csvDataObject[i] = csvData.get(i);

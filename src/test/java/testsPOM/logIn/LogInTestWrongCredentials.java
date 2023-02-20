@@ -16,12 +16,12 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.List;
 
-public class LogInTestWrongCredentials extends TestUtil { //extends TestUtil, защото там инициализираме драйвъра
+public class LogInTestWrongCredentials extends TestUtil {
 
-    @Test (dataProvider = "wrongCredentials")//управляваме през тестовите данни (през самите параметри)
+    @Test (dataProvider = "wrongCredentials")
     public void loginWithWrongCredentials (String email, String password) throws InterruptedException {
 
-        HomePage homePage = new HomePage(driver); //един page, един обект
+        HomePage homePage = new HomePage(driver);
         homePage.goToLogin();
 
         WebElement emailField = driver.findElement(By.name("email"));
@@ -36,12 +36,12 @@ public class LogInTestWrongCredentials extends TestUtil { //extends TestUtil, з
         Assert.assertTrue(errorMsg.isDisplayed(), "Error message is not displayed.");
     }
 
-    @DataProvider(name = "wrongCredentials") //името на DataProvider, който ще използваме
+    @DataProvider(name = "wrongCredentials")
     public static Object[][] readWrongCredentialsFromCsv(){
         try{
-            CSVReader csvReader = new CSVReader(new FileReader("src/test/resources/wrongCredentials.csv")); // има ексепшън, който трябва да хванем (IOException)
-            List<String[]> csvData = csvReader.readAll();// методът csvReader.readAll(); също има ексепшън, който трябва да хванем
-            Object[][] csvDataObject = new Object[csvData.size()][2]; //все едно това ни е броя на редовете в scv. В случая имаме само 2 стойности в scv, затова можем да ги хардкорнем, но не можем да хардкорнем редовете, защото те се променят
+            CSVReader csvReader = new CSVReader(new FileReader("src/test/resources/wrongCredentials.csv"));
+            List<String[]> csvData = csvReader.readAll();
+            Object[][] csvDataObject = new Object[csvData.size()][2]; //само 2 стойности в scv
 
             for (int i = 0; i < csvData.size(); i++) {
                 csvDataObject[i] = csvData.get(i);

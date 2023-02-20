@@ -19,7 +19,7 @@ import java.util.List;
 
 public class GoToCheckOutWithOneProductFromEachCategoryAndItemParam extends TestUtil {
 
-    //вариант с Assert накрая + param Categories:(с методът public void selectCategoryAndItemFromCategory(String categoryXpath, String itemXPath){}
+    //RESUME: вариант с Assert накрая + методът public void selectCategoryAndItemFromCategory(String categoryXpath, String itemXPath){}
     @Test(dataProvider = "correctCredentials")//управляваме през тестовите данни (през самите параметри)
 
     public void goToCheckOutWithOneProductFromEachCategoryAndItemParam (String email, String password) throws InterruptedException {
@@ -87,10 +87,9 @@ public class GoToCheckOutWithOneProductFromEachCategoryAndItemParam extends Test
     @DataProvider(name = "correctCredentials") //името на DataProvider, който ще използваме
     public static Object[][] readCorrectCredentialsFromCsv(){
         try{
-            CSVReader csvReader = new CSVReader(new FileReader("src/test/resources/correctCredentials.csv")); // има ексепшън, който трябва да хванем (IOException)
-            List<String[]> csvData = csvReader.readAll();// методът csvReader.readAll(); също има ексепшън, който трябва да хванем
-            Object[][] csvDataObject = new Object[csvData.size()][2]; //все едно това ни е броя на редовете в scv. В случая имаме само 2 стойности в scv, затова можем да ги хардкорнем, но не можем да хардкорнем редовете, защото те се променят
-
+            CSVReader csvReader = new CSVReader(new FileReader("src/test/resources/correctCredentials.csv"));
+            List<String[]> csvData = csvReader.readAll();
+            Object[][] csvDataObject = new Object[csvData.size()][2];
             for (int i = 0; i < csvData.size(); i++) {
                 csvDataObject[i] = csvData.get(i);
             }

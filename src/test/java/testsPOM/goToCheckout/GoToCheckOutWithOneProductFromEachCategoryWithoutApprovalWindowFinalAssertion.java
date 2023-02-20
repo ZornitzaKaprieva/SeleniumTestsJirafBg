@@ -19,12 +19,12 @@ import java.util.List;
 
 public class GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindowFinalAssertion extends TestUtil {
 
-    //вариант с Assert на накрая:(следва да направя тест с подаване на параметри от .csv 6 реда с категориите и xpath на продуктите)
-    @Test(dataProvider = "correctCredentials")//управляваме през тестовите данни (през самите параметри)
+    //RESUME: вариант с Assert на накрая + full xPath
+    @Test(dataProvider = "correctCredentials")
 
-    public void goToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindow (String email, String password) throws InterruptedException {
-        HomePage homePage = new HomePage(driver); //един page, един обект
-        LogInPage logInPage = new LogInPage(driver); //един page, един обект
+    public void goToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindowFinalAssertion (String email, String password) throws InterruptedException {
+        HomePage homePage = new HomePage(driver);
+        LogInPage logInPage = new LogInPage(driver);
         MyProfilePage myProfilePage = new MyProfilePage(driver);
 
         Categories gameAndPlay = new Categories(driver);
@@ -96,12 +96,12 @@ public class GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindowFina
         wait05.until(ExpectedConditions.visibilityOf(personalInfoTitle));
     }
 
-    @DataProvider(name = "correctCredentials") //името на DataProvider, който ще използваме
+    @DataProvider(name = "correctCredentials")
     public static Object[][] readCorrectCredentialsFromCsv(){
         try{
-            CSVReader csvReader = new CSVReader(new FileReader("src/test/resources/correctCredentials.csv")); // има ексепшън, който трябва да хванем (IOException)
-            List<String[]> csvData = csvReader.readAll();// методът csvReader.readAll(); също има ексепшън, който трябва да хванем
-            Object[][] csvDataObject = new Object[csvData.size()][2]; //все едно това ни е броя на редовете в scv. В случая имаме само 2 стойности в scv, затова можем да ги хардкорнем, но не можем да хардкорнем редовете, защото те се променят
+            CSVReader csvReader = new CSVReader(new FileReader("src/test/resources/correctCredentials.csv"));
+            List<String[]> csvData = csvReader.readAll();
+            Object[][] csvDataObject = new Object[csvData.size()][2]; //В случая имаме само 2 стойности в scv, затова можем да ги хардкорнем
 
             for (int i = 0; i < csvData.size(); i++) {
                 csvDataObject[i] = csvData.get(i);

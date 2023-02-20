@@ -17,21 +17,23 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.List;
 
-public class AddToCart3ItemsFromHomePageAfterLogIn extends TestUtil {
+public class AddToCart3ItemsFromHomePageAfterLogIn extends TestUtil { //extends TestUtil, защото там инициализираме драйвъра
 
-    @Test(dataProvider = "correctCredentials")//управляваме през тестовите данни (през самите параметри)
+    @Test(dataProvider = "correctCredentials") //управляваме през тестовите данни (през самите параметри)
 
-    public void addToCart3ItemsFromHomePage(String email, String password) throws InterruptedException {
+    public void addToCart3ItemsFromHomePageAfterLogIn(String email, String password) throws InterruptedException {
 
-        HomePage homePage = new HomePage(driver); //един page, един обект
+        //RESUME: вариант с assertions и данни от .csv файл за login + full xpath
+
+        HomePage homePage = new HomePage(driver);
         homePage.goToLogin();
 
         WebElement emailField = driver.findElement(By.name("email"));
         Assert.assertTrue(emailField.isDisplayed(), "Email Link was not displayed");
 
 
-        LogInPage logInPage = new LogInPage(driver); //един page, един обект
-        MyProfilePage myProfilePage = logInPage.login(email, password); //ако нямаме това = трябват асършани todo
+        LogInPage logInPage = new LogInPage(driver);
+        MyProfilePage myProfilePage = logInPage.login(email, password); //ако нямаме това = трябват асършани
         myProfilePage.goToHomePage();
         Assert.assertTrue(applicationUrl.equals(applicationUrl));
 

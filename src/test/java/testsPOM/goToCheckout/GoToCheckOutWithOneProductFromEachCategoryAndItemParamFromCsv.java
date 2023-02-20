@@ -54,7 +54,7 @@ public class GoToCheckOutWithOneProductFromEachCategoryAndItemParamFromCsv exten
         ProductPage itemFromStem = new ProductPage(driver);
 
         homePage.goToLogin();
-        logInPage.login("qa-test1122@abv.bg","test1122");//хардкорваме стойностите, защото нямаме провайдър з тях
+        logInPage.login("qa-test1122@abv.bg","test1122");//хардкорваме стойностите, защото нямаме провайдър за тях
         myProfilePage.goToHomePage();
 
         gameAndPlay.selectCategoryAndItemFromCategory(xpathGamesAndToys, xpathGTItem1);
@@ -92,12 +92,12 @@ public class GoToCheckOutWithOneProductFromEachCategoryAndItemParamFromCsv exten
         wait05.until(ExpectedConditions.visibilityOf(personalInfoTitle));
     }
 
-    @DataProvider(name = "xPathOneItemFromEachCategoryCsv") //името на DataProvider, който ще използваме
+    @DataProvider(name = "xPathOneItemFromEachCategoryCsv")
     public static Object[][] readXPathOneItemFromEachCategoryCsv(){
         try{
-            CSVReader csvReader = new CSVReader(new FileReader("src/test/resources/oneItemFromEachCategory.csv")); // има ексепшън, който трябва да хванем (IOException)
-            List<String[]> csvData = csvReader.readAll();// методът csvReader.readAll(); също има ексепшън, който трябва да хванем
-            Object[][] csvDataObject = new Object[csvData.size()][2]; //все едно това ни е броя на редовете в scv. В случая имаме само 2 стойности в scv, затова можем да ги хардкорнем, но не можем да хардкорнем редовете, защото те се променят
+            CSVReader csvReader = new CSVReader(new FileReader("src/test/resources/oneItemFromEachCategory.csv"));
+            List<String[]> csvData = csvReader.readAll();
+            Object[][] csvDataObject = new Object[csvData.size()][csvData.size()]; //няма да хардкорнем редовете и стойностит, в случай, че се променят
 
             for (int i = 0; i < csvData.size(); i++) {
                 csvDataObject[i] = csvData.get(i);

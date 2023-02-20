@@ -21,11 +21,11 @@ public class AddToCart3ItemsFromHomePageAfterLogInItemCsv extends TestUtil {
     // (ако ни гръмне някой тест поради липса на наличност, не знаем кой е продуктът)
     // (проверяваме през теста GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindowWithAssertions, който е по-дълъг, но по-надежден)
 
-    @Test(dataProvider = "homePageItems")//управляваме през тестовите данни (през самите параметри)
+    @Test(dataProvider = "homePageItems")
 
-    public void addToCart3ItemsFromHomePageAfterLogInItemParam (String xpathItem1, String xpathItem2,String xpathItem3) throws InterruptedException {
+    public void addToCart3ItemsFromHomePageAfterLogInItemCsv (String xpathItem1, String xpathItem2,String xpathItem3) throws InterruptedException {
 
-        //подреденият вариант с final assertion and param: (не можем да сложим параметри за повече от един продукт, тъй като, за да се поръча, следва да се мине през страницата на конкретния продукт
+        //подреденият вариант с final assertion:
         HomePage homePage = new HomePage(driver); //един page, един обект
         LogInPage logInPage = new LogInPage(driver); //един page, един обект
         MyProfilePage myProfilePage = new MyProfilePage(driver);
@@ -40,7 +40,7 @@ public class AddToCart3ItemsFromHomePageAfterLogInItemCsv extends TestUtil {
         ProductPage item3 = new ProductPage(driver);
 
         homePage.goToLogin();
-        logInPage.login("qa-test1122@abv.bg","test1122"); //хардкорнато е, защото не знам как да сложа 2 провайдъра
+        logInPage.login("qa-test1122@abv.bg","test1122"); //хардкорнато
         myProfilePage.goToHomePage();
 
         //item1:
@@ -58,13 +58,12 @@ public class AddToCart3ItemsFromHomePageAfterLogInItemCsv extends TestUtil {
         Assert.assertEquals(item3.getHowManyItemsInTheCart(), "КОЛИЧКА: 3", "Problem with addToCartCounter");
     }
 
-    @DataProvider(name = "homePageItems") //името на DataProvider, който ще използваме
+    @DataProvider(name = "homePageItems")
     public static Object[][] readHomePageItemsFromCsv(){
         try{
-            CSVReader csvReader = new CSVReader(new FileReader("src/test/resources/homePageItems.csv")); // има ексепшън, който трябва да хванем (IOException)
-            List<String[]> csvData = csvReader.readAll();// методът csvReader.readAll(); също има ексепшън, който трябва да хванем
-            Object[][] csvDataObject = new Object[csvData.size()][2]; //все едно това ни е броя на редовете в scv. В случая имаме само 2 стойности в scv, затова можем да ги хардкорнем, но не можем да хардкорнем редовете, защото те се променят
-
+            CSVReader csvReader = new CSVReader(new FileReader("src/test/resources/homePageItems.csv"));
+            List<String[]> csvData = csvReader.readAll();
+            Object[][] csvDataObject = new Object[csvData.size()][2];
             for (int i = 0; i < csvData.size(); i++) {
                 csvDataObject[i] = csvData.get(i);
             }

@@ -13,7 +13,7 @@ import java.util.List;
 
 public class TestFromLoginToCartPage1ItemCsv extends TestUtil {
 
-    //този тест е само за пример. Той не следва РОМ, дадено е за пример как с една команда да поръчаме продукт:
+    //този тест е само за пример. Той не следва РОМ, дадено е за пример как с една команда да достигнем до чекаут:
     @Test(dataProvider = "correctCredentialsAndItemDetails")
     public void goFromLoginToCartPage1ItemCsv (String email, String password,String categoryName, String xPath) throws InterruptedException {
         ExamplePathFromLoginToCartPage1Item firstItemFromGamesAndToys = new ExamplePathFromLoginToCartPage1Item(driver);

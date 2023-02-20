@@ -20,7 +20,8 @@ import java.util.List;
 public class CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsWithItemParamFromCsv extends TestUtil {
 
     //RESUME: вариант с Assert в края на теста и данни от .csv файл за айтемите  (логинът е хардкорнат)
-    // (ако ни гръмне някой тест поради липса на наличност, не знаем кой е продукта) //todo може и да стане с if за колко броя продукти има в количката
+    // (ако ни гръмне някой тест поради липса на наличност, не знаем кой е продукта)
+    // todo може и да стане с if за колко броя продукти има в количката
     // (проверяваме през теста GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindowWithAssertions, който е по-дълъг, но по-надежден)
 
     @Test(dataProvider = "xPathOneItemFromEachCategoryCsv")//управляваме през тестовите данни (през самите параметри)
@@ -97,12 +98,12 @@ public class CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsW
         fillShippingDetails.fillDeliveryDetailsWithoutAddress("Това е поредният спам от мен. Като ви писна, кажете си");
     }
 
-    @DataProvider(name = "xPathOneItemFromEachCategoryCsv") //името на DataProvider, който ще използваме
+    @DataProvider(name = "xPathOneItemFromEachCategoryCsv")
     public static Object[][] readXPathOneItemFromEachCategoryCsv(){
         try{
-            CSVReader csvReader = new CSVReader(new FileReader("src/test/resources/oneItemFromEachCategory.csv")); // има ексепшън, който трябва да хванем (IOException)
-            List<String[]> csvData = csvReader.readAll();// методът csvReader.readAll(); също има ексепшън, който трябва да хванем
-            Object[][] csvDataObject = new Object[csvData.size()][2]; //все едно това ни е броя на редовете в scv. В случая имаме само 2 стойности в scv, затова можем да ги хардкорнем, но не можем да хардкорнем редовете, защото те се променят
+            CSVReader csvReader = new CSVReader(new FileReader("src/test/resources/oneItemFromEachCategory.csv"));
+            List<String[]> csvData = csvReader.readAll();
+            Object[][] csvDataObject = new Object[csvData.size()][csvData.size()]; //няма да хардкорнем редовете и стойностите, в случай, че се променят
 
             for (int i = 0; i < csvData.size(); i++) {
                 csvDataObject[i] = csvData.get(i);

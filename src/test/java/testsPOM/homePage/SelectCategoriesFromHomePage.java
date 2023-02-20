@@ -11,7 +11,7 @@ import pages.HomePage;
 public class SelectCategoriesFromHomePage extends TestUtil {
 
     @Test
-    public void selectCategoriesFromHomaPage(){ //повтаря се с SelectCategoryWithoutLogIn
+    public void selectCategoriesFromHomaPage(){ //повтаря се със SelectCategoryWithoutLogIn
 //        HomePage homePage = new HomePage(driver);
 //        homePage.goToCategoryFromHomePage("[1]");
 
