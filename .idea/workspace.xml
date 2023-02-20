@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d277289d-3610-405e-b4e6-a75187aeb2f3" name="Changes" comment="Some changes to the notes have been made">
+    <list default="true" id="d277289d-3610-405e-b4e6-a75187aeb2f3" name="Changes" comment="Some note changes have been made">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/base/TestUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/TestUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testsPOM/goToCheckout/GoToCheckOutWithOneProductFromEachCategoryAndItemParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testsPOM/goToCheckout/GoToCheckOutWithOneProductFromEachCategoryAndItemParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testsPOM/goToCheckout/GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindowFinalAssertion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testsPOM/goToCheckout/GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindowFinalAssertion.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +75,7 @@
       <recent name="testsPOM.myProfile" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.D:/QA/domashni i upravneniq/Java/SeleniumTestsJirafBg/src/test/resources/testing.xml">
+  <component name="RunManager" selected="TestNG.CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsWithLoginCatItemsCsv">
     <configuration name="AddToCart3ItemsFromHomePageAfterLogIn.addToCart3ItemsFromHomePageAfterLogIn" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumTestsJirafBg" />
       <extension name="coverage">
@@ -104,6 +106,23 @@
       <option name="MAIN_CLASS_NAME" value="testsPOM.checkout.CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsWithItemParamFromCsv" />
       <option name="METHOD_NAME" value="checkOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsWithItemParamFromCsv" />
       <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsWithLoginCatItemsCsv" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumTestsJirafBg" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testsPOM.checkout.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testsPOM.checkout" />
+      <option name="MAIN_CLASS_NAME" value="testsPOM.checkout.CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsWithLoginCatItemsCsv" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -214,38 +233,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LogInTestWrongCredentials" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumTestsJirafBg" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testsPOM.logIn.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testsPOM.logIn" />
-      <option name="MAIN_CLASS_NAME" value="testsPOM.logIn.LogInTestWrongCredentials" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="TestNG.D:/QA/domashni i upravneniq/Java/SeleniumTestsJirafBg/src/test/resources/testing.xml" />
       <item itemvalue="TestNG.AddToCart3ItemsFromHomePageAfterLogIn.addToCart3ItemsFromHomePageAfterLogIn" />
       <item itemvalue="TestNG.CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsWithItemParamFromCsv.checkOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsWithItemParamFromCsv" />
+      <item itemvalue="TestNG.CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsWithLoginCatItemsCsv" />
       <item itemvalue="TestNG.CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsWithLoginCatItemsCsv.checkOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsWithLoginCatItemsCsv" />
       <item itemvalue="TestNG.GoToCheckOutWithOneProductFromEachCategoryAndItemParamFromCsv.goToCheckOutWithOneProductFromEachCategoryAndItemParam" />
-      <item itemvalue="TestNG.LogInTestWrongCredentials" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsWithLoginCatItemsCsv" />
+        <item itemvalue="TestNG.CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsWithLoginCatItemsCsv.checkOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsWithLoginCatItemsCsv" />
         <item itemvalue="TestNG.GoToCheckOutWithOneProductFromEachCategoryAndItemParamFromCsv.goToCheckOutWithOneProductFromEachCategoryAndItemParam" />
         <item itemvalue="TestNG.CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsWithItemParamFromCsv.checkOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsWithItemParamFromCsv" />
         <item itemvalue="TestNG.AddToCart3ItemsFromHomePageAfterLogIn.addToCart3ItemsFromHomePageAfterLogIn" />
-        <item itemvalue="TestNG.CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsWithLoginCatItemsCsv.checkOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsWithLoginCatItemsCsv" />
-        <item itemvalue="TestNG.LogInTestWrongCredentials" />
       </list>
     </recent_temporary>
   </component>
@@ -384,7 +386,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676881090587</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Some note changes have been made">
+      <created>1676882510346</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1676882510346</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -418,7 +427,8 @@
     <MESSAGE value="Test cases: edit" />
     <MESSAGE value="Login test with wrong credentials" />
     <MESSAGE value="Some changes to the notes have been made" />
-    <option name="LAST_COMMIT_MESSAGE" value="Some changes to the notes have been made" />
+    <MESSAGE value="Some note changes have been made" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some note changes have been made" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -445,7 +455,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/testsPOM/goToCheckout/GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindowFinalAssertion.java</url>
-          <line>57</line>
+          <line>59</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>

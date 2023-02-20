@@ -55,6 +55,7 @@
         <classes>
             <class name="testsPOM.checkout.CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetails"/>
             <class name="testsPOM.checkout.CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsWithItemParamFromCsv"/>
+            <class name="testsPOM.checkout.CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsWithLoginCatItemsCsv"/>
         </classes>
     </test>
 
