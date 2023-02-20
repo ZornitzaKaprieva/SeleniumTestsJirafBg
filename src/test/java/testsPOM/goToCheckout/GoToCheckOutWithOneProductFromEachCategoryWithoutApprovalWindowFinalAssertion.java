@@ -20,6 +20,8 @@ import java.util.List;
 public class GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindowFinalAssertion extends TestUtil {
 
     //RESUME: вариант с Assert на накрая + full xPath
+    // (ако ни гръмне някой тест поради липса на наличност, не знаем кой е продукта)
+    // (проверяваме през теста GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindowWithAssertions, който е по-дълъг, но по-надежден)
     @Test(dataProvider = "correctCredentials")
 
     public void goToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindowFinalAssertion (String email, String password) throws InterruptedException {

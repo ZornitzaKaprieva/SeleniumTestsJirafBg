@@ -20,6 +20,8 @@ import java.util.List;
 public class GoToCheckOutWithOneProductFromEachCategoryAndItemParam extends TestUtil {
 
     //RESUME: вариант с Assert накрая + методът public void selectCategoryAndItemFromCategory(String categoryXpath, String itemXPath){}
+    // (ако ни гръмне някой тест поради липса на наличност, не знаем кой е продукта)
+    // (проверяваме през теста GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindowWithAssertions, който е по-дълъг, но по-надежден)
     @Test(dataProvider = "correctCredentials")//управляваме през тестовите данни (през самите параметри)
 
     public void goToCheckOutWithOneProductFromEachCategoryAndItemParam (String email, String password) throws InterruptedException {
