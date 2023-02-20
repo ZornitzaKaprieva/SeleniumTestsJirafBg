@@ -29,8 +29,11 @@ public class LogInTestWrongCredentials extends TestUtil { //extends TestUtil, з
 
 
         LogInPage logInPage = new LogInPage(driver); //един page, един обект
-        MyProfilePage myProfilePage = logInPage.login(email, password); //ако нямаме това = трябват асършани todo
+        logInPage.login(email, password);
         //Thread.sleep(1000);
+
+        WebElement errorMsg = driver.findElement(By.xpath("/html/body/main/section/div/div/div/section/section/section/div/ul/li"));
+        Assert.assertTrue(errorMsg.isDisplayed(), "Error message is not displayed.");
     }
 
     @DataProvider(name = "wrongCredentials") //името на DataProvider, който ще използваме
