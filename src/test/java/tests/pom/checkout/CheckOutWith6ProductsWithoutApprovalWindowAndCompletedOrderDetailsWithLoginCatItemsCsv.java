@@ -98,26 +98,26 @@ public class CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsW
         fillShippingDetails.fillDeliveryDetailsWithoutAddress("Това е поредният спам от мен. Като ви писна, кажете си");
     }
 
-    @DataProvider(name = "loginCategoriesItems") //името на DataProvider, който ще използваме
-    public static Object[][] readXPathOneItemFromEachCategoryCsv(){
-        try{
-            CSVReader csvReader = new CSVReader(new FileReader("src/test/resources/loginCategoriesItems.csv")); // има ексепшън, който трябва да хванем (IOException)
-            List<String[]> csvData = csvReader.readAll();// методът csvReader.readAll(); също има ексепшън, който трябва да хванем
-            Object[][] csvDataObject = new Object[csvData.size()][csvData.size()]; // няма да хардкорнем редовете и стойностите, защото може да се променят
-
-            for (int i = 0; i < csvData.size(); i++) {
-                csvDataObject[i] = csvData.get(i);
-            }
-            return csvDataObject;
-
-        }catch (IOException e){
-            System.out.println("Not possible to find CSV!");
-            return null;
-        } catch (CsvException e){
-            System.out.println("Something went wrong!");
-            return null;
-        }
-
-    }
+    //@DataProvider(name = "loginCategoriesItems"): moved to TestUtil
+//    @DataProvider(name = "loginCategoriesItems")
+//    public static Object[][] readLoginCategoriesItemsCsv(){
+//        try{
+//            CSVReader csvReader = new CSVReader(new FileReader("src/test/resources/loginCategoriesItems.csv")); // има ексепшън, който трябва да хванем (IOException)
+//            List<String[]> csvData = csvReader.readAll();// методът csvReader.readAll(); също има ексепшън, който трябва да хванем
+//            Object[][] csvDataObject = new Object[csvData.size()][csvData.size()]; // няма да хардкорнем редовете и стойностите, защото може да се променят
+//
+//            for (int i = 0; i < csvData.size(); i++) {
+//                csvDataObject[i] = csvData.get(i);
+//            }
+//            return csvDataObject;
+//
+//        }catch (IOException e){
+//            System.out.println("Not possible to find CSV!");
+//            return null;
+//        } catch (CsvException e){
+//            System.out.println("Something went wrong!");
+//            return null;
+//        }
+//    }
 }
 

@@ -54,26 +54,27 @@ public class GoToCheckOutWithDifferentItemFromDifferentCategoriesAfterLogin exte
 
     }
 
-    @DataProvider(name = "correctCredentials")
-    public static Object[][] readCorrectCredentialsFromCsv(){
-        try{
-            CSVReader csvReader = new CSVReader(new FileReader("src/test/resources/correctCredentials.csv"));
-            List<String[]> csvData = csvReader.readAll();
-            Object[][] csvDataObject = new Object[csvData.size()][2]; //В случая имаме само 2 стойности в scv, затова можем да ги хардкорнем, но не можем да хардкорнем редовете, защото те се променят
-
-            for (int i = 0; i < csvData.size(); i++) {
-                csvDataObject[i] = csvData.get(i);
-            }
-            return csvDataObject;
-
-        }catch (IOException e){
-            System.out.println("Not possible to find CSV!");
-            return null;
-        } catch (CsvException e){
-            System.out.println("Something went wrong!");
-            return null;
-        }
-
-    }
+    //    @DataProvider(name = "correctCredentials"): moved to TestUtil
+//    @DataProvider(name = "correctCredentials")
+//    public static Object[][] readCorrectCredentialsFromCsv(){
+//        try{
+//            CSVReader csvReader = new CSVReader(new FileReader("src/test/resources/correctCredentials.csv"));
+//            List<String[]> csvData = csvReader.readAll();
+//            Object[][] csvDataObject = new Object[csvData.size()][2]; //В случая имаме само 2 стойности в scv, затова можем да ги хардкорнем, но не можем да хардкорнем редовете, защото те се променят
+//
+//            for (int i = 0; i < csvData.size(); i++) {
+//                csvDataObject[i] = csvData.get(i);
+//            }
+//            return csvDataObject;
+//
+//        }catch (IOException e){
+//            System.out.println("Not possible to find CSV!");
+//            return null;
+//        } catch (CsvException e){
+//            System.out.println("Something went wrong!");
+//            return null;
+//        }
+//
+//    }
 }
 

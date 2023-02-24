@@ -26,8 +26,6 @@ Q
 !src/test/java/pages/CheckOut.java,4\8\48d41b18e248fee6e7b8330cc350dd7e4379b859
 S
 #src/test/java/pages/Categories.java,5\5\5522ece3f52c239b0eb9847fd791a4d3c0f344d6
-Q
-!src/test/java/pages/HomePage.java,4\2\42b8300070bf5b4b5a0097b050c9368a280f7ab1
 ‘
 asrc/test/java/testsPOM/addToCart/AddToCart3ItemsFromHomePageAfterLogInItemFinalXpathProducts.java,9\2\92bbab5528110b60314ef0331acaaf64ebd8f9b6
 —

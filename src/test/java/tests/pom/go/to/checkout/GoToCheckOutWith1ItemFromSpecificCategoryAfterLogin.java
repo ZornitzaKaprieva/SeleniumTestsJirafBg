@@ -52,30 +52,29 @@ public class GoToCheckOutWith1ItemFromSpecificCategoryAfterLogin extends TestUti
         itemFromGameAndPlay.goToCartFromProductPage(); //todo
         WebElement cartTitle = driver.findElement(By.xpath("/html/body/main/section/div/div/div/section/div/div[1]/div[1]/div[1]/h1"));
         Assert.assertTrue(cartTitle.isDisplayed());
-
-
     }
 
-    @DataProvider(name = "correctCredentials")
-    public static Object[][] readCorrectCredentialsFromCsv(){
-        try{
-            CSVReader csvReader = new CSVReader(new FileReader("src/test/resources/correctCredentials.csv"));
-            List<String[]> csvData = csvReader.readAll();
-            Object[][] csvDataObject = new Object[csvData.size()][2];
-
-            for (int i = 0; i < csvData.size(); i++) {
-                csvDataObject[i] = csvData.get(i);
-            }
-            return csvDataObject;
-
-        }catch (IOException e){
-            System.out.println("Not possible to find CSV!");
-            return null;
-        } catch (CsvException e){
-            System.out.println("Something went wrong!");
-            return null;
-        }
-
-    }
+//    @DataProvider(name = "correctCredentials"): moved to TestUtil
+//    @DataProvider(name = "correctCredentials")
+//    public static Object[][] readCorrectCredentialsFromCsv(){
+//        try{
+//            CSVReader csvReader = new CSVReader(new FileReader("src/test/resources/correctCredentials.csv"));
+//            List<String[]> csvData = csvReader.readAll();
+//            Object[][] csvDataObject = new Object[csvData.size()][2];
+//
+//            for (int i = 0; i < csvData.size(); i++) {
+//                csvDataObject[i] = csvData.get(i);
+//            }
+//            return csvDataObject;
+//
+//        }catch (IOException e){
+//            System.out.println("Not possible to find CSV!");
+//            return null;
+//        } catch (CsvException e){
+//            System.out.println("Something went wrong!");
+//            return null;
+//        }
+//
+//    }
 }
 

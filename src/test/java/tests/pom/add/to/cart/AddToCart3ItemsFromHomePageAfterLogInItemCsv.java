@@ -58,25 +58,26 @@ public class AddToCart3ItemsFromHomePageAfterLogInItemCsv extends TestUtil {
         Assert.assertEquals(item3.getHowManyItemsInTheCart(), "КОЛИЧКА: 3", "Problem with addToCartCounter");
     }
 
-    @DataProvider(name = "homePageItems")
-    public static Object[][] readHomePageItemsFromCsv(){
-        try{
-            CSVReader csvReader = new CSVReader(new FileReader("src/test/resources/homePageItems.csv"));
-            List<String[]> csvData = csvReader.readAll();
-            Object[][] csvDataObject = new Object[csvData.size()][2];
-            for (int i = 0; i < csvData.size(); i++) {
-                csvDataObject[i] = csvData.get(i);
-            }
-            return csvDataObject;
-
-        }catch (IOException e){
-            System.out.println("Not possible to find CSV!");
-            return null;
-        } catch (CsvException e){
-            System.out.println("Something went wrong!");
-            return null;
-        }
-
-    }
+    //@DataProvider(name = "homePageItems"): moved to TestUtil
+//    @DataProvider(name = "homePageItems")
+//    public static Object[][] readHomePageItemsFromCsv(){
+//        try{
+//            CSVReader csvReader = new CSVReader(new FileReader("src/test/resources/homePageItems.csv"));
+//            List<String[]> csvData = csvReader.readAll();
+//            Object[][] csvDataObject = new Object[csvData.size()][2];
+//            for (int i = 0; i < csvData.size(); i++) {
+//                csvDataObject[i] = csvData.get(i);
+//            }
+//            return csvDataObject;
+//
+//        }catch (IOException e){
+//            System.out.println("Not possible to find CSV!");
+//            return null;
+//        } catch (CsvException e){
+//            System.out.println("Something went wrong!");
+//            return null;
+//        }
+//
+//    }
 }
 

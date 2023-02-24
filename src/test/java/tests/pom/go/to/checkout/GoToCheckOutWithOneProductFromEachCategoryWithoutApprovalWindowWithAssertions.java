@@ -96,25 +96,26 @@ public class GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindowWith
         wait05.until(ExpectedConditions.visibilityOf(personalInfoTitle));
     }
 
-    @DataProvider(name = "xPathOneItemFromEachCategoryCsv")
-    public static Object[][] readXPathOneItemFromEachCategoryCsv() {
-        try {
-            CSVReader csvReader = new CSVReader(new FileReader("src/test/resources/oneItemFromEachCategory.csv"));
-            List<String[]> csvData = csvReader.readAll();
-            Object[][] csvDataObject = new Object[csvData.size()][csvData.size()]; //няма да хардкорнем редовете и стойностите, в случай че се променят.
-
-            for (int i = 0; i < csvData.size(); i++) {
-                csvDataObject[i] = csvData.get(i);
-            }
-            return csvDataObject;
-
-        } catch (IOException e) {
-            System.out.println("Not possible to find CSV!");
-            return null;
-        } catch (CsvException e) {
-            System.out.println("Something went wrong!");
-            return null;
-        }
-
-    }
+    //    @DataProvider(name = "xPathOneItemFromEachCategoryCsv"): moved to TestUtil
+//    @DataProvider(name = "xPathOneItemFromEachCategoryCsv")
+//    public static Object[][] readXPathOneItemFromEachCategoryCsv() {
+//        try {
+//            CSVReader csvReader = new CSVReader(new FileReader("src/test/resources/oneItemFromEachCategory.csv"));
+//            List<String[]> csvData = csvReader.readAll();
+//            Object[][] csvDataObject = new Object[csvData.size()][csvData.size()]; //няма да хардкорнем редовете и стойностите, в случай че се променят.
+//
+//            for (int i = 0; i < csvData.size(); i++) {
+//                csvDataObject[i] = csvData.get(i);
+//            }
+//            return csvDataObject;
+//
+//        } catch (IOException e) {
+//            System.out.println("Not possible to find CSV!");
+//            return null;
+//        } catch (CsvException e) {
+//            System.out.println("Something went wrong!");
+//            return null;
+//        }
+//
+//    }
 }

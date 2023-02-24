@@ -74,6 +74,7 @@ public class AddToCart3ItemsFromHomePageAfterLogIn extends TestUtil { //extends 
         Assert.assertEquals(item3.getHowManyItemsInTheCart(), "КОЛИЧКА: 3", "Problem with addToCartCounter");
 
         //ХРОНОЛОГИЧНО ПОДРЕДЕН ВАРИАНТ:
+        //ХРОНОЛОГИЧНО ПОДРЕДЕН ВАРИАНТ:
 //
 //        //item1:
 //        HomePage homePageItem1 = new HomePage(driver);
@@ -107,26 +108,27 @@ public class AddToCart3ItemsFromHomePageAfterLogIn extends TestUtil { //extends 
 
     }
 
-    @DataProvider(name = "correctCredentials") //името на DataProvider, който ще използваме
-    public static Object[][] readCorrectCredentialsFromCsv(){
-        try{
-            CSVReader csvReader = new CSVReader(new FileReader("src/test/resources/correctCredentials.csv")); // има ексепшън, който трябва да хванем (IOException)
-            List<String[]> csvData = csvReader.readAll();// методът csvReader.readAll(); също има ексепшън, който трябва да хванем
-            Object[][] csvDataObject = new Object[csvData.size()][2]; //все едно това ни е броя на редовете в scv. В случая имаме само 2 стойности в scv, затова можем да ги хардкорнем, но не можем да хардкорнем редовете, защото те се променят
-
-            for (int i = 0; i < csvData.size(); i++) {
-                csvDataObject[i] = csvData.get(i);
-            }
-            return csvDataObject;
-
-        }catch (IOException e){
-            System.out.println("Not possible to find CSV!");
-            return null;
-        } catch (CsvException e){
-            System.out.println("Something went wrong!");
-            return null;
-        }
-
-    }
+    //@DataProvider(name = "correctCredentials"): moved to TestUtil
+//    @DataProvider(name = "correctCredentials") //името на DataProvider, който ще използваме
+//    public static Object[][] readCorrectCredentialsFromCsv(){
+//        try{
+//            CSVReader csvReader = new CSVReader(new FileReader("src/test/resources/correctCredentials.csv")); // има ексепшън, който трябва да хванем (IOException)
+//            List<String[]> csvData = csvReader.readAll();// методът csvReader.readAll(); също има ексепшън, който трябва да хванем
+//            Object[][] csvDataObject = new Object[csvData.size()][2]; //все едно това ни е броя на редовете в scv. В случая имаме само 2 стойности в scv, затова можем да ги хардкорнем, но не можем да хардкорнем редовете, защото те се променят
+//
+//            for (int i = 0; i < csvData.size(); i++) {
+//                csvDataObject[i] = csvData.get(i);
+//            }
+//            return csvDataObject;
+//
+//        }catch (IOException e){
+//            System.out.println("Not possible to find CSV!");
+//            return null;
+//        } catch (CsvException e){
+//            System.out.println("Something went wrong!");
+//            return null;
+//        }
+//
+//    }
 }
 
