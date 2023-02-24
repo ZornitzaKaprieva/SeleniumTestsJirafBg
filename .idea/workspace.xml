@@ -4,11 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d277289d-3610-405e-b4e6-a75187aeb2f3" name="Changes" comment="Some note changes have been made">
+    <list default="true" id="d277289d-3610-405e-b4e6-a75187aeb2f3" name="Changes" comment="Test added: CheckOut with loginCategoriesItems.csv">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/base/TestUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/TestUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testsPOM/goToCheckout/GoToCheckOutWithOneProductFromEachCategoryAndItemParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testsPOM/goToCheckout/GoToCheckOutWithOneProductFromEachCategoryAndItemParam.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testsPOM/goToCheckout/GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindowFinalAssertion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testsPOM/goToCheckout/GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindowFinalAssertion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ProductPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testsPOM/addToCart/AddToCart3ItemsFromHomePageAfterLogIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/pom/add/to/cart/AddToCart3ItemsFromHomePageAfterLogIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testsPOM/addToCart/AddToCart3ItemsFromHomePageAfterLogInItemCsv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/pom/add/to/cart/AddToCart3ItemsFromHomePageAfterLogInItemCsv.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testsPOM/addToCart/AddToCart3ItemsFromHomePageAfterLogInItemFinalXpathProducts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/pom/add/to/cart/AddToCart3ItemsFromHomePageAfterLogInItemFinalXpathProducts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testsPOM/categories/SelectCategoryWithoutLogIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/pom/categories/SelectCategoryWithoutLogIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testsPOM/checkout/CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/pom/checkout/CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testsPOM/checkout/CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsWithItemParamFromCsv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/pom/checkout/CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsWithItemParamFromCsv.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testsPOM/checkout/CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsWithLoginCatItemsCsv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/pom/checkout/CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsWithLoginCatItemsCsv.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testsPOM/goToCheckout/GoToCheckOutWith1ItemFromSpecificCategoryAfterLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/pom/go/to/checkout/GoToCheckOutWith1ItemFromSpecificCategoryAfterLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testsPOM/goToCheckout/GoToCheckOutWithDifferentItemFromDifferentCategoriesAfterLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/pom/go/to/checkout/GoToCheckOutWithDifferentItemFromDifferentCategoriesAfterLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testsPOM/goToCheckout/GoToCheckOutWithOneProductFromEachCategoryAndItemParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/pom/go/to/checkout/GoToCheckOutWithOneProductFromEachCategoryAndItemParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testsPOM/goToCheckout/GoToCheckOutWithOneProductFromEachCategoryAndItemParamFromCsv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/pom/go/to/checkout/GoToCheckOutWithOneProductFromEachCategoryAndItemParamFromCsv.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testsPOM/goToCheckout/GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindowFinalAssertion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/pom/go/to/checkout/GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindowFinalAssertion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testsPOM/goToCheckout/GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindowWithAssertions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/pom/go/to/checkout/GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindowWithAssertions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testsPOM/goToCheckout/TestFromLoginToCartPage1ItemCsv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/pom/go/to/checkout/TestFromLoginToCartPage1ItemCsv.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testsPOM/homePage/GoToLogInFromHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/pom/home/page/GoToLogInFromHomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testsPOM/homePage/SelectCategoriesFromHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/pom/home/page/SelectCategoriesFromHomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testsPOM/logIn/LogInTestCorrectCredentials.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/pom/logIn/LogInTestCorrectCredentials.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testsPOM/logIn/LogInTestWrongCredentials.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/pom/logIn/LogInTestWrongCredentials.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testsPOM/myProfile/MyProfilePageGoToHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/pom/my/profile/MyProfilePageGoToHomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testsPOM/myProfile/MyProfilePageTestLogOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/pom/my/profile/MyProfilePageTestLogOut.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testsPOM/selectItemAfterLogIn/Select2ItemsFromHomePageAfterLogInWithParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/pom/select/item/after/logIn/Select2ItemsFromHomePageAfterLogInWithParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testsPOM/selectItemAfterLogIn/SelectItemFromHomePageAfterLogIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/pom/select/item/after/logIn/SelectItemFromHomePageAfterLogIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testing.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testing.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testingCourseProjectTaskOnly.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testingCourseProjectTaskOnly.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,15 +77,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "last_opened_file_path": "D:/QA/domashni i upravneniq/Java/SeleniumTestsJirafBgCourseProject"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/QA/domashni i upravneniq/Java/SeleniumTestsJirafBg&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\QA\domashni i upravneniq\Java\SeleniumTestsJirafBg\src\test\resources" />
@@ -75,7 +98,7 @@
       <recent name="testsPOM.myProfile" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsWithLoginCatItemsCsv">
+  <component name="RunManager" selected="TestNG.AddToCart3ItemsFromHomePageAfterLogIn.addToCart3ItemsFromHomePageAfterLogIn">
     <configuration name="AddToCart3ItemsFromHomePageAfterLogIn.addToCart3ItemsFromHomePageAfterLogIn" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumTestsJirafBg" />
       <extension name="coverage">
@@ -235,6 +258,7 @@
     </configuration>
     <list>
       <item itemvalue="TestNG.D:/QA/domashni i upravneniq/Java/SeleniumTestsJirafBg/src/test/resources/testing.xml" />
+      <item itemvalue="TestNG.CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsWithParam.checkOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetails" />
       <item itemvalue="TestNG.AddToCart3ItemsFromHomePageAfterLogIn.addToCart3ItemsFromHomePageAfterLogIn" />
       <item itemvalue="TestNG.CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsWithItemParamFromCsv.checkOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsWithItemParamFromCsv" />
       <item itemvalue="TestNG.CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsWithLoginCatItemsCsv" />
@@ -243,11 +267,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.AddToCart3ItemsFromHomePageAfterLogIn.addToCart3ItemsFromHomePageAfterLogIn" />
         <item itemvalue="TestNG.CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsWithLoginCatItemsCsv" />
         <item itemvalue="TestNG.CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsWithLoginCatItemsCsv.checkOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsWithLoginCatItemsCsv" />
         <item itemvalue="TestNG.GoToCheckOutWithOneProductFromEachCategoryAndItemParamFromCsv.goToCheckOutWithOneProductFromEachCategoryAndItemParam" />
         <item itemvalue="TestNG.CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsWithItemParamFromCsv.checkOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsWithItemParamFromCsv" />
-        <item itemvalue="TestNG.AddToCart3ItemsFromHomePageAfterLogIn.addToCart3ItemsFromHomePageAfterLogIn" />
       </list>
     </recent_temporary>
   </component>
@@ -393,7 +417,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676882510346</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Test added: CheckOut with loginCategoriesItems.csv">
+      <created>1676882952682</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1676882952682</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -428,7 +459,8 @@
     <MESSAGE value="Login test with wrong credentials" />
     <MESSAGE value="Some changes to the notes have been made" />
     <MESSAGE value="Some note changes have been made" />
-    <option name="LAST_COMMIT_MESSAGE" value="Some note changes have been made" />
+    <MESSAGE value="Test added: CheckOut with loginCategoriesItems.csv" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test added: CheckOut with loginCategoriesItems.csv" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -439,7 +471,7 @@
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/testsPOM/myProfile/MyProfilePageTestLogOut.java</url>
+          <url>file://$PROJECT_DIR$/src/test/java/tests/pom/my/profile/MyProfilePageTestLogOut.java</url>
           <line>30</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
@@ -449,12 +481,12 @@
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/testsPOM/addToCart/AddToCart3ItemsFromHomePageAfterLogIn.java</url>
+          <url>file://$PROJECT_DIR$/src/test/java/tests/pom/add/to/cart/AddToCart3ItemsFromHomePageAfterLogIn.java</url>
           <line>53</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/testsPOM/goToCheckout/GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindowFinalAssertion.java</url>
+          <url>file://$PROJECT_DIR$/src/test/java/tests/pom/go/to/checkout/GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindowFinalAssertion.java</url>
           <line>59</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>

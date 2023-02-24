@@ -39,7 +39,7 @@ public class ProductPage extends BasePage {
 
     public HomePage goToHomePageAfterAddToCart(){
         addToCartButton.click();
-        continueToShoppingButton.click(); //todo
+        continueToShoppingButton.click(); //За да работи в теста следва да сложим фрейм и да инциалзираме уебелемент: driver.switchTo().frame(continueToShoppingButton);//todo
         homePageBtn.click();
         return new HomePage(driver);
     }

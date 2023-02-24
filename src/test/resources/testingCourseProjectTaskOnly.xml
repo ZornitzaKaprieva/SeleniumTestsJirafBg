@@ -6,30 +6,30 @@
 
     <test name="LoginSuit" >
         <classes>
-            <class name="testsPOM.logIn.LogInTestCorrectCredentials"/>
-            <class name="testsPOM.logIn.LogInTestWrongCredentials"/>
+            <class name="tests.pom.logIn.LogInTestCorrectCredentials"/>
+            <class name="tests.pom.logIn.LogInTestWrongCredentials"/>
         </classes>
     </test>
 
 
     <test name="AddToCartSuit">
         <classes>
-            <class name="testsPOM.addToCart.AddToCart3ItemsFromHomePageAfterLogInItemFinalXpathProducts"/>
-            <class name="testsPOM.addToCart.AddToCart3ItemsFromHomePageAfterLogInItemCsv"/>
+            <class name="tests.pom.add.to.cart.AddToCart3ItemsFromHomePageAfterLogInItemFinalXpathProducts"/>
+            <class name="tests.pom.add.to.cart.AddToCart3ItemsFromHomePageAfterLogInItemCsv"/>
         </classes>
     </test>
 
     <test name="GoToCheckoutSuit">
         <classes>
-            <class name="testsPOM.goToCheckout.GoToCheckOutWithOneProductFromEachCategoryAndItemParam"/>
-            <class name="testsPOM.goToCheckout.GoToCheckOutWithOneProductFromEachCategoryAndItemParamFromCsv"/>
+            <class name="tests.pom.go.to.checkout.GoToCheckOutWithOneProductFromEachCategoryAndItemParam"/>
+            <class name="tests.pom.go.to.checkout.GoToCheckOutWithOneProductFromEachCategoryAndItemParamFromCsv"/>
         </classes>
     </test>
 
     <test name="CheckoutSuit">
         <classes>
-            <class name="testsPOM.checkout.CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetails"/>
-            <class name="testsPOM.checkout.CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsWithLoginCatItemsCsv"/>
+            <class name="tests.pom.checkout.CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetails"/>
+            <class name="tests.pom.checkout.CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsWithLoginCatItemsCsv"/>
         </classes>
     </test>
 
