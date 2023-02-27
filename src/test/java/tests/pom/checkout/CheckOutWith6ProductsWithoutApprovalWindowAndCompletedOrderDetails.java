@@ -53,22 +53,28 @@ public class CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetails 
 
         gameAndPlay.selectCategoryAndItemFromCategory("[1]", "[1]/div/div[2]/h3/a");
         itemFromGameAndPlay.goToHomePageAfterAddToCartByClickingOnProductPage();
+        //Assert.assertEquals(itemFromGameAndPlay.getHowManyItemsInTheCart(), "КОЛИЧКА: 1", "Problem with addToCartCounter");
 
         costumesAndRolePlaying.selectCategoryAndItemFromCategory("[2]", "[3]/div/div[1]/a");
         itemFromCostumesAndRolePlaying.goToHomePageAfterAddToCartByClickingOnProductPage();
+        //Assert.assertEquals(temFromCostumesAndRolePlaying.getHowManyItemsInTheCart(), "КОЛИЧКА: 2", "Problem with addToCartCounter");
 
 //        accessories.selectCategoryAndItemFromCategory("[3]", "[1]/div/div[2]/h3/a");
 //        itemFromAccessories.goToHomePageAfterAddToCartByClickingOnProductPage();
+        //Assert.assertEquals(itemFromAccessories.getHowManyItemsInTheCart(), "КОЛИЧКА: 3", "Problem with addToCartCounter");
 //
 //
 //        creativity.selectCategoryAndItemFromCategory("[4]", "[14]/div/div[2]/h3/a");
 //        itemFromCreativity.goToHomePageAfterAddToCartByClickingOnProductPage();
+        //Assert.assertEquals(itemFromCreativity.getHowManyItemsInTheCart(), "КОЛИЧКА: 4", "Problem with addToCartCounter");
 //
 //        shoesAndSlippers.selectCategoryAndItemFromCategory("[5]", "[3]/div/div[2]/h3/a");
 //        itemFromShoesAndSlippers.goToHomePageAfterAddToCartByClickingOnProductPage();
+        //Assert.assertEquals(itemFromShoesAndSlippers.getHowManyItemsInTheCart(), "КОЛИЧКА: 5", "Problem with addToCartCounter");
 //
 //        stem.selectCategoryAndItemFromCategory("[6]", "[1]/div/div[2]/h3/a");
 //        itemFromStem.goToHomePageAfterAddToCartByClickingOnProductPage();
+        //Assert.assertEquals(itemFromStem.getHowManyItemsInTheCart(), "КОЛИЧКА: 6", "Problem with addToCartCounter");
 
         //final Assertion:
         Assert.assertEquals(itemFromAccessories.getHowManyItemsInTheCart(), "КОЛИЧКА: 2", "Problem with addToCartCounter(itemFromStem)");

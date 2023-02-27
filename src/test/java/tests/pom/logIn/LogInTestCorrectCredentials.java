@@ -31,9 +31,10 @@ public class LogInTestCorrectCredentials extends TestUtil {
 
 
         LogInPage logInPage = new LogInPage(driver);
-        MyProfilePage myProfilePage = logInPage.login(email, password); //ако нямаме това = трябват асършани
+        MyProfilePage myProfilePage = logInPage.login(email, password); // сега не е нужно, нямаме тестове с MyProfilePage: ако нямаме това = трябват асършани
 
-        WebElement myProfileContent = driver.findElement(By.id("content")); //в случая не е нужен assert, но го правя за упражнение
+        logInPage.login(email, password);
+        WebElement myProfileContent = driver.findElement(By.id("content"));
         Assert.assertTrue(myProfileContent.isDisplayed(), "Мy Profile content was not displayed");
         //Thread.sleep(1000);
     }

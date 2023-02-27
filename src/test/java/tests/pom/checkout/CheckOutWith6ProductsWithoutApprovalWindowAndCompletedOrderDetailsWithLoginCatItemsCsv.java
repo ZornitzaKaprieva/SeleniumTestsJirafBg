@@ -60,19 +60,25 @@ public class CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsW
 
         gameAndPlay.selectCategoryAndItemFromCategory(xpathGamesAndToys, xpathGTItem1);
         itemFromGameAndPlay.goToHomePageAfterAddToCartByClickingOnProductPage();
+        //Assert.assertEquals(itemFromGameAndPlay.getHowManyItemsInTheCart(), "КОЛИЧКА: 1", "Problem with addToCartCounter(itemFromStem)");
 
         costumesAndRolePlaying.selectCategoryAndItemFromCategory(xpathCostumesAndRolePlaying, xpathCRPItem1);
         itemFromCostumesAndRolePlaying.goToHomePageAfterAddToCartByClickingOnProductPage();
+        //Assert.assertEquals(itemFromCostumesAndRolePlaying.getHowManyItemsInTheCart(), "КОЛИЧКА: 2", "Problem with addToCartCounter(itemFromStem)");
 
         accessories.selectCategoryAndItemFromCategory(xpathAccessories, xpathAItem1);
         itemFromAccessories.goToHomePageAfterAddToCartByClickingOnProductPage();
+        //Assert.assertEquals(itemFromAccessories.getHowManyItemsInTheCart(), "КОЛИЧКА: 3", "Problem with addToCartCounter(itemFromStem)");
+
 
 
         creativity.selectCategoryAndItemFromCategory(xpathCreativity, xpathCItem1);
         itemFromCreativity.goToHomePageAfterAddToCartByClickingOnProductPage();
+        //Assert.assertEquals(itemFromCreativity.getHowManyItemsInTheCart(), "КОЛИЧКА: 4", "Problem with addToCartCounter(itemFromStem)");
 
         shoesAndSlippers.selectCategoryAndItemFromCategory(xpathShoesAndSlippers, xpathSSItem1);
         itemFromShoesAndSlippers.goToHomePageAfterAddToCartByClickingOnProductPage();
+        //Assert.assertEquals(itemFromCreativity.itemFromShoesAndSlippers(), "КОЛИЧКА: 5", "Problem with addToCartCounter(itemFromStem)");
 
         stem.selectCategoryAndItemFromCategory(xpathStem, xpathSItem1);
         itemFromStem.goToHomePageAfterAddToCartByClickingOnProductPage();
