@@ -6,8 +6,8 @@
 
     <test name="LoginSuit" >
         <classes>
-            <class name="tests.pom.logIn.LogInTestCorrectCredentials"/>
-            <class name="tests.pom.logIn.LogInTestWrongCredentials"/>
+            <class name="tests.pom.login.LogInTestCorrectCredentials"/>
+            <class name="tests.pom.login.LogInTestWrongCredentials"/>
         </classes>
     </test>
 

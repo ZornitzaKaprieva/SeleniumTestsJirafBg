@@ -1,20 +1,12 @@
-package tests.pom.logIn;
+package tests.pom.login;
 
 import base.TestUtil;
-import com.opencsv.CSVReader;
-import com.opencsv.exceptions.CsvException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import pages.HomePage;
 import pages.LogInPage;
-import pages.MyProfilePage;
-
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.List;
 
 public class LogInTestWrongCredentials extends TestUtil {
 
