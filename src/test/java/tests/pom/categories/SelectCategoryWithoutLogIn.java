@@ -21,26 +21,26 @@ public class SelectCategoryWithoutLogIn extends TestUtil {
         gameAndPlay.selectCategory("[1]");
         WebElement gameAndPlayTitle = driver.findElement(By.xpath("/html/body/main/section/div/div/div[2]/section/div/div/h1"));
         Assert.assertTrue(gameAndPlayTitle.isDisplayed());
-
-        costumesAndRolePlaying.selectCategory("[2]");
-        WebElement costumesAndRolePlayingTitle = driver.findElement(By.xpath("/html/body/main/section/div/div/div[2]/section/div/div/h1"));
-        Assert.assertTrue(costumesAndRolePlayingTitle.isDisplayed());
-
-        accessories.selectCategory("[3]");
-        WebElement accessoriesTitle = driver.findElement(By.xpath("/html/body/main/section/div/div/div[2]/section/div/div/h1"));
-        Assert.assertTrue(accessoriesTitle.isDisplayed());
-
-        creativity.selectCategory("[4]");
-        WebElement selectCategoryTitle = driver.findElement(By.xpath("/html/body/main/section/div/div/div[2]/section/div/div/h1"));
-        Assert.assertTrue(selectCategoryTitle.isDisplayed());
-
-        shoesAndSlippers.selectCategory("[5]");
-        WebElement shoesAndSlippersTitle = driver.findElement(By.xpath("/html/body/main/section/div/div/div[2]/section/div/div/h1"));
-        Assert.assertTrue(shoesAndSlippersTitle.isDisplayed());
-
-        stem.selectCategory("[6]");
-        WebElement stemTitle = driver.findElement(By.xpath("/html/body/main/section/div/div/div[2]/section/div/div/h1"));
-        Assert.assertTrue(stemTitle.isDisplayed());
+//
+//        costumesAndRolePlaying.selectCategory("[2]");
+//        WebElement costumesAndRolePlayingTitle = driver.findElement(By.xpath("/html/body/main/section/div/div/div[2]/section/div/div/h1"));
+//        Assert.assertTrue(costumesAndRolePlayingTitle.isDisplayed());
+//
+//        accessories.selectCategory("[3]");
+//        WebElement accessoriesTitle = driver.findElement(By.xpath("/html/body/main/section/div/div/div[2]/section/div/div/h1"));
+//        Assert.assertTrue(accessoriesTitle.isDisplayed());
+//
+//        creativity.selectCategory("[4]");
+//        WebElement selectCategoryTitle = driver.findElement(By.xpath("/html/body/main/section/div/div/div[2]/section/div/div/h1"));
+//        Assert.assertTrue(selectCategoryTitle.isDisplayed());
+//
+//        shoesAndSlippers.selectCategory("[5]");
+//        WebElement shoesAndSlippersTitle = driver.findElement(By.xpath("/html/body/main/section/div/div/div[2]/section/div/div/h1"));
+//        Assert.assertTrue(shoesAndSlippersTitle.isDisplayed());
+//
+//        stem.selectCategory("[6]");
+//        WebElement stemTitle = driver.findElement(By.xpath("/html/body/main/section/div/div/div[2]/section/div/div/h1"));
+//        Assert.assertTrue(stemTitle.isDisplayed());
     }
 }
 

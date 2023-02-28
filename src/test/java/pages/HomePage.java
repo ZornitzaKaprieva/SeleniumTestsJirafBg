@@ -20,6 +20,23 @@ public class HomePage extends BasePage { //todo да се опишат елем�
     @FindBy(xpath = "//span[text()=\"Вход\"] ")
     private WebElement enterBtn;
 
+    //откриване на категория по клас (следва да се заменят всички xpath с класове)todo
+    @FindBy(className = "amenu-link")
+    private WebElement gamesAndToysCategory;
+
+    @FindBy(className = "mm-2")
+    private WebElement costumesAndRolePlaying;
+
+    @FindBy(className = "mm-3")
+    private WebElement accessoriesCategory;
+    @FindBy(className = "mm-4")
+    private WebElement creativityCategory;
+
+    @FindBy(className = "mm-6")
+    private WebElement shoesAndSlippersCategory;
+
+    @FindBy(className = "mm-7")
+    private WebElement stemCategory;
 
     public HomePage(WebDriver driver){
         super(driver);
@@ -65,5 +82,64 @@ public class HomePage extends BasePage { //todo да се опишат елем�
 
         WebElement itemFromCategoryToBeSelected = driver.findElement(By.xpath(PRODUCT_FROM_HOMEPAGE_XPATH + itemXPath));
         itemFromCategoryToBeSelected.click();
+    }
+
+    // методи за селектиране на категория по клас:
+
+    //за всички категории:
+    public void goToCategoryFromHomePageClass (){
+
+        if (agreeBtn.isDisplayed()){
+            agreeBtn.click();
+        }
+        gamesAndToysCategory.click();//ok
+        costumesAndRolePlaying.click();//ok
+        accessoriesCategory.click();//ok
+        creativityCategory.click();//ok
+        shoesAndSlippersCategory.click();//ok
+        stemCategory.click();//ok
+    }
+
+    //отделно за всяка категория:
+    public void selectGamesAndToysCategory(){
+        if (agreeBtn.isDisplayed()){
+            agreeBtn.click();
+        }
+        gamesAndToysCategory.click();//ok
+    }
+
+    public void selectCostumesAndRolePlayingCategory(){
+        if (agreeBtn.isDisplayed()){
+            agreeBtn.click();
+        }
+        costumesAndRolePlaying.click();//ok
+    }
+
+    public void selectAccessoriesCategory(){
+        if (agreeBtn.isDisplayed()){
+            agreeBtn.click();
+        }
+        accessoriesCategory.click();//ok
+    }
+
+    public void selectCreativityCategory(){
+        if (agreeBtn.isDisplayed()){
+            agreeBtn.click();
+        }
+        creativityCategory.click();//ok
+    }
+
+    public void selectShoesAndSlippersCategory(){
+        if (agreeBtn.isDisplayed()){
+            agreeBtn.click();
+        }
+        shoesAndSlippersCategory.click();//ok
+    }
+
+    public void selectStemCategory(){
+        if (agreeBtn.isDisplayed()){
+            agreeBtn.click();
+        }
+        stemCategory.click();//ok
     }
 }

@@ -37,9 +37,10 @@ public class ProductPage extends BasePage {
         continueToShoppingButton.click();
     }
 
-    public HomePage goToHomePageAfterAddToCart(){
+    public HomePage goToHomePageAfterAddToCart(){//todo
         addToCartButton.click();
-        continueToShoppingButton.click(); //За да работи в теста следва да сложим фрейм и да инциалзираме уебелемент: driver.switchTo().frame(continueToShoppingButton);//todo
+       // continueToShoppingButton.click(); //За да работи в теста следва да сложим фрейм и да инциалзираме уебелемент: driver.switchTo().frame(continueToShoppingButton);//todo
+        driver.switchTo().frame(continueToShoppingButton);
         homePageBtn.click();
         return new HomePage(driver);
     }
@@ -56,9 +57,10 @@ public class ProductPage extends BasePage {
         return cartBadge.getText();
     }
 
-    public CartPage goToCartFromProductPage(){
+    public CartPage goToCartFromProductPage(){//todo
         addToCartButton.click();
-        goToCheckOutBtn.click();
+        //goToCheckOutBtn.click(); //За да работи в теста следва да сложим фрейм и да инциалзираме уебелемент: driver.switchTo().frame(continueToShoppingButton);//todo
+        driver.switchTo().frame(goToCheckOutBtn);
         return new CartPage(driver);
     }
 
