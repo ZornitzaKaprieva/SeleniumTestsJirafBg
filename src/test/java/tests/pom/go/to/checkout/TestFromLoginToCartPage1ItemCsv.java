@@ -15,7 +15,7 @@ public class TestFromLoginToCartPage1ItemCsv extends TestUtil {
 
     //този тест е само за пример. Той не следва РОМ, дадено е за пример как с една команда да достигнем до чекаут:
     @Test(dataProvider = "correctCredentialsAndItemDetails")
-    public void goFromLoginToCartPage1ItemCsv (String email, String password,String categoryName, String xPath) throws InterruptedException {
+    public void goFromLoginToCartPage1ItemCsv (String email, String password,String categoryName, String xPath) {
         ExamplePathFromLoginToCartPage1Item firstItemFromGamesAndToys = new ExamplePathFromLoginToCartPage1Item(driver);
         firstItemFromGamesAndToys.goToCheckOutAfterFromLoginToCartPage1Item( email, password, categoryName, xPath);
 

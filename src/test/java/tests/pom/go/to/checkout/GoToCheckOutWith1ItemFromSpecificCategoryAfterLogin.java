@@ -21,7 +21,7 @@ public class GoToCheckOutWith1ItemFromSpecificCategoryAfterLogin extends TestUti
 
     @Test(dataProvider = "correctCredentials")
 
-    public void goToCheckOutWith1ItemFromSpecificCategoryAfterLogin (String email, String password) throws InterruptedException {
+    public void goToCheckOutWith1ItemFromSpecificCategoryAfterLogin (String email, String password) {
         HomePage homePage = new HomePage(driver);
         homePage.goToLogin();
 

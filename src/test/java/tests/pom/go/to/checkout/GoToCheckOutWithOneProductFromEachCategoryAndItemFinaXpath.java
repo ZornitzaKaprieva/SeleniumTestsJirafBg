@@ -16,7 +16,7 @@ public class GoToCheckOutWithOneProductFromEachCategoryAndItemFinaXpath extends 
     //RESUME: вариант с метода public void selectCategoryAndItemFromCategory(String categoryXpath, String itemXPath){}
     @Test(dataProvider = "correctCredentials")//управляваме през тестовите данни (през самите параметри)
 
-    public void goToCheckOutWithOneProductFromEachCategoryAndItemParam (String email, String password) throws InterruptedException {
+    public void goToCheckOutWithOneProductFromEachCategoryAndItemParam (String email, String password) {
         HomePage homePage = new HomePage(driver); //един page, един обект
         LogInPage logInPage = new LogInPage(driver);
         MyProfilePage myProfilePage = new MyProfilePage(driver);

@@ -14,7 +14,7 @@ public class LogInTestCorrectCredentials extends TestUtil {
 
     @Test (dataProvider = "correctCredentials")
 
-    public void successfulLogin(String email, String password) throws InterruptedException {
+    public void successfulLogin(String email, String password) {
 
         HomePage homePage = new HomePage(driver);
         homePage.goToLogin();
@@ -24,7 +24,7 @@ public class LogInTestCorrectCredentials extends TestUtil {
 
 
         LogInPage logInPage = new LogInPage(driver);
-        MyProfilePage myProfilePage = logInPage.login(email, password); // сега не е нужно, нямаме тестове с MyProfilePage: ако нямаме това = трябват асършани
+        //MyProfilePage myProfilePage = logInPage.login(email, password); // сега не е нужно, нямаме тестове с MyProfilePage: ако нямаме това = трябват асършани
 
         logInPage.login(email, password);
         WebElement myProfileContent = driver.findElement(By.id("content"));

@@ -17,7 +17,7 @@ public class GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindowFull
 
     @Test(dataProvider = "correctCredentials")
 
-    public void goToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindowFinalAssertion (String email, String password) throws InterruptedException {
+    public void goToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindowFullXpath (String email, String password) {
         HomePage homePage = new HomePage(driver);
         LogInPage logInPage = new LogInPage(driver);
         MyProfilePage myProfilePage = new MyProfilePage(driver);
@@ -53,29 +53,29 @@ public class GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindowFull
         gameAndPlay.selectCategory("[1]");
         item1GameAndPlay.selectItemFromCategory("/html/body/main/section/div/div/div[2]/section/section/div[3]/div/div[1]/article[1]/div");
         itemFromGameAndPlay.goToHomePageAfterAddToCartByClickingOnProductPage();
-        //Assert.assertEquals(itemFromGameAndPlay.getHowManyItemsInTheCart(), "КОЛИЧКА: 1", "Problem with addToCartCounter(itemFromStem)");
+        Assert.assertEquals(itemFromGameAndPlay.getHowManyItemsInTheCart(), "КОЛИЧКА: 1", "Problem with addToCartCounter(itemFromStem)");
 
 
         costumesAndRolePlaying.selectCategory("[2]");
         itemCostumesAndRolePlaying.selectItemFromCategory("/html/body/main/section/div/div/div[2]/section/section/div[3]/div/div[1]/article[3]/div/div[1]/a");
         itemFromCostumesAndRolePlaying.goToHomePageAfterAddToCartByClickingOnProductPage();
-        //Assert.assertEquals(itemFromCostumesAndRolePlaying.getHowManyItemsInTheCart(), "КОЛИЧКА: 2", "Problem with addToCartCounter(itemFromStem)");
+        Assert.assertEquals(itemFromCostumesAndRolePlaying.getHowManyItemsInTheCart(), "КОЛИЧКА: 2", "Problem with addToCartCounter(itemFromStem)");
 
         accessories.selectCategory("[3]");
         itemAccessories.selectItemFromCategory("/html/body/main/section/div/div/div[2]/section/section/div[3]/div/div[1]/article[1]/div/div[2]/h3/a");
         itemFromAccessories.goToHomePageAfterAddToCartByClickingOnProductPage();
-        //Assert.assertEquals(itemFromAccessories.getHowManyItemsInTheCart(), "КОЛИЧКА: 3", "Problem with addToCartCounter(itemFromStem)");
+        Assert.assertEquals(itemFromAccessories.getHowManyItemsInTheCart(), "КОЛИЧКА: 3", "Problem with addToCartCounter(itemFromStem)");
 
 
         creativity.selectCategory("[4]");
         itemCreativity.selectItemFromCategory("/html/body/main/section/div/div/div[2]/section/section/div[3]/div/div[1]/article[14]/div/div[2]/h3/a");
         itemFromCreativity.goToHomePageAfterAddToCartByClickingOnProductPage();
-        //Assert.assertEquals(itemFromCreativity.getHowManyItemsInTheCart(), "КОЛИЧКА: 4", "Problem with addToCartCounter(itemFromStem)");
+        Assert.assertEquals(itemFromCreativity.getHowManyItemsInTheCart(), "КОЛИЧКА: 4", "Problem with addToCartCounter(itemFromStem)");
 
         shoesAndSlippers.selectCategory("[5]");
-        itemShoesAndSlippers.selectItemFromCategory("/html/body/main/section/div/div/div[2]/section/section/div[3]/div/div[1]/article[3]/div/div[2]/h3/a");
+        itemShoesAndSlippers.selectItemFromCategory("/html/body/main/section/div/div/div[2]/section/section/div[3]/div/div[1]/article[14]/div/div[2]/h3/a");
         itemFromShoesAndSlippers.goToHomePageAfterAddToCartByClickingOnProductPage();
-        //Assert.assertEquals(itemFromShoesAndSlippers.getHowManyItemsInTheCart(), "КОЛИЧКА: 5", "Problem with addToCartCounter(itemFromStem)");
+        Assert.assertEquals(itemFromShoesAndSlippers.getHowManyItemsInTheCart(), "КОЛИЧКА: 5", "Problem with addToCartCounter(itemFromStem)");
 
         stem.selectCategory("[6]");
         itemStem.selectItemFromCategory("/html/body/main/section/div/div/div[2]/section/section/div[3]/div/div[1]/article[2]/div/div[2]/h3/a"); //острилка

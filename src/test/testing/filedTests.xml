@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite thread-count="3" verbose="1" name="SeleniumTestsJirafBg"
+       annotations="JDK" parallel="tests">
+
+
+
+    <test name="CheckOutSuit">
+        <classes>
+            <class name="tests.pom.checkout.CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetails"/>
+            <class name="tests.pom.checkout.CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsWithLoginCatItemsCsv"/>
+            <class name="tests.pom.checkout.CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsWithItemParamFromCsv"/>
+        </classes>
+    </test>
+
+
+
+</suite>

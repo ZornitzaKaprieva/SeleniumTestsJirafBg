@@ -30,7 +30,7 @@ public class CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsW
                                                                                                         String xpathAccessories, String xpathAItem1,
                                                                                                         String xpathCreativity, String xpathCItem1,
                                                                                                         String xpathShoesAndSlippers, String xpathSSItem1,
-                                                                                                        String xpathStem, String xpathSItem1) throws InterruptedException {
+                                                                                                        String xpathStem, String xpathSItem1) {
         HomePage homePage = new HomePage(driver); //един page, един обект
         LogInPage logInPage = new LogInPage(driver);
         MyProfilePage myProfilePage = new MyProfilePage(driver);
@@ -59,29 +59,28 @@ public class CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsW
 
         gameAndPlay.selectCategoryAndItemFromCategory(xpathGamesAndToys, xpathGTItem1);
         itemFromGameAndPlay.goToHomePageAfterAddToCartByClickingOnProductPage();
-        //Assert.assertEquals(itemFromGameAndPlay.getHowManyItemsInTheCart(), "КОЛИЧКА: 1", "Problem with addToCartCounter(itemFromStem)");
+        Assert.assertEquals(itemFromGameAndPlay.getHowManyItemsInTheCart(), "КОЛИЧКА: 1", "Problem with addToCartCounter(itemFromStem)");
 
         costumesAndRolePlaying.selectCategoryAndItemFromCategory(xpathCostumesAndRolePlaying, xpathCRPItem1);
         itemFromCostumesAndRolePlaying.goToHomePageAfterAddToCartByClickingOnProductPage();
-        //Assert.assertEquals(itemFromCostumesAndRolePlaying.getHowManyItemsInTheCart(), "КОЛИЧКА: 2", "Problem with addToCartCounter(itemFromStem)");
+        Assert.assertEquals(itemFromCostumesAndRolePlaying.getHowManyItemsInTheCart(), "КОЛИЧКА: 2", "Problem with addToCartCounter(itemFromStem)");
 
         accessories.selectCategoryAndItemFromCategory(xpathAccessories, xpathAItem1);
         itemFromAccessories.goToHomePageAfterAddToCartByClickingOnProductPage();
-        //Assert.assertEquals(itemFromAccessories.getHowManyItemsInTheCart(), "КОЛИЧКА: 3", "Problem with addToCartCounter(itemFromStem)");
+        Assert.assertEquals(itemFromAccessories.getHowManyItemsInTheCart(), "КОЛИЧКА: 3", "Problem with addToCartCounter(itemFromStem)");
 
 
 
         creativity.selectCategoryAndItemFromCategory(xpathCreativity, xpathCItem1);
         itemFromCreativity.goToHomePageAfterAddToCartByClickingOnProductPage();
-        //Assert.assertEquals(itemFromCreativity.getHowManyItemsInTheCart(), "КОЛИЧКА: 4", "Problem with addToCartCounter(itemFromStem)");
+        Assert.assertEquals(itemFromCreativity.getHowManyItemsInTheCart(), "КОЛИЧКА: 4", "Problem with addToCartCounter(itemFromStem)");
 
         shoesAndSlippers.selectCategoryAndItemFromCategory(xpathShoesAndSlippers, xpathSSItem1);
         itemFromShoesAndSlippers.goToHomePageAfterAddToCartByClickingOnProductPage();
-        //Assert.assertEquals(itemFromCreativity.itemFromShoesAndSlippers(), "КОЛИЧКА: 5", "Problem with addToCartCounter(itemFromStem)");
+        Assert.assertEquals(itemFromShoesAndSlippers.getHowManyItemsInTheCart(), "КОЛИЧКА: 5", "Problem with addToCartCounter(itemFromStem)");
 
         stem.selectCategoryAndItemFromCategory(xpathStem, xpathSItem1);
         itemFromStem.goToHomePageAfterAddToCartByClickingOnProductPage();
-
         //final Assertion:
         Assert.assertEquals(itemFromAccessories.getHowManyItemsInTheCart(), "КОЛИЧКА: 6", "Problem with addToCartCounter(itemFromStem)");
 
@@ -97,7 +96,7 @@ public class CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsW
         WebDriverWait wait05 = new WebDriverWait(driver, Duration.ofSeconds(4));
         wait05.until(ExpectedConditions.visibilityOf(personalInfoTitle));
 
-        //deliveryDetails:
+        //deliveryDetails: Note! ако дава грешка с fillShippingDetails.fillDeliveryDetails(), използвай fillShippingDetails.fillDeliveryDetailsWithoutAddress
         CheckOut fillShippingDetails = new CheckOut(driver);
         //fillShippingDetails.fillDeliveryDetails("QA","Test. Test","ул. проф. д-р Г.Павлов17","1111","София", "Това е поредният спам от мен. Като ви писна, кажете си");
         fillShippingDetails.fillDeliveryDetailsWithoutAddress("Това е поредният спам от мен. Като ви писна, кажете си");

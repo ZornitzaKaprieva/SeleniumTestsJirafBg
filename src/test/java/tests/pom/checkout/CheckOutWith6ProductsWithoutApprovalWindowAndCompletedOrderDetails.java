@@ -23,7 +23,7 @@ public class CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetails 
     //вариант с Assert накрая + методът public void selectCategoryAndItemFromCategory(String categoryXpath, String itemXPath){}
     @Test(dataProvider = "correctCredentials")
 
-    public void checkOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetails (String email, String password) throws InterruptedException {
+    public void checkOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetails (String email, String password) {
 
         HomePage homePage = new HomePage(driver);
         LogInPage logInPage = new LogInPage(driver);
@@ -68,11 +68,11 @@ public class CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetails 
         itemFromCreativity.goToHomePageAfterAddToCartByClickingOnProductPage();
         Assert.assertEquals(itemFromCreativity.getHowManyItemsInTheCart(), "КОЛИЧКА: 4", "Problem with addToCartCounter");
 
-        shoesAndSlippers.selectCategoryAndItemFromCategory("[5]", "[3]/div/div[2]/h3/a");
+        shoesAndSlippers.selectCategoryAndItemFromCategory("[5]", "[14]/div/div[2]/h3/a");
         itemFromShoesAndSlippers.goToHomePageAfterAddToCartByClickingOnProductPage();
         Assert.assertEquals(itemFromShoesAndSlippers.getHowManyItemsInTheCart(), "КОЛИЧКА: 5", "Problem with addToCartCounter");
 
-        stem.selectCategoryAndItemFromCategory("[6]", "[1]/div/div[2]/h3/a");
+        stem.selectCategoryAndItemFromCategory("[6]", "[3]/div/div[2]/h3/a");
         itemFromStem.goToHomePageAfterAddToCartByClickingOnProductPage();
         Assert.assertEquals(itemFromStem.getHowManyItemsInTheCart(), "КОЛИЧКА: 6", "Problem with addToCartCounter");
 
@@ -91,10 +91,10 @@ public class CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetails 
         WebDriverWait wait05 = new WebDriverWait(driver, Duration.ofSeconds(4));
         wait05.until(ExpectedConditions.visibilityOf(personalInfoTitle));
 
-        //deliveryDetails:
+        //deliveryDetails: Note! ако дава грешка с fillShippingDetails.fillDeliveryDetails(), използвай fillShippingDetails.fillDeliveryDetailsWithoutAddress
         CheckOut fillShippingDetails = new CheckOut(driver);
-        //fillShippingDetails.fillDeliveryDetails("QA","Test. Test","ул. проф. д-р Г.Павлов17","1111","София", "Това е поредният спам от мен. Като ви писна, кажете си");
-        fillShippingDetails.fillDeliveryDetailsWithoutAddress("Това е поредният спам от мен. Като ви писна, кажете си");
+        fillShippingDetails.fillDeliveryDetails("QA","Test. Test","ул. проф. д-р Г.Павлов17","1111","София", "Това е поредният спам от мен. Като ви писна, кажете си");
+        //fillShippingDetails.fillDeliveryDetailsWithoutAddress("Това е поредният спам от мен. Като ви писна, кажете си");
     }
 
     //@DataProvider(name = "correctCredentials"): moved to TestUtil

@@ -21,7 +21,7 @@ public class AddToCart3ItemsFromHomePageAfterLogInItemCsv extends TestUtil {
 
     @Test(dataProvider = "homePageItems")//управляваме през тестовите данни (през самите параметри)
 
-    public void addToCart3ItemsFromHomePageAfterLogInItemParam (String xpathItem1, String xpathItem2,String xpathItem3) throws InterruptedException {
+    public void addToCart3ItemsFromHomePageAfterLogInItemItemCsv (String xpathItem1, String xpathItem2,String xpathItem3) {
 
         //подреденият вариант с final assertion and param: (не можем да сложим параметри за повече от един продукт, тъй като, за да се поръча, следва да се мине през страницата на конкретния продукт
         HomePage homePage = new HomePage(driver); //един page, един обект

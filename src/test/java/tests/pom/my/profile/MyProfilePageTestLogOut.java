@@ -19,7 +19,7 @@ import java.util.List;
 public class MyProfilePageTestLogOut extends TestUtil {
     @Test(dataProvider = "correctCredentials")
 
-    public void loginLogOut(String email, String password) throws InterruptedException {
+    public void loginLogOut(String email, String password) {
 
         HomePage homePage = new HomePage(driver); //един page, един обект
         homePage.goToLogin();

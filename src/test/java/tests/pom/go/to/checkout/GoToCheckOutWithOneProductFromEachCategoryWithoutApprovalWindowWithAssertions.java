@@ -29,7 +29,7 @@ public class GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindowWith
                                                                                               String xpathAccessories, String xpathAItem1,
                                                                                               String xpathCreativity, String xpathCItem1,
                                                                                               String xpathShoesAndSlippers, String xpathSSItem1,
-                                                                                              String xpathStem, String xpathSItem1) throws InterruptedException {
+                                                                                              String xpathStem, String xpathSItem1) {
         HomePage homePage = new HomePage(driver); //един page, един обект
         homePage.goToLogin();
 

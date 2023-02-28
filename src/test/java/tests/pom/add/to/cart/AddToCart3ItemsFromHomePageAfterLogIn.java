@@ -21,7 +21,7 @@ public class AddToCart3ItemsFromHomePageAfterLogIn extends TestUtil { //extends 
 
     @Test(dataProvider = "correctCredentials") //управляваме през тестовите данни (през самите параметри)
 
-    public void addToCart3ItemsFromHomePageAfterLogIn(String email, String password) throws InterruptedException {
+    public void addToCart3ItemsFromHomePageAfterLogIn(String email, String password) {
 
         //RESUME: вариант с assertions и данни от .csv файл за login + full xpath
 

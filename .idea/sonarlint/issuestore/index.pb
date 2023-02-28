@@ -20,7 +20,5 @@ l
 <src/test/java/pages/ExamplePathFromLoginToCartPage1Item.java,3\1\31588ffe238eead8678ea9047b9d022f4ca9aadc
 Q
 !src/test/java/pages/CartPage.java,9\c\9ce7e1e9f82d450fc521dc73c47f682161dd5e91
-Q
-!src/test/java/pages/CheckOut.java,4\8\48d41b18e248fee6e7b8330cc350dd7e4379b859
 T
 $src/test/java/pages/ProductPage.java,d\3\d3d1f0b73a437016b8e297cf4d10e792b2c6b213

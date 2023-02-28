@@ -14,7 +14,7 @@ import java.time.Duration;
 public class GoToLogInFromHomePage extends TestUtil {
 
     @Test
-    public void successfullyGoToLogin() throws InterruptedException {
+    public void successfullyGoToLogin() {
 
         HomePage homePage = new HomePage(driver);
         homePage.goToLogin();

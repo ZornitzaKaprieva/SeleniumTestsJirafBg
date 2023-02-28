@@ -12,7 +12,7 @@ import pages.MyProfilePage;
 public class Select2ItemsFromHomePageAfterLogInFullXpath extends TestUtil {
     @Test(dataProvider = "correctCredentials")
 
-    public void select2ItemsFromHomePageAfterLogInFullXpath (String email, String password) throws InterruptedException {
+    public void select2ItemsFromHomePageAfterLogInFullXpath (String email, String password) {
 
         HomePage homePage = new HomePage(driver);
         homePage.goToLogin();

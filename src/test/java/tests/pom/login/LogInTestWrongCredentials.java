@@ -11,7 +11,7 @@ import pages.LogInPage;
 public class LogInTestWrongCredentials extends TestUtil {
 
     @Test (dataProvider = "wrongCredentials")
-    public void loginWithWrongCredentials (String email, String password) throws InterruptedException {
+    public void loginWithWrongCredentials (String email, String password) {
 
         HomePage homePage = new HomePage(driver);
         homePage.goToLogin();

@@ -20,7 +20,7 @@ public class MyProfilePageGoToHomePage extends TestUtil {
 
     @Test(dataProvider = "correctCredentials")
 
-    public void goToHomePageAfterLogin (String email, String password) throws InterruptedException {
+    public void goToHomePageAfterLogin (String email, String password) {
 
         HomePage homePage = new HomePage(driver);
         homePage.goToLogin();

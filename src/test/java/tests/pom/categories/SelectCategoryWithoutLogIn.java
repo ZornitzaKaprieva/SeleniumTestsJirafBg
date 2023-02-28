@@ -9,7 +9,7 @@ import pages.Categories;
 
 public class SelectCategoryWithoutLogIn extends TestUtil {
     @Test
-    public void successfullySelectedCategory() throws InterruptedException {
+    public void successfullySelectedCategory() {
 
         Categories gameAndPlay = new Categories(driver);
         Categories costumesAndRolePlaying = new Categories(driver);

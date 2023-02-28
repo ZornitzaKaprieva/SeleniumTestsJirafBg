@@ -21,7 +21,7 @@ public class GoToCheckOutWithDifferentItemFromDifferentCategoriesAfterLogin exte
 
     @Test(dataProvider = "correctCredentials")
 
-    public void goToCheckOutWithDifferentItemFromDifferentCategoriesAfterLogin (String email, String password) throws InterruptedException {
+    public void goToCheckOutWithDifferentItemFromDifferentCategoriesAfterLogin (String email, String password) {
         HomePage homePage = new HomePage(driver);
         homePage.goToLogin();
 
