@@ -19,13 +19,10 @@ import java.util.List;
 
 public class GoToCheckOutWithOneProductFromEachCategoryAndItemParamFromCsv extends TestUtil {
 
-    //RESUME: вариант с Assert в края на теста и данни от .csv файл за айтемите (логинът е хардкорнат)
-    // (ако ни гръмне някой тест поради липса на наличност, не знаем кой е продукта)
-    // (проверяваме през теста GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindowWithAssertions, който е по-дълъг, но по-надежден)
-
+    //RESUME: вариант с данни от .csv файл за айтемите (логинът е хардкорнат)
     @Test(dataProvider = "xPathOneItemFromEachCategoryCsv")
 
-    public void goToCheckOutWithOneProductFromEachCategoryAndItemParam (String xpathGamesAndToys, String xpathGTItem1,
+    public void goToCheckOutWithOneProductFromEachCategoryAndItemParamFromCsv (String xpathGamesAndToys, String xpathGTItem1,
                                                                         String xpathCostumesAndRolePlaying, String xpathCRPItem1,
                                                                         String xpathAccessories, String xpathAItem1,
                                                                         String xpathCreativity, String xpathCItem1,
@@ -59,19 +56,27 @@ public class GoToCheckOutWithOneProductFromEachCategoryAndItemParamFromCsv exten
 
         gameAndPlay.selectCategoryAndItemFromCategory(xpathGamesAndToys, xpathGTItem1);
         itemFromGameAndPlay.goToHomePageAfterAddToCartByClickingOnProductPage();
+        Assert.assertEquals(itemFromGameAndPlay.getHowManyItemsInTheCart(), "КОЛИЧКА: 1", "Problem with addToCartCounter(itemFromStem)");
 
         costumesAndRolePlaying.selectCategoryAndItemFromCategory(xpathCostumesAndRolePlaying, xpathCRPItem1);
         itemFromCostumesAndRolePlaying.goToHomePageAfterAddToCartByClickingOnProductPage();
+        Assert.assertEquals(itemFromCostumesAndRolePlaying.getHowManyItemsInTheCart(), "КОЛИЧКА: 2", "Problem with addToCartCounter(itemFromStem)");
 
         accessories.selectCategoryAndItemFromCategory(xpathAccessories, xpathAItem1);
         itemFromAccessories.goToHomePageAfterAddToCartByClickingOnProductPage();
+        Assert.assertEquals(itemFromAccessories.getHowManyItemsInTheCart(), "КОЛИЧКА: 3", "Problem with addToCartCounter(itemFromStem)");
+
 
 
         creativity.selectCategoryAndItemFromCategory(xpathCreativity, xpathCItem1);
         itemFromCreativity.goToHomePageAfterAddToCartByClickingOnProductPage();
+        Assert.assertEquals(itemFromCreativity.getHowManyItemsInTheCart(), "КОЛИЧКА: 4", "Problem with addToCartCounter(itemFromStem)");
+
 
         shoesAndSlippers.selectCategoryAndItemFromCategory(xpathShoesAndSlippers, xpathSSItem1);
         itemFromShoesAndSlippers.goToHomePageAfterAddToCartByClickingOnProductPage();
+        Assert.assertEquals(itemFromShoesAndSlippers.getHowManyItemsInTheCart(), "КОЛИЧКА: 5", "Problem with addToCartCounter(itemFromStem)");
+
 
         stem.selectCategoryAndItemFromCategory(xpathStem, xpathSItem1);
         itemFromStem.goToHomePageAfterAddToCartByClickingOnProductPage();

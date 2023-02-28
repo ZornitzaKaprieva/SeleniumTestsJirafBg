@@ -21,7 +21,7 @@
 
     <test name="GoToCheckoutSuit">
         <classes>
-            <class name="tests.pom.go.to.checkout.GoToCheckOutWithOneProductFromEachCategoryAndItemParam"/>
+            <class name="tests.pom.go.to.checkout.GoToCheckOutWithOneProductFromEachCategoryAndItemFinaXpath"/>
             <class name="tests.pom.go.to.checkout.GoToCheckOutWithOneProductFromEachCategoryAndItemParamFromCsv"/>
         </classes>
     </test>

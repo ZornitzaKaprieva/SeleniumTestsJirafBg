@@ -20,7 +20,7 @@ import java.util.List;
 public class GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindowWithAssertions extends TestUtil {
 
     //RESUME: вариант с Assert на всяко действие и данни от .csv файл за айтемите (логинът е хардкорнат)
-    // (ако ни гръмне някой тест поради липса на наличност, тук можем да проверим кой е продуктът:
+    // (ако ни гръмне някой тест поради липса на наличност, тук лесно можем да проверим кой е продуктът:
 
     @Test(dataProvider = "xPathOneItemFromEachCategoryCsv")
 

@@ -1,25 +1,18 @@
 package tests.pom.select.item.after.logIn;
 
 import base.TestUtil;
-import com.opencsv.CSVReader;
-import com.opencsv.exceptions.CsvException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import pages.HomePage;
 import pages.LogInPage;
 import pages.MyProfilePage;
 
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.List;
-
-public class Select2ItemsFromHomePageAfterLogInWithParam extends TestUtil {
+public class Select2ItemsFromHomePageAfterLogInFullXpath extends TestUtil {
     @Test(dataProvider = "correctCredentials")
 
-    public void select2ItemsFromHomePageAfterLogInWithParam (String email, String password) throws InterruptedException {
+    public void select2ItemsFromHomePageAfterLogInFullXpath (String email, String password) throws InterruptedException {
 
         HomePage homePage = new HomePage(driver);
         homePage.goToLogin();

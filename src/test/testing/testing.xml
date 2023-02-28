@@ -26,7 +26,7 @@
 
     <test name="SelectItemsSuit">
         <classes>
-            <class name="tests.pom.select.item.after.logIn.Select2ItemsFromHomePageAfterLogInWithParam"/>
+            <class name="tests.pom.select.item.after.logIn.Select2ItemsFromHomePageAfterLogInFullXpath"/>
             <class name="tests.pom.select.item.after.logIn.SelectItemFromHomePageAfterLogIn"/>
         </classes>
     </test>
@@ -43,9 +43,9 @@
         <classes>
             <class name="tests.pom.go.to.checkout.GoToCheckOutWith1ItemFromSpecificCategoryAfterLogin"/>
             <class name="tests.pom.go.to.checkout.GoToCheckOutWithDifferentItemFromDifferentCategoriesAfterLogin"/>
-            <class name="tests.pom.go.to.checkout.GoToCheckOutWithOneProductFromEachCategoryAndItemParam"/>
+            <class name="tests.pom.go.to.checkout.GoToCheckOutWithOneProductFromEachCategoryAndItemFinaXpath"/>
             <class name="tests.pom.go.to.checkout.GoToCheckOutWithOneProductFromEachCategoryAndItemParamFromCsv"/>
-            <class name="tests.pom.go.to.checkout.GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindowFinalAssertion"/>
+            <class name="tests.pom.go.to.checkout.GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindowFullXpath"/>
             <class name="tests.pom.go.to.checkout.GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindowWithAssertions"/>
             <class name="tests.pom.go.to.checkout.TestFromLoginToCartPage1ItemCsv"/>
         </classes>

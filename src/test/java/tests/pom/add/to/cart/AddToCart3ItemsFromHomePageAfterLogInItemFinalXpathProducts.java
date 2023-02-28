@@ -21,7 +21,7 @@ public class AddToCart3ItemsFromHomePageAfterLogInItemFinalXpathProducts extends
 
     public void addToCart3ItemsFromHomePageAfterLogInItemFinalXpathProducts (String email, String password) throws InterruptedException {
 
-        //подреденият вариант с final assertion and param:
+        //подреденият вариант с final XPath:
         // (не можем да сложим параметри за повече от един продукт,
         // тъй като, за да се поръча, следва да се мине през страницата на конкретния продукт
 
@@ -44,18 +44,17 @@ public class AddToCart3ItemsFromHomePageAfterLogInItemFinalXpathProducts extends
         //item1:
         homePageItem1.selectItemFromHomePageParam("[1]/div/div[2]/h3");
         item1.goToHomePageAfterAddToCartByClickingOnProductPage();
-        //Assert.assertEquals(item31.getHowManyItemsInTheCart(), "КОЛИЧКА: 1", "Problem with addToCartCounter");
+        Assert.assertEquals(item1.getHowManyItemsInTheCart(), "КОЛИЧКА: 1", "Problem with addToCartCounter");
 
 
         //item2:
         homePageItem2.selectItemFromHomePageParam("[2]/div/div[2]/h3/a");
         item2.goToHomePageAfterAddToCartByClickingOnProductPage();
-        //Assert.assertEquals(item2.getHowManyItemsInTheCart(), "КОЛИЧКА: 2", "Problem with addToCartCounter");
+        Assert.assertEquals(item2.getHowManyItemsInTheCart(), "КОЛИЧКА: 2", "Problem with addToCartCounter");
 
         //item3:
         homePageItem3.selectItemFromHomePageParam("[3]");
         item3.goToHomePageAfterAddToCartByClickingOnProductPage();
-
         Assert.assertEquals(item3.getHowManyItemsInTheCart(), "КОЛИЧКА: 3", "Problem with addToCartCounter");
 
         //ХРОНОЛОГИЧНО ПОДРЕДЕН ВАРИАНТ (with assertions):

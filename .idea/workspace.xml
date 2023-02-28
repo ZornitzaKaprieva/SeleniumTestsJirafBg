@@ -4,15 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d277289d-3610-405e-b4e6-a75187aeb2f3" name="Changes" comment="Providers have been added to TestUtil">
+    <list default="true" id="d277289d-3610-405e-b4e6-a75187aeb2f3" name="Changes" comment="Changes were made in some packages (go.to.checkout, login)">
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/TestUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/TestUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/pom/add/to/cart/AddToCart3ItemsFromHomePageAfterLogInItemCsv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/pom/add/to/cart/AddToCart3ItemsFromHomePageAfterLogInItemCsv.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/pom/add/to/cart/AddToCart3ItemsFromHomePageAfterLogInItemFinalXpathProducts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/pom/add/to/cart/AddToCart3ItemsFromHomePageAfterLogInItemFinalXpathProducts.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/pom/checkout/CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/pom/checkout/CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetails.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/pom/checkout/CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsWithItemParamFromCsv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/pom/checkout/CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsWithItemParamFromCsv.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/pom/checkout/CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsWithLoginCatItemsCsv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/pom/checkout/CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsWithLoginCatItemsCsv.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/pom/logIn/LogInTestCorrectCredentials.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/pom/logIn/LogInTestCorrectCredentials.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/pom/go/to/checkout/GoToCheckOutWithOneProductFromEachCategoryAndItemParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/pom/go/to/checkout/GoToCheckOutWithOneProductFromEachCategoryAndItemFinaXpath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/pom/go/to/checkout/GoToCheckOutWithOneProductFromEachCategoryAndItemParamFromCsv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/pom/go/to/checkout/GoToCheckOutWithOneProductFromEachCategoryAndItemParamFromCsv.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/pom/go/to/checkout/GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindowFinalAssertion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/pom/go/to/checkout/GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindowFullXpath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/pom/go/to/checkout/GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindowWithAssertions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/pom/go/to/checkout/GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindowWithAssertions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/pom/select/item/after/logIn/Select2ItemsFromHomePageAfterLogInWithParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/pom/select/item/after/logIn/Select2ItemsFromHomePageAfterLogInFullXpath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/itemsXPathsReadOnly" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/readOnly/itemsXPathsReadOnly" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/taskConditionReadOnly" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/readOnly/taskConditionReadOnly" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testing.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/testing/testing.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testingCourseProjectTaskOnly.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/testing/testingCourseProjectTaskOnly.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +80,10 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\QA\domashni i upravneniq\Java\SeleniumTestsJirafBg\src\test\resources" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\QA\domashni i upravneniq\Java\SeleniumTestsJirafBg\src\test\readOnly" />
+      <recent name="D:\QA\domashni i upravneniq\Java\SeleniumTestsJirafBg\src\test\testing" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="testsPOM.checkout" />
       <recent name="testsPOM.addToCart" />
@@ -79,7 +92,7 @@
       <recent name="testsPOM.myProfile" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.AddToCart3ItemsFromHomePageAfterLogInItemCsv.addToCart3ItemsFromHomePageAfterLogInItemCsv">
+  <component name="RunManager" selected="TestNG.GoToCheckOutWithOneProductFromEachCategoryAndItemParamFromCsv.goToCheckOutWithOneProductFromEachCategoryAndItemParam">
     <configuration name="AddToCart3ItemsFromHomePageAfterLogInItemCsv.addToCart3ItemsFromHomePageAfterLogInItemCsv" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumTestsJirafBg" />
       <extension name="coverage">
@@ -110,41 +123,6 @@
       <option name="MAIN_CLASS_NAME" value="tests.pom.add.to.cart.AddToCart3ItemsFromHomePageAfterLogInItemFinalXpathProducts" />
       <option name="METHOD_NAME" value="addToCart3ItemsFromHomePageAfterLogInItemFinalXpathProducts" />
       <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AddToCart3ItemsFromHomePageAfterLogIn.addToCart3ItemsFromHomePageAfterLogIn" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumTestsJirafBg" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testsPOM.addToCart.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testsPOM.addToCart" />
-      <option name="MAIN_CLASS_NAME" value="testsPOM.addToCart.AddToCart3ItemsFromHomePageAfterLogIn" />
-      <option name="METHOD_NAME" value="addToCart3ItemsFromHomePageAfterLogIn" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsWithLoginCatItemsCsv" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumTestsJirafBg" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testsPOM.checkout.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testsPOM.checkout" />
-      <option name="MAIN_CLASS_NAME" value="testsPOM.checkout.CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsWithLoginCatItemsCsv" />
-      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -201,6 +179,42 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GoToCheckOutWithOneProductFromEachCategoryAndItemFinaXpath.goToCheckOutWithOneProductFromEachCategoryAndItemParam" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumTestsJirafBg" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.pom.go.to.checkout.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.pom.go.to.checkout" />
+      <option name="MAIN_CLASS_NAME" value="tests.pom.go.to.checkout.GoToCheckOutWithOneProductFromEachCategoryAndItemFinaXpath" />
+      <option name="METHOD_NAME" value="goToCheckOutWithOneProductFromEachCategoryAndItemParam" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GoToCheckOutWithOneProductFromEachCategoryAndItemParamFromCsv.goToCheckOutWithOneProductFromEachCategoryAndItemParam" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumTestsJirafBg" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.pom.go.to.checkout.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.pom.go.to.checkout" />
+      <option name="MAIN_CLASS_NAME" value="tests.pom.go.to.checkout.GoToCheckOutWithOneProductFromEachCategoryAndItemParamFromCsv" />
+      <option name="METHOD_NAME" value="goToCheckOutWithOneProductFromEachCategoryAndItemParam" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="tests.pom.add.to.cart" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumTestsJirafBg" />
       <extension name="coverage">
@@ -219,19 +233,19 @@
     </configuration>
     <list>
       <item itemvalue="TestNG.D:/QA/domashni i upravneniq/Java/SeleniumTestsJirafBg/src/test/resources/testing.xml" />
+      <item itemvalue="TestNG.GoToCheckOutWithOneProductFromEachCategoryAndItemFinaXpath.goToCheckOutWithOneProductFromEachCategoryAndItemParam" />
+      <item itemvalue="TestNG.GoToCheckOutWithOneProductFromEachCategoryAndItemParamFromCsv.goToCheckOutWithOneProductFromEachCategoryAndItemParam" />
       <item itemvalue="TestNG.AddToCart3ItemsFromHomePageAfterLogInItemCsv.addToCart3ItemsFromHomePageAfterLogInItemCsv" />
       <item itemvalue="TestNG.AddToCart3ItemsFromHomePageAfterLogInItemFinalXpathProducts.addToCart3ItemsFromHomePageAfterLogInItemFinalXpathProducts" />
       <item itemvalue="TestNG.tests.pom.add.to.cart" />
-      <item itemvalue="TestNG.AddToCart3ItemsFromHomePageAfterLogIn.addToCart3ItemsFromHomePageAfterLogIn" />
-      <item itemvalue="TestNG.CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsWithLoginCatItemsCsv" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.GoToCheckOutWithOneProductFromEachCategoryAndItemParamFromCsv.goToCheckOutWithOneProductFromEachCategoryAndItemParam" />
+        <item itemvalue="TestNG.GoToCheckOutWithOneProductFromEachCategoryAndItemFinaXpath.goToCheckOutWithOneProductFromEachCategoryAndItemParam" />
         <item itemvalue="TestNG.AddToCart3ItemsFromHomePageAfterLogInItemCsv.addToCart3ItemsFromHomePageAfterLogInItemCsv" />
         <item itemvalue="TestNG.AddToCart3ItemsFromHomePageAfterLogInItemFinalXpathProducts.addToCart3ItemsFromHomePageAfterLogInItemFinalXpathProducts" />
         <item itemvalue="TestNG.tests.pom.add.to.cart" />
-        <item itemvalue="TestNG.AddToCart3ItemsFromHomePageAfterLogIn.addToCart3ItemsFromHomePageAfterLogIn" />
-        <item itemvalue="TestNG.CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsWithLoginCatItemsCsv" />
       </list>
     </recent_temporary>
   </component>
@@ -398,7 +412,21 @@
       <option name="project" value="LOCAL" />
       <updated>1677225285044</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Some changes were made in packages add.to.cart and checkout">
+      <created>1677494021232</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1677494021232</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Changes were made in some packages (go.to.checkout, login)">
+      <created>1677496019907</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1677496019907</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -413,7 +441,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Preparation of the working environment" />
     <MESSAGE value="LoginTests" />
     <MESSAGE value="Select Item After LogIn from HomePage" />
     <MESSAGE value="Select Item from HomePage After LogIn" />
@@ -436,7 +463,10 @@
     <MESSAGE value="Test added: CheckOut with loginCategoriesItems.csv" />
     <MESSAGE value="Package names have been edited" />
     <MESSAGE value="Providers have been added to TestUtil" />
-    <option name="LAST_COMMIT_MESSAGE" value="Providers have been added to TestUtil" />
+    <MESSAGE value="Some changes were made in packages add.to.cart and checkout" />
+    <MESSAGE value="Changes were made in some packages (login)" />
+    <MESSAGE value="Changes were made in some packages (go.to.checkout, login)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes were made in some packages (go.to.checkout, login)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -462,8 +492,8 @@
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/tests/pom/go/to/checkout/GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindowFinalAssertion.java</url>
-          <line>59</line>
+          <url>file://$PROJECT_DIR$/src/test/java/tests/pom/go/to/checkout/GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindowFullXpath.java</url>
+          <line>58</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>

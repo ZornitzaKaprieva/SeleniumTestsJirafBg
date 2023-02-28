@@ -20,8 +20,7 @@ import java.util.List;
 public class CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsWithLoginCatItemsCsv extends TestUtil {
 
     //RESUME: вариант с Assert в края на теста и данни от .csv файл за айтемите  (логинът е хардкорнат)
-    // (ако ни гръмне някой тест поради липса на наличност, не знаем кой е продукта) //todo може и да стане с if за колко броя продукти има в количката
-    // (проверяваме през теста GoToCheckOutWithOneProductFromEachCategoryWithoutApprovalWindowWithAssertions, който е по-дълъг, но по-надежден)
+    // (ако ни гръмне някой тест поради липса на наличност, не знаем кой е продукта) //todo може ли да стане с if за колко броя продукти има в количката
 
     @Test(dataProvider = "loginCategoriesItems")//управляваме през тестовите данни (през самите параметри)
 
