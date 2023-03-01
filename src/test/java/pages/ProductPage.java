@@ -12,10 +12,10 @@ public class ProductPage extends BasePage {
     @FindBy(className = "add")//(xpath = "/html/body/main/section/div/div/div/section/div[2]/div[2]/div[3]/div[2]/form/div[2]/div[2]/div/button")
     private WebElement addToCartButton;
 
-    @FindBy(xpath = "/html/body/div[6]/div/div/div[2]/div/div[2]/div/div/button")  //todo
+    @FindBy(css = ".cart-content-btn > .btn-secondary")
     private WebElement continueToShoppingButton;
 
-    @FindBy(xpath = "/html/body/div[6]/div/div/div[2]/div/div[2]/div/div/a/i") //todo
+    @FindBy(css = ".cart-content-btn > .btn-primary")
     private WebElement goToCheckOutBtn;
     @FindBy (xpath = "/html/body/main/div/div/nav/ol/li[1]/a/span")
     private WebElement homePageBtn;
@@ -39,8 +39,7 @@ public class ProductPage extends BasePage {
 
     public HomePage goToHomePageAfterAddToCart(){//todo
         addToCartButton.click();
-       // continueToShoppingButton.click(); //За да работи в теста следва да сложим фрейм и да инциалзираме уебелемент: driver.switchTo().frame(continueToShoppingButton);//todo
-        driver.switchTo().frame(continueToShoppingButton);
+        continueToShoppingButton.click(); //За да работи в теста може да сложим фрейм и да инциалзираме уебелемент: driver.switchTo().frame(continueToShoppingButton);//todo
         homePageBtn.click();
         return new HomePage(driver);
     }
@@ -59,8 +58,8 @@ public class ProductPage extends BasePage {
 
     public CartPage goToCartFromProductPage(){//todo
         addToCartButton.click();
-        //goToCheckOutBtn.click(); //За да работи в теста следва да сложим фрейм и да инциалзираме уебелемент: driver.switchTo().frame(continueToShoppingButton);//todo
-        driver.switchTo().frame(goToCheckOutBtn);
+        goToCheckOutBtn.click(); //За да работи в теста може да сложим фрейм и да инциалзираме уебелемент: driver.switchTo().frame(continueToShoppingButton);//todo
+        //driver.switchTo().frame(goToCheckOutBtn);
         return new CartPage(driver);
     }
 

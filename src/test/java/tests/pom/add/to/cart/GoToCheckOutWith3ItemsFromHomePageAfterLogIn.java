@@ -1,29 +1,21 @@
 package tests.pom.add.to.cart;
 
 import base.TestUtil;
-import com.opencsv.CSVReader;
-import com.opencsv.exceptions.CsvException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import pages.HomePage;
 import pages.LogInPage;
 import pages.MyProfilePage;
 import pages.ProductPage;
 
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.List;
-
-public class AddToCart3ItemsFromHomePageAfterLogIn extends TestUtil { //extends TestUtil, защото там инициализираме драйвъра
+public class GoToCheckOutWith3ItemsFromHomePageAfterLogIn extends TestUtil { //extends TestUtil, защото там инициализираме драйвъра
 
     @Test(dataProvider = "correctCredentials") //управляваме през тестовите данни (през самите параметри)
 
-    public void addToCart3ItemsFromHomePageAfterLogIn(String email, String password) {
+    public void goToCheckOutWith3ItemsFromHomePageAfterLogIn(String email, String password) {
 
-        //RESUME: вариант с assertions и данни от .csv файл за login + full xpath
 
         HomePage homePage = new HomePage(driver);
         homePage.goToLogin();
@@ -69,7 +61,8 @@ public class AddToCart3ItemsFromHomePageAfterLogIn extends TestUtil { //extends 
         WebElement itemTitle3 = driver.findElement(By.xpath("/html/body/main/section/div/div/div/section/div[2]/div[2]/h1"));
         Assert.assertTrue(itemTitle3.isDisplayed(), "Item2 Title is not displayed.");
 
-        item3.goToHomePageAfterAddToCart();//методът с pop-up прозореца
+        item3.goToCartFromProductPage();//методът с pop-up прозореца
+        //item3.goToCartFromProductPage();//методът с pop-up прозореца
         //item3.goToHomePageAfterAddToCartByClickingOnProductPage(); //методът без pop-up прозореца
         Assert.assertEquals(item3.getHowManyItemsInTheCart(), "КОЛИЧКА: 3", "Problem with addToCartCounter");
 
