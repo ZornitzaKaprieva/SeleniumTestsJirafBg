@@ -20,7 +20,7 @@ import java.util.List;
 public class CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetails extends TestUtil {
 
 
-    //вариант с Assert накрая + методът public void selectCategoryAndItemFromCategory(String categoryXpath, String itemXPath){}
+    //вариант с метода public void selectCategoryAndItemFromCategory(String categoryXpath, String itemXPath){}
     @Test(dataProvider = "correctCredentials")
 
     public void checkOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetails (String email, String password) {

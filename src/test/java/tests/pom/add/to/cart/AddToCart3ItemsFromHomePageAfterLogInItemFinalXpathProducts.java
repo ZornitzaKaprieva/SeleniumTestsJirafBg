@@ -17,16 +17,14 @@ import java.util.List;
 
 public class AddToCart3ItemsFromHomePageAfterLogInItemFinalXpathProducts extends TestUtil {
 
-    @Test(dataProvider = "correctCredentials")//управляваме през тестовите данни (през самите параметри)
+    @Test(dataProvider = "correctCredentials")
 
     public void addToCart3ItemsFromHomePageAfterLogInItemFinalXpathProducts (String email, String password) {
 
-        //подреденият вариант с final XPath:
-        // (не можем да сложим параметри за повече от един продукт,
-        // тъй като, за да се поръча, следва да се мине през страницата на конкретния продукт
+        //RESUME: с final XPath:
 
         HomePage homePage = new HomePage(driver); //един page, един обект
-        LogInPage logInPage = new LogInPage(driver); //един page, един обект
+        LogInPage logInPage = new LogInPage(driver);
         MyProfilePage myProfilePage = new MyProfilePage(driver);
 
         HomePage homePageItem1 = new HomePage(driver);

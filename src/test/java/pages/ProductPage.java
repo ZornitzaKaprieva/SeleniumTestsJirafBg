@@ -9,7 +9,7 @@ public class ProductPage extends BasePage {
 
     @FindBy(xpath = "/html/body/main/header/div[2]/div/div[2]")
     private WebElement menuWrapper;
-    @FindBy(xpath = "/html/body/main/section/div/div/div/section/div[2]/div[2]/div[3]/div[2]/form/div[2]/div[2]/div/button")
+    @FindBy(className = "add")//(xpath = "/html/body/main/section/div/div/div/section/div[2]/div[2]/div[3]/div[2]/form/div[2]/div[2]/div/button")
     private WebElement addToCartButton;
 
     @FindBy(xpath = "/html/body/div[6]/div/div/div[2]/div/div[2]/div/div/button")  //todo

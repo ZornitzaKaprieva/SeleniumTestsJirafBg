@@ -19,7 +19,7 @@ import java.util.List;
 
 public class CheckOutWith6ProductsWithoutApprovalWindowAndCompletedOrderDetailsWithItemParamFromCsv extends TestUtil {
 
-    //RESUME: вариант с Assert в края на теста и данни от .csv файл за айтемите  (логинът е хардкорнат)
+    //RESUME: вариант с данни от .csv файл за айтемите  (логинът е хардкорнат)
 
     @Test(dataProvider = "xPathOneItemFromEachCategoryCsv")//управляваме през тестовите данни (през самите параметри)
 

@@ -32,7 +32,7 @@ public class CheckOut extends BasePage {
     @FindBy(xpath = "/html/body/main/section/div/div/div/section/div/div[1]/section[2]/div/div/form/div[2]/button")
     private WebElement continueBtnWithFilledAddress;
 
-    @FindBy(xpath = "/html/body/main/section/div/div/div/section/div/div[1]/section[3]/div/div[2]/form/div/div[2]/div/textarea")
+    @FindBy(id = "delivery_message")//(xpath = "/html/body/main/section/div/div/div/section/div/div[1]/section[3]/div/div[2]/form/div/div[2]/div/textarea")
     private WebElement commentField;
 
     @FindBy(xpath = "/html/body/main/section/div/div/div/section/div/div[1]/section[3]/div/div[2]/form/button")

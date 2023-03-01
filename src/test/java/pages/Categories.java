@@ -15,9 +15,6 @@ public class Categories extends  BasePage {
     @FindBy(xpath = "//span[text()=\"Разбрах\"] ")
     private WebElement agreeBtn;
 
-    //опит за откриване на категория по клас: todo
-//    @FindBy(className = "amenu-item mm-1 plex")
-//    private WebElement gamesCategory;
 
     public Categories(WebDriver driver) {
         super(driver);
@@ -42,7 +39,6 @@ public class Categories extends  BasePage {
         selectCategory.click();
     }
 
-    //new:
     public void selectCategoryAndItemFromCategory(String categoryXpath, String itemXPath){
         WebElement selectCategory = driver.findElement(By.xpath(CATEGORY_XPATH + categoryXpath)); //към контантата добавяме конкретен айтем
 
@@ -54,15 +50,4 @@ public class Categories extends  BasePage {
         WebElement itemFromCategoryToBeSelected = driver.findElement(By.xpath(PRODUCT_CATEGORY_XPATH + itemXPath));
         itemFromCategoryToBeSelected.click();
     }
-
-
-    //опит за откриване на категория по клас:
-
-
-//    public void selectCategoryGamesAndToys() {
-//        if (agreeBtn.isDisplayed()) {
-//            agreeBtn.click();
-//        }
-//        gamesCategory.click();
-//    }
 }
